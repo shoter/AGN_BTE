@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Clipboard"
+    category="Equipment"
+    tags="smallitem"
+    description="A thin, rigid board with a clip at the top for holding documents in place."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Aluminium Powder"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="0,0,30,40" depth="0.83"/>
+
+    <Body width="26" height="36" density="10.1"/>
+
+    <Pickable slots="Any"/>
+	
+	<ItemContainer capacity="10" hideitems="false" itempos="0,0">
+      <Containable name="docs"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Coalition Captain"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a job description for the captain position."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docCom.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Coalition Assistant"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a job description for the assistant position."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docAst.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Coalition Security"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a job description for the security officer position."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docSec.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Coalition Doctor"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a job description for the medical doctor position."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docMed.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Coalition Engineer"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a job description for the engineer position."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docEng.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Coalition Mechanic"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a job description for the mechanic position."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docMec.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Coalition Cook"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a job description for the culinary specialist position."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docCul.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Coalition Seamen"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a job description for the seaman position."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docNov.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Basic Emergency Protocol"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a In-Case-Of-Emergency document issued to every crew member."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docBasic.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Outbreak Protocol"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a classified executive order mandate document."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Outbreak Protocol"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docOutbreak.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Classified Protocol A"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This document is missing letters and words. It seems important."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Classified Protocol A"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docOutbreakA.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Classified Protocol B"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This transparent sheet has some letters and loose words in it. It seems important."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Classified Protocol B"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="58,40,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docOutbreakB.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Document about Threshers"
+    category="Misc"
+    tags="smallitem,docs"
+    description="A document describing tiger threshers."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Document about Threshers"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docTiger.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Document about Crawlers"
+    category="Misc"
+    tags="smallitem,docs"
+    description="A document describing crawlers."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Document about Crawlers"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docCrawl.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Document about Mantises"
+    category="Misc"
+    tags="smallitem,docs"
+    description="A document describing mantises."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Document about Mantises"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docMantis.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Document about Scorpions"
+    category="Misc"
+    tags="smallitem,docs"
+    description="A document describing scorpions."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Document about Scorpions"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docScorpion.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Document about Molochs"
+    category="Misc"
+    tags="smallitem,docs"
+    description="A document describing molochs."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Document about Molochs"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docMoloch.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Husk Autopsy Photos"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is the second page of a husk autopsy report."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Husk Autopsy Photos"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docHuskhuman2.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Top Secret Cover"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a cover sheet for classified information."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Top Secret Cover"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,40,25,40" depth="0.8"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docSecret.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="A drawing of the Nehalennia"
+    category="Misc"
+    tags="smallitem,docs"
+    description="A piece of paper from a notebook containing a poorly drawn layout of the Nehalennia."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="58,0,24,40" depth="0.81"/>
+
+    <Body width="23" height="33" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/drawNehalenniaII.png" origin="0.65,0.45"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="A drawing of a Moloch"
+    category="Misc"
+    tags="smallitem,docs"
+    description="A piece of paper from a notebook containing a poorly drawn strategy against Molochs."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="58,0,24,40" depth="0.81"/>
+
+    <Body width="23" height="33" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/drawMoloch.png" origin="0.65,0.45"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Guitar"
+    category="Misc"
+    Tags="bigitem"
+	description="A trusty, seven-string guitar used to raise spirits among the crew."
+    price="290">
+	
+	<Deconstruct time="10">
+	  <Item name="Steel Bar"/>
+	  <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="tools.png" sourcerect="111,0,46,121" depth="0.55"/>
+
+    <Body radius="20" height="83" density="12"/>
+
+    <RepairTool structurefixamount="0" limbfixamount="0" range="0" barrelpos="0,0" particles="bubbles">
+      <sound file="guitar_1.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_2.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_3.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_4.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_5.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_6.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_7.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_8.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_9.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_10.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_11.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_12.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_13.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_14.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_15.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_16.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_17.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_18.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_19.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_20.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_21.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_22.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_23.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_24.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_25.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_26.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="guitar_27.ogg" type="OnUse" range="600" loop="true"/>
+	  <StatusEffect type="InWater" target="This" Condition="-75"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="1" delay="15"/>
+	  <StatusEffect type="Always" target="This" Condition="15"/>
+	  <StatusEffect type="OnUse">
+	    <Explosion range="35" force="0.2" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="6.5"/>
+      </StatusEffect>
+    </RepairTool>
+	
+	<Holdable slots="RightHand+LeftHand" controlpose="true"
+              aimpos="50,0" handle1="-2,0" handle2="10,50"/>
+  </Item>
+  
+  <Item
+    name="Harmonica"
+    category="Misc"
+    Tags="smallitem"
+	description="A trusty harmonica used mostly by lone crew members."
+    price="60">
+	
+	<Deconstruct time="10">
+	  <Item name="Aluminium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="tools.png" sourcerect="0,155,26,5" depth="0.55"/>
+
+    <Body width="22" height="2" density="14"/>
+
+    <RepairTool structurefixamount="0" limbfixamount="0" range="0" barrelpos="0,0" particles="bubbles">
+      <sound file="harmonica_1.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="harmonica_2.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="harmonica_3.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="harmonica_4.ogg" type="OnUse" range="600" loop="true"/>
+	  <sound file="harmonica_5.ogg" type="OnUse" range="600" loop="true"/>
+	  <StatusEffect type="InWater" target="This" Condition="-75"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="1" delay="15"/>
+	  <StatusEffect type="Always" target="This" Condition="15"/>
+	  <StatusEffect type="OnUse">
+	    <Explosion range="35" force="0.2" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="6.5"/>
+      </StatusEffect>
+    </RepairTool>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              aimpos="30,18" handle1="-7,0" handle2="8,0"/>
+  </Item>
+  
+  <Item
+    name="Bike Horn"
+    category="Misc"
+    tags="smallitem,weapon"
+    description="HONK">
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Aluminium Powder"/>
+    </Deconstruct>
+
+    <Sprite texture="Content/Items/Jobgear/clownshirt.png" sourcerect="32,50,32,14" depth="0.55"/>
+
+    <Body width="30" height="10" density="9.9"/>
+
+    <Holdable slots="RightHand,LeftHand,Any" aimpos="100,0" handle1="-5,0"/>
+
+    <RangedWeapon reload="2">
+      <Sound file="Content/Items/Weapons/honk.ogg" type="OnUse"/>
+    </RangedWeapon>
+  </Item>
+  
+  <Item
+    name="Paper Boat"
+    category="Misc"
+    tags="smallitem"
+    description="We all float down here...">
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="tools.png" sourcerect="102,149,30,11" depth="0.55"/>
+
+    <Body width="27" height="8" density="7.5"/>
+
+    <Holdable slots="RightHand,LeftHand,Any" aimpos="50,0" handle1="-5,0"/>
+
+    <Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="2" aimpos="35,-10"/>
+  </Item>
+</Items>

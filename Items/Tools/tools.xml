@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Screwdriver"
+    category="Equipment"
+    Tags="smallitem,tool"
+	description="Standard issue tool for Electrical Engineers."
+    price="85">
+	
+	<Deconstruct time="5">
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+       
+    <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="0,58,31,6" depth="0.55"/>
+
+    <Body width="31" height="6" density="13"/>
+			  
+	<MeleeWeapon slots="RightHand,LeftHand,Any"
+          aimpos="50,0" handle1="-10,0" handle2="-8,1" holdangle="40" reload="1.0">
+      <Attack damage="2" stun="0.1" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Screwdriver.ogg"/>
+    </MeleeWeapon>
+  </Item>
+
+  <Item
+    name="Wrench"
+    category="Equipment"
+    Tags="meditem,tool"
+	description="Standard issue tool for Mechanics."
+    price="160">
+	
+	<Deconstruct time="5">
+	  <Item name="Steel Bar"/>
+      <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite  texture ="Mods/BTE/Items/Tools/tools.png" sourcerect="0,0,62,14" depth="0.55"/>
+
+    <Body width="30" height="7" density="50"/>
+
+    <MeleeWeapon slots="RightHand,LeftHand,Any"
+          aimpos="50,0" handle1="-14,-2" handle2="-11,-1" holdangle="30" reload="2.2">
+      <Attack damage="12" damagetype="Blunt" stun="0.3" targetforce="30" sound="Mods/BTE/Items/Weapons/Wrench.ogg"/>
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Sulphurite Tank"
+    category="Equipment"
+    Tags="meditem"
+	description="A tank with liquefied compressed Sulphurite gas. This gas is not toxic but its denser than oxygen so displaces it when released."
+    price="60">
+
+    <Deconstruct time="10">
+      <Item name="Aluminium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="52,31,12,33" depth="0.55"/>
+
+    <Body width="12" height="33" density="8"/>
+
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="30,-15" handle1="0,5" handle2="0,-5">
+      <StatusEffect type="OnFire" target="This,Hull" Condition="-2" oxygen="-5000"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Thermite Tank"
+    category="Equipment"
+    Tags="meditem"
+	description="A tank with compressed thermite gas, which is used as welding fuel."
+    price="75">
+
+    <Deconstruct time="10">
+      <Item name="Aluminium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="52,31,12,33" depth="0.55"/>
+
+    <Body width="12" height="33" density="8"/>
+
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="30,-15" handle1="0,5" handle2="0,-5">
+      <StatusEffect type="OnFire" target="This" Condition="-100.0" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
+        <Explosion range="300" structuredamage="15" damage="50" stun="4" force="3.5"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Welding Tool"
+    category="Equipment"
+    Tags="meditem,tool"
+	description="One of the most crucial tools on board any submarine. Also works underwater."
+    price="250">
+	
+	<Deconstruct time="10">
+	  <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="tools.png" sourcerect="0,132,49,19" depth="0.55"/>
+
+    <Body width="47" height="17" density="40"/>
+
+    <RepairTool structurefixamount="0.5" limbfixamount="-0.5" range="100" barrelpos="19,6" particles="weld">
+      <RequiredItems name="Thermite Tank,Sulphurite Tank,Oxygen Tank,Oxygenite Tank" type="Contained" msg="Welding fuel depleted"/>
+      <sound file="Content/Items/Tools/weldingTool.ogg" type="OnUse" range="500.0" loop="true"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Oxygen Tank" Condition="-5"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Oxygenite Tank" Condition="-3"/>
+	  <StatusEffect type="OnUse" target="Contained,Hull" targetnames="Sulphurite Tank" Condition="-2" oxygen="-2500"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Thermite Tank" Condition="-1"/>
+      <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Windowed Door" Stuck="20.0" Condition="3.0"/>
+      <Fixable name="structure"/>
+      <RequiredSkill name="Construction" level="20"/>
+      <StatusEffect type="OnFailure" target="Contained" Condition="-1.5"/>
+      <LightComponent LightColor="1.0,0.9,0.7,1.0" Flicker="0.5">
+        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5"/>
+      </LightComponent>
+    </RepairTool>
+   
+    <ItemContainer capacity="1" hideitems="false" itempos="8,-21">
+      <Containable name="Oxygen Tank"/>
+	  <Containable name="Oxygenite Tank"/>
+	  <Containable name="Sulphurite Tank"/>
+	  <Containable name="Thermite Tank"/>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              aimpos="50,0" handle1="-17,0" handle2="10,0"/>
+  </Item>
+  
+  <Item
+    name="Saw Cutter"
+    category="Equipment"
+    Tags="meditem,tool"
+	description="Cuts through various materials using a circular blade. It works on batteries."
+    price="200">
+
+    <Deconstruct time="10">
+	  <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+	  <Item name="Iron Powder"/>
+	  <Item name="Iron Powder" requirefullcondition="true"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+    
+    <Sprite texture ="tools.png" sourcerect="0,35,77,49" depth="0.55"/>
+
+    <Body width="76" height="48" density="40"/>
+
+    <RepairTool structurefixamount="-0.2" limbfixamount="-6.4" range="50" barrelpos="20,10" particles="bubbles">
+      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-1.0"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-3"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-2"/>
+      <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Windowed Door" Stuck="-20.0" Condition="-1.5"/>
+      <sound file="SawLoop.ogg" type="OnUse" range="500.0" loop="true"/>
+      <Fixable name="structure"/>
+      <RequiredSkill name="Construction" level="30"/>
+      <StatusEffect type="OnFailure" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-4.0"/>
+      <LightComponent LightColor="0.8,0.7,1.0,0.3" Flicker="0.5">
+        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5"/>
+      </LightComponent>
+    </RepairTool>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell"/>
+      <Containable name="Fulgurium Battery Cell"/>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              holdpos="35,-10" aimpos="50,0" handle1="-12,4"/>
+  </Item>
+
+  <Item
+    name="Plasma Cutter"
+    category="Equipment"
+    Tags="meditem,tool"
+	description="Cuts through various materials using a jet of ionized gas."
+    price="350">
+
+    <Deconstruct time="10">
+	  <Item name="Steel Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+    
+    <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="0,0,41,16" depth="0.55"/>
+
+    <Body width="41" height="16" density="40"/>
+
+    <RepairTool structurefixamount="-0.4" limbfixamount="-1.2" range="100" barrelpos="28,8" particles="plasma">
+      <RequiredItems name="Oxygen Tank,Oxygenite Tank,Sulphurite Tank,Thermite Tank" type="Contained" msg="Gas tank depleted"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Oxygen Tank" Condition="-2"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Oxygenite Tank" Condition="-1"/>
+	  <StatusEffect type="OnUse" target="Contained,Hull" targetnames="Sulphurite Tank" Condition="-3" oxygen="-2750"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Thermite Tank" Condition="-5"/>
+      <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Windowed Door" Stuck="-20.0" Condition="-3.0"/>
+      <sound file="Content/Items/Tools/plasmaCutter.ogg" type="OnUse" range="500.0" loop="true"/>
+      <Fixable name="structure"/>
+      <RequiredSkill name="Construction" level="30"/>
+      <StatusEffect type="OnFailure" target="Contained" Condition="-1.5"/>
+      <LightComponent LightColor="0.8,0.7,1.0,1.0" Flicker="0.5">
+        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5"/>
+      </LightComponent>
+    </RepairTool>
+
+    <ItemContainer capacity="1" hideitems="false" itempos="-17,-21">
+      <Containable name="Oxygen Tank"/>
+	  <Containable name="Oxygenite Tank"/>
+	  <Containable name="Sulphurite Tank"/>
+	  <Containable name="Thermite Tank"/>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              aimpos="50,0" handle1="-12,4"/>
+  </Item>
+  
+  <Item
+    name="Fire Extinguisher"
+    category="Equipment"
+    Tags="bigitem,tool"
+	description="A handheld carbon dioxide extinguisher. A must in every submarine"
+    price="200">
+
+    <Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Tools/extinguisher.png"  depth="0.55" sourcerect="0,0,34,64" origin="0.4,0.5"/>
+
+    <Body radius="10" height="45" density="7"/>
+
+    <RepairTool extinquishamount="30.0" range="300" barrelpos="21,25" particles="extinguisher" particlespeed="650.0">
+      <StatusEffect type="OnUse" target="This" Condition="-2.0"/>
+      <sound file="Content/Items/Tools/extinguisher.ogg" type="OnUse" range="500.0" loop="true"/>
+    </RepairTool>
+
+    <Propulsion force="-20" usablein="water" particles="bubbles"/>
+	
+	<Holdable slots="RightHand+LeftHand" controlpose="false"
+              aimpos="40,-20" handle1="-2,30"/>
+  </Item>
+
+  <Item
+    name="Handheld Sonar"
+    category="Equipment"
+    Tags="smallitem,tool"
+	description="A personal sonar device used by divers to explore underwater areas or find their way back to the submarine."
+    price="175">
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Aluminium Powder"/>
+	  <Item name="Copper Coil"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="42,0,22,9" depth="0.55"/>
+
+    <Body width="31" height="6" density="14"/>
+
+    <Radar range="6000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="0.2">
+      <StatusEffect type="OnUse" target="Contained" Condition="-1.5" disabledeltatime="true"/>
+      <sound file="Content/Items/Engine/radarPing.ogg" type="OnUse" range="1000.0"/>
+	  <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Content/Items/Engine/radarOverlay.png" origin="0.5,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell, Fulgurium Battery Cell">
+        <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
+      </Containable>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand,LeftHand,Any"
+              holdangle="30" handle1="-10,0"/>
+  </Item>
+  
+  <Item
+    name="Flashlight"
+    category="Equipment"
+    Tags="smallitem,tool"
+	description="A portable hand-held electric light source."
+    price="150">
+
+    <Deconstruct time="15">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Aluminium Powder"/>
+	  <Item name="Copper Coil"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="0,36,27,11" depth="0.55"/>
+
+    <Body width="27" height="10" density="10.1"/>
+
+    <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.1" range="800" powerconsumption="10" IsOn="true">
+      <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.0,1.0"/>
+    </LightComponent>
+    
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell, Fulgurium Battery Cell">
+        <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
+      </Containable>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand,LeftHand,Any" aimpos="100,0" handle1="0,0">
+      <StatusEffect type="OnActive" target="Contained" Condition="-0.15"/>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Flare"
+    category="Equipment"
+	tags="smallitem"
+	description="Flares are used mostly for signalling but also as emergency illumination."
+    spritecolor="1.0,0.0,0.0,1.0"
+	canuseonself="true"
+    price="50">
+
+    <Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Aluminium Powder"/>
+	  <Item name="Potassium" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="0,38,21,7" depth="0.55"/>
+
+    <Body width="21" height="7" density="12"/>
+	
+	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="600" IsOn="false">
+      <StatusEffect type="OnActive" target="This" Condition="-1">
+        <ParticleEmitter particle="flare" particlespersecond="30"/>
+        <ParticleEmitter particle="bubbles" particlespersecond="30"/>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+      <sound file="Content/Items/Tools/flare.ogg" type="OnActive" range="800" loop="true"/>
+    </LightComponent>
+	
+	<ItemComponent>
+      <StatusEffect type="OnUse" target="This" IsOn="true"/>
+    </ItemComponent>
+
+    <Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="3" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Food Can"
+    Tags="meditem"
+    description="An aluminium food container."
+	impacttolerance="2"
+	price="40">
+	
+	<Deconstruct time="5">
+      <Item name="Aluminium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Mods/BTE/Items/Tools/tools.png" sourcerect="82,0,18,24" depth="0.6"/>
+
+    <Body width="18" height="24" density="12"/>
+
+    <ItemContainer capacity="1" hideitems="true">
+	  <Containable name="smallitem"/>
+    </ItemContainer>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="3" aimpos="35,-10">
+      <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/FoodCan.ogg"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+</Items>

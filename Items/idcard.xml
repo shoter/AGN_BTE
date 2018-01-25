@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Item
+	name="ID Card"
+  category="Equipment"
+	Tags="smallitem,docs"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+	<Sprite texture ="Content/Items/idcard.png" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+</Item>
+	
+
+

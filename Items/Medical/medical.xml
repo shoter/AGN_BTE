@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Medical Syringe"
+    category="Equipment"
+    Tags="smallitem,medical"
+	description="Injection is often a much more effective method of administering drugs than taking them orally."
+	canuseonself="true"
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="0,0,25,5" depth="0.6"/>
+
+    <Body width="25" height="5" density="9.5"/>
+
+    <MeleeWeapon slots="Any,RightHand,LeftHand"
+              aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
+
+      <StatusEffect type="OnUse" target="Contained, Character" Condition="-25.0" disabledeltatime="true">
+	    <sound file="Content/Items/Medical/syringe.ogg"/>
+        <RequiredItem name="chem" type="Contained"/>
+        <Use/>
+      </StatusEffect>
+    </MeleeWeapon>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="chem"/>
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Bandage"
+    category="Equipment"
+    Tags="smallitem,medical"
+	description="Treated with a hemostatic agent that quickly seals most minor wounds."
+    canuseonself="true"
+    price="20">
+	
+	<Deconstruct time="5">
+      <Item name="Bandage" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="0,16,11,16" depth="0.6"/>
+
+    <Body width="11" height="16" density="8"/>
+
+    <MeleeWeapon slots="Any,RightHand,LeftHand"
+              aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
+      <StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true"/>
+      <StatusEffect type="OnUse" target="This, Character" bleeding="-0.1" duration="5.0">
+	    <sound file="Content/Items/Medical/bandage.ogg"/>
+	  </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Aluminium Powder"
+    category="Material"
+    spritecolor="0.7,0.7,0.7,1.0"
+    Tags="smallitem,chem,medical"
+    price="20">
+	
+	<Deconstruct time="5">
+      <Item name="Aluminium Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.1"/>
+    
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-0.2" duration="90">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Copper Powder"
+    category="Material"
+    spritecolor="0.78,0.55,0.2,1.0"
+    Tags="smallitem,chem,medical"
+    price="25">
+	
+	<Deconstruct time="5">
+      <Item name="Copper Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.1"/>
+    
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-0.1" duration="90">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Iron Powder"
+    category="Material"
+    Tags="smallitem,chem"
+    price="5">
+	
+	<Deconstruct time="5">
+      <Item name="Iron Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6" color="0.2,0.2,0.2,1.0"/>
+
+    <Body width="8" height="16" density="10.5"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-0.3" duration="90">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Uranium Powder"
+    category="Material"
+    spritecolor="0.2,0.35,0.06,1.0"
+    Tags="smallitem,chem,medical"
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Uranium Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="11"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-5.0" duration="60.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Fulgurium Powder"
+    category="Material"
+    spritecolor="1.0,0.7,0.05,1.0"
+    Tags="smallitem,chem,medical">
+	
+	<Deconstruct time="5">
+      <Item name="Fulgurium Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.1"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-5.0" duration="60.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Stabilozine"
+    category="Material"
+    spritecolor="1.0,1.0,0.7,1.0"
+    Tags="smallitem,chem,medical"
+    description="A mild stimulant which is used as an ingredient in the manufacture of various chemicals."
+    price="10">
+	
+	<Deconstruct time="5">
+      <Item name="Stabilozine" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="15,15,8,17" depth="0.6" />
+
+    <Body width="8" height="17" density="10"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="0.3" Oxygen="0.3" duration="10">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Erythrozine"
+    category="Material"
+    spritecolor="0.5,0.5,1.0,1.0"
+    Tags="smallitem,chem,medical"
+    description="Most commonly used for treating oxygen deprivation."
+    canuseonself="true"
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Erythrozine" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6" />
+
+    <Body width="8" height="16" density="10.2"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-0.3" Oxygen="2.0" duration="10">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Fibrinozine"
+    category="Material"
+    spritecolor="0.6,0.4,0.2,1.0"
+    Tags="smallitem,chem,medical"
+	description="A hemostatic agent that slows down bleeding."
+    canuseonself="true"
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Erythrozine" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6" />
+
+    <Body width="8" height="16" density="10.3"/>
+    
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Bleeding="-0.2" duration="5.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Corrigodone"
+    category="Material"
+    spritecolor="0.8,0.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+	description="Highly effective at treating various types of physical trauma."
+    canuseonself="true"
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Corrigodone" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.2"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="3.0" duration="5.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Auxiliorizine"
+    category="Material"
+    spritecolor="1.0,1.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+    description="A highly potent corrigodone-based stimulant."
+    price="150">
+	
+	<Deconstruct time="5">
+      <Item name="Auxiliorizine" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.4"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="1.0" Oxygen="1.0" Bleeding="-0.05" duration="60.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Chlorine"
+    category="Material"
+    spritecolor="1.0,1.0,1.0,0.6"
+    Tags="smallitem,chem,medical"
+    price="20">
+	
+	<Deconstruct time="5">
+      <Item name="Chlorine" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="15,15,8,17" depth="0.6"/>
+
+    <Body width="8" height="17" density="10.5"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-0.1" duration="20">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Biomass"
+    category="Material"
+    spritecolor="0.0,0.9,0.1,1.0"
+    Tags="smallitem,chem,medical"
+    canuseonself="true"
+    price="15">
+	
+	<Deconstruct time="5">
+      <Item name="Biomass" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <ItemComponent>
+      <StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true"/>
+      <StatusEffect type="OnUse" target="Character" Health="0.01" duration="20"/>      
+    </ItemComponent>
+
+    <Sprite texture ="medical.png" sourcerect="39,82,10,18" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.1"/>
+    
+    <Holdable slots="Any,RightHand,LeftHand"/>
+  </Item>
+
+  <Item
+    name="Ethanol"
+    category="Material"
+    spritecolor="0.0,0.9,0.1,1.0"
+    Tags="smallitem,chem,medical"
+    canuseonself="true"
+    price="20">
+	
+	<Deconstruct time="5">
+      <Item name="Ethanol" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="15,15,8,17" depth="0.6"/>
+
+    <Body width="8" height="7" density="10.01"/>
+    
+    <Holdable slots="Any">
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.04" disabledeltatime="true" duration="50"/>
+	  <StatusEffect type="OnUse" target="Character" Health="-0.001" duration="50"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.3" delay="12" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="1" delay="21" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.4" delay="34" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="2" delay="40" disabledeltatime="true"/>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Potassium"
+    category="Material"
+    spritecolor="0.8,0.8,0.8,1.0"
+    Tags="smallitem,chem,medical"
+    price="20">
+	
+	<Deconstruct time="5">
+      <Item name="Potassium" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10"/>
+    
+    <Holdable slots="Any">
+	  <StatusEffect type="InWater" target="This" Condition="-100"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="-100.0">
+	    <sound file="Mods/BTE/Items/Weapons/ChemExplosion.ogg"/>
+	    <Explosion range="150" damage="8" stun="2" shockwave="false" flames="false" sparks="false" force="0.3"/>
+	  </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Flash Powder"
+    category="Material"
+    spritecolor="0.1,0.1,0.1,1.0"
+    Tags="smallitem,chem,explosive"
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Flash Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.1"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnFire" target="This" Condition="-100.0">
+	    <sound file="Mods/BTE/Items/Weapons/ChemExplosion.ogg"/>
+        <Explosion range="150" damage="3" stun="3" force="0.1"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Propellant Powder"
+    category="Material"
+    Tags="smallitem,chem,explosive"
+    price="75">
+	
+	<Deconstruct time="5">
+      <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.1"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnFire" target="This" Condition="-100.0">
+	    <sound file="Mods/BTE/Items/Weapons/ChemExplosion.ogg"/>
+        <Explosion range="150" damage="5" stun="2" force="0.5"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Chloral Hydrate"
+    category="Material"
+    spritecolor="1.0,1.0,1.0,0.8"
+    Tags="smallitem,chem,medical"
+    price="20">
+	
+	<Deconstruct time="5">
+      <Item name="Chloral Hydrate" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="15,15,8,17" depth="0.6"/>
+
+    <Body width="8" height="17" density="10.1"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-5.0" Stun="10" disabledeltatime="true">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Phosphorus"
+    category="Material"
+    spritecolor="0.5,0.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+    price="20">
+	
+	<Deconstruct time="5">
+      <Item name="Phosphorus" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.1"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-5.0" disabledeltatime="true">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Sulphuric Acid"
+    category="Material"
+    spritecolor="255.0,250.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Sulphuric Acid" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="15,15,8,17" depth="0.6"/>
+
+    <Body width="8" height="17" density="11"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-2.0" duration="90">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Hyperzine"
+    category="Material"
+    spritecolor="0.8,0.3,0.8,1.0"
+    Tags="smallitem,chem,medical"
+    description="A potent muscle stimulant."
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Hyperzine" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="12"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="1.5" setvalue="true" duration="60.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Morbusine"
+    category="Material"
+    spritecolor="0.0,0.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+    description="A highly potent neurotoxin that reduces inhibitory transmissions in the nervous system resulting in muscular contractions and subsequent suffocation."
+    price="400">
+	
+	<Deconstruct time="5">
+      <Item name="Morbusine" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="12"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.1" oxygen="-0.1" duration="100" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="10" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="20" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.11" delay="30" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.14" delay="40" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="50" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.16" delay="60" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.19" delay="70" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.15" delay="80" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="90" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="100" disabledeltatime="true"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Hematosine"
+    category="Material"
+    spritecolor="0.0,0.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+    description="A highly potent neurotoxin that causes hemorrhage through all natural openings and wounds the victim might already have."
+    price="400">
+	
+	<Deconstruct time="5">
+      <Item name="Hematosine" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="12"/>
+
+    <Holdable slots="Any">
+	  <StatusEffect type="OnUse" target="Character" bleeding="0.05" duration="100"/>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Velonaceps Calyx Eggs"
+    category="Material"
+    spritecolor="0.0,0.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+    description="Dormant eggs of the Europan lifeform colloquially referred to as 'husk parasite'."
+    price="200">
+	
+	<Deconstruct time="5">
+      <Item name="Velonaceps Calyx Eggs" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="11"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" HuskInfectionState="0.01">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Calyxanide"
+    category="Material"
+    spritecolor="0.0,0.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+    description="An antiparasitic drug used in the treatment of husk parasite infections."
+    price="300">
+	
+	<Deconstruct time="5">
+      <Item name="Calyxanide" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.7"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" HuskInfectionState="0.0" setvalue="true">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item
+    name="Liquid Oxygenite"
+    category="Material"
+    spritecolor="0.6,0.8,1.0,1.0"
+    Tags="smallitem,chem,medical"
+    canuseonself="true"
+    description="A mildy toxic solution that slowly releases oxygen into the bloodstream when injected.">
+	
+	<Deconstruct time="5">
+      <Item name="Liquid Oxygenite" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6" />
+
+    <Body width="8" height="16" density="10"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Health="-0.1" Oxygen="10.0" duration="60">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Thermite Powder"
+    category="Material"
+    spritecolor="0.5,0.0,0.0,1.0"
+    Tags="smallitem,chem,medical"
+    price="25"
+	impacttolerance="6">
+	
+	<Deconstruct time="5">
+      <Item name="Thermite Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="8" height="16" density="10.1"/>
+    
+    <Holdable slots="Any"> 
+      <StatusEffect type="OnFire" target="this" condition="-100">
+	    <sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
+	    <Fire size="150.0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Health="-2.5" duration="90.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Midazolam"
+    category="Material"
+    Tags="smallitem,chem,medical"
+	description="Medication used for anesthesia, procedural sedation, trouble sleeping, and severe agitation."
+    price="25">
+	
+	<Deconstruct time="5">
+      <Item name="Midazolam" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="15,15,8,17" depth="0.6"/>
+
+    <Body width="8" height="17" density="10.2"/>
+
+    <Holdable slots="Any">
+      <StatusEffect type="OnUse" target="Character" Stun="100" disabledeltatime="true"/> 
+	  <StatusEffect type="OnUse" target="Character" Health="-0.1" duration="60.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <!-- <Item
+    name="Epinephrine"
+    category="Material"
+    Tags="smallitem,chem,medical"
+	description="Also known as adrenalin, this drug quickly increases blood flow to muscles, output of the heart, pupil dilation, and blood sugar."
+    price="75">
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="15,15,8,17" depth="0.6"/>
+
+    <Body width="8" height="17" density="10"/>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+      <StatusEffect type="OnUse" target="Character" Stun="-80" setvalue="true"/> 
+	  <StatusEffect type="OnUse" target="Character" Oxygen="-1.5" duration="60.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item> -->
+</Items>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Polycarbonate Bar"
+    category="Material"
+    Tags="smallitem"
+    description="Polycarbonate is a thermoplastic polymer, which can be molded into hard, soft and optically transparent materials."
+    canbepicked="true"
+    price="30">
+   
+    <Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="materials.png" sourcerect="0,13,24,12" depth="0.55"/>
+
+    <Body width="24" height="12" density="9.5"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+
+  <Item
+    name="Aluminium Bar"
+    category="Material"
+    Tags="smallitem"
+    description="Aluminium is a metal with a wide range of applications, from electronic devices to weapons and packaging."
+    canbepicked="true"
+    price="40">
+   
+    <Deconstruct time="5">
+      <Item name="Aluminium Powder"/>
+      <Item name="Aluminium Powder"/>     
+    </Deconstruct>
+
+    <Sprite texture ="materials.png" sourcerect="0,0,24,12" depth="0.55"/>
+
+    <Body width="24" height="12" density="30"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+  
+  <Item
+    name="Copper Bar"
+    category="Material"
+    Tags="smallitem"
+    description="Copper is a metal with applications in electronics, plumbing and industrial machinery."
+    spritecolor="0.78,0.55,0.2,1.0"
+    canbepicked="true"
+    price="50">
+   
+    <Deconstruct time="5">
+      <Item name="Copper Powder"/>
+      <Item name="Copper Powder"/>     
+    </Deconstruct>
+
+    <Sprite texture ="materials.png" sourcerect="0,0,24,12" depth="0.55"/>
+
+    <Body width="24" height="12" density="40"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+  
+  <Item
+    name="Steel Bar"
+    category="Material"
+    Tags="smallitem"
+	description="Steel is an iron alloy and a major component in infrastructure, tools, vehicles, machines, appliances and weapons."
+    canbepicked="true"
+    price="75">
+
+    <Deconstruct time="5">
+      <Item name="Iron Powder"/>
+      <Item name="Iron Powder"/>     
+    </Deconstruct>
+
+    <Sprite texture ="materials.png" sourcerect="0,0,24,12" depth="0.55"/>
+
+    <Body width="24" height="12" density="50"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+
+  <Item
+    name="Uranium Bar"
+    category="Material"
+    Tags="smallitem"
+	description="Uranium is a radioactive metal with mostly military applications."
+    spritecolor="0.2,0.35,0.06,1.0"
+    canbepicked="true"
+    price="100">
+
+    <Deconstruct time="5">
+      <Item name="Uranium Powder"/>
+      <Item name="Uranium Powder"/>
+    </Deconstruct>
+
+    <Sprite texture ="materials.png" sourcerect="0,0,24,12" depth="0.55"/>
+
+    <Body width="24" height="12" density="60"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+
+  <Item
+    name="Fulgurium Bar"
+    category="Material"
+    Tags="smallitem"
+    description="Fulgurium is a rare metal with some very unique properties. It's only found in Europa."
+    spritecolor="1.0,0.7,0.05,1.0"
+    canbepicked="true">
+   
+    <Deconstruct time="5">
+      <Item name="Fulgurium Powder"/>
+      <Item name="Fulgurium Powder"/>
+    </Deconstruct>
+
+    <Sprite texture ="materials.png" sourcerect="0,0,24,12" depth="0.55"/>
+
+    <Body width="24" height="12" density="10"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+</Items>

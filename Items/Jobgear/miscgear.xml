@@ -1,0 +1,841 @@
+﻿<Items> 
+  <Item
+    name="Survivor Beanie"
+    category="Misc"
+	tags="smallitem,clothing"
+	description="A worn knit cap designed to provide warmth in cold environments."
+	>
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="BeanieHatSurvivor.png" depth="0.6"/>
+
+    <Body width="14" height="6" radius="8" density="10.1"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="BeanieHatSurvivor.png" limb="Head" origin="0.6,0.7" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.06" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Cap A"
+    category="Misc"
+	tags="smallitem,clothing"
+	description="A worn kepi with a stiff, rounded visor."
+	>
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="CaphatSurvivor.png" sourcerect="0,0,32,16" depth="0.6"/>
+
+    <Body width="14" height="6" radius="8" density="10.2"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="CapHatSurvivor.png" limb="Head" sourcerect="0,0,32,16" origin="0.4,1.2" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.03" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Cap B"
+    category="Misc"
+	tags="smallitem,clothing"
+	description="A worn kepi with a stiff, rounded visor."
+	>
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="CaphatSurvivor.png" sourcerect="0,16,32,18" depth="0.6"/>
+
+    <Body width="14" height="6" radius="8" density="10.2"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="CapHatSurvivor.png" limb="Head" sourcerect="0,16,32,16" origin="0.65,1.2" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.03" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Beret"
+    category="Misc"
+	tags="smallitem,clothing"
+	description="A worn, round, flat-crowned hat made of synthetic fiber."
+	>
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="BerethatSurvivor.png" depth="0.6"/>
+
+    <Body width="14" height="6" radius="8" density="10.1"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="BeretHatSurvivor.png" limb="Head" origin="0.5,0.9" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.08" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Ushanka A"
+    category="Misc"
+	tags="smallitem,clothing"
+	description="A worn fur cap with ear flaps designed to provide warmth in cold environments."
+	>
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="UshankaHatSurvivor.png" sourcerect="26,0,25,16" depth="0.6"/>
+
+    <Body width="21" height="13" radius="8" density="10.2"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="UshankaHatSurvivor.png" limb="Head" sourcerect="26,0,25,16" origin="0.55,1.2" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.08" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Ushanka B"
+    category="Misc"
+	tags="smallitem,clothing"
+	description="A worn fur cap with ear flaps designed to provide warmth in cold environments."
+	>
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="UshankaHatSurvivor.png" sourcerect="26,0,25,16" depth="0.6"/>
+
+    <Body width="21" height="13" radius="8" density="10.2"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="UshankaHatSurvivor.png" limb="Head" sourcerect="0,0,23,34" origin="0.55,0.6" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.08" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Capt's Cap"
+    category="Misc"
+    tags="meditem,clothing"
+    description="A token of the Captain's unquestionable authority.">
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="captainhatSurvivor.png" depth="0.6"/>
+
+    <Body width="25" height="15" density="10.3"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="captainhatSurvivor.png" limb="Head" origin="0.5,0.9" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.08" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Safety Helmet"
+    category="Misc"
+	tags="meditem,clothing"
+	description="A headgear worn to protect the head from injuries."
+	>
+	
+	<Deconstruct time="5">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="HardHatSurvivor.png" depth="0.6"/>
+
+    <Body width="14" height="8" radius="8" density="16"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="HardhatSurvivor.png" limb="Head" origin="0.5,0.9" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.06" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.4" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.2" bleedingdamagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Welding Helmet"
+    category="Misc"
+	tags="meditem,clothing"
+	description="A headgear worn to protect the head and eyes from injuries."
+	>
+	
+	<Deconstruct time="5">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="WeldHatSurvivor.png" depth="0.6"/>
+
+    <Body height="35" radius="2" density="17"/>
+
+    <Wearable limbtype="Head" slots="Any,Head">
+      <sprite texture="WeldHatSurvivor.png" limb="Head" origin="0.45,0.5" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.08" ObstructVision="true" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.6"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.5" bleedingmultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.3" bleedingdamagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Ballistic Helmet"
+    category="Misc"
+    tags="meditem,clothing"
+    description="While the helmet won't offer adequate protection against most of the inhabitants of the subsurface ocean, it can be extremely useful if there are traitors on board.">
+
+    <Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Steel Bar"/>
+    </Deconstruct>
+    
+    <Sprite texture ="securitygearSurvivor.png" sourcerect="66,53,29,22" depth="0.6"/>
+
+    <Body radius="12" density="30"/>
+
+    <Wearable slots="Any,Head">
+      <sprite texture="securitygearSurvivor.png" limb="Head" sourcerect="66,53,29,22" origin="0.51,0.9" depth="0.039"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.1" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.2" bleedingmultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.1" bleedingmultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Vest"
+    category="Misc"
+	tags="meditem,clothing"
+	description="A sleeveless worn garment that covers the torso."
+	price="50">
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+	<Sprite texture ="doctorgearSurvivor.png" sourcerect="76,19,51,13" depth="0.6"/>
+
+    <Body width="50" height="17" density="11"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="survivorgear.png" limb="Torso" sourcerect="14,51,29,49" depth="0.02" origin="0.52,0.6"/>
+	  
+      <sprite texture="survivorgear.png" limb="LeftHand" sourcerect="0,0,12,37" origin="0.56,0.6" depth="0.14"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.02" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Sweater"
+    category="Misc"
+	tags="meditem,clothing"
+	description="A worn garment covering the torso and arms."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+	<Sprite texture ="doctorgearSurvivor.png" sourcerect="76,19,51,13" depth="0.6"/>
+
+    <Body width="50" height="17" density="11"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="survivorgear.png" limb="Torso" sourcerect="14,0,28,51" depth="0.02" origin="0.5,0.6"/>
+	  
+	  <sprite texture="survivorgear.png" limb="RightHand" sourcerect="0,0,12,37" origin="0.56,0.6"/>
+      <sprite texture="Sweater.png" limb="LeftHand" sourcerect="50,70,14,37" origin="0.6,0.6" depth="0.14"/>
+
+      <sprite texture="survivorgear.png" limb="RightArm" sourcerect="45,3,17,39" origin="0.5,0.5" depth="0.005"/>
+      <sprite texture="Sweater.png" limb="LeftArm" sourcerect="31,69,17,40" origin="0.5,0.5" depth="0.13" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.05" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Jumper"
+    category="Misc"
+	tags="meditem,clothing"
+	description="A worn garment covering the torso and arms with a muff sewn onto the lower front."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+	<Sprite texture ="captainLegsSurvivor.png" sourcerect="0,71,51,12" depth="0.6"/>
+
+    <Body width="50" height="17" density="11"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="survivorgear.png" limb="Torso" sourcerect="47,51,29,49" depth="0.02" origin="0.5,0.6"/>
+	  
+	  <sprite texture="survivorgear.png" limb="RightHand" sourcerect="64,2,14,37" origin="0.6,0.6"/>
+      <sprite texture="survivorgear.png" limb="LeftHand" sourcerect="0,0,12,37" origin="0.56,0.6" depth="0.14"/>
+	  
+	  <sprite texture="Sweater.png" limb="RightArm" sourcerect="31,69,17,40" origin="0.5,0.5" depth="0.005" hidelimb="true"/>
+      <sprite texture="survivorgear.png" limb="LeftArm" sourcerect="45,3,17,39" origin="0.5,0.5" depth="0.13"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.06" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.9"/>
+    </Wearable>
+	
+	<ItemContainer capacity="1">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Survivor Capt's Jacket"
+    category="Misc"
+    tags="meditem,clothing">
+	
+	<Deconstruct time="15">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="captainLegsSurvivor.png" sourcerect="0,52,52,17" depth="0.6"/>
+
+    <Body width="52" height="17" density="12"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="captainTorsoSurvivor.png" limb="Torso" sourcerect="0,3,30,58" origin="0.5,0.48"/>
+
+      <sprite texture="captainTorso.png" limb="RightHand" sourcerect="47,0,15,39" origin="0.45,0.6"/>
+      <sprite texture="captainTorsoSurvivor.png" limb="LeftHand" sourcerect="48,0,15,41" origin="0.6,0.6"/>
+
+      <sprite texture="captainTorso.png" limb="RightArm" sourcerect="30,0,17,42" origin="0.5,0.5" hidelimb="true"/>
+      <sprite texture="captainTorsoSurvivor.png" limb="LeftArm" sourcerect="30,0,19,43" origin="0.5,0.5" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.07" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.7"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.7"/>
+    </Wearable>
+	
+	<ItemContainer capacity="1">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Survivor Utility Vest"
+    category="Misc"
+    tags="meditem,clothing"
+    description="An utility vest used mostly by engineers. It has pockets for carrying any extra gear an engineer might need.">
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture = "engigearSurvivor.png" sourcerect="53,50,51,21" depth="0.6"/>
+
+    <Body width="50" height="17" density="17"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="engigearSurvivor.png" limb="Torso" sourcerect="0,77,32,51" origin="0.5,0.48" depth="0.2"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.08" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.8"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingdamagemultiplier="0.8"/>
+    </Wearable>
+
+    <ItemContainer capacity="2">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Survivor Utility Jumpsuit"
+    category="Misc"
+    tags="meditem,clothing"
+    description="The fire-resistant fabric offers some protection against fires. Plenty of pockets for carrying any extra gear a mechanic might need.">
+	
+	<Deconstruct time="15">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+	<Sprite texture = "engigearSurvivor.png" sourcerect="0,52,50,25" depth="0.6"/>
+
+    <Body width="50" height="17" density="19"/>
+
+    <Wearable slots="Any,Torso+Legs">
+      <sprite texture="engigearSurvivor.png" limb="Torso" sourcerect="0,0,32,51" origin="0.5,0.48" depth="0.01"/>
+	  
+	  <sprite texture="engigearSurvivor.png" limb="RightHand" sourcerect="52,0,15,39" origin="0.45,0.6"/>
+      <sprite texture="engigearSurvivor.png" limb="LeftHand" sourcerect="52,0,15,39" origin="0.45,0.6" depth="0.14"/>
+
+      <sprite texture="engigearSurvivor.png" limb="RightArm" sourcerect="34,0,17,42" origin="0.5,0.5" depth="0.005" hidelimb="true"/>
+      <sprite texture="engigearSurvivor.png" limb="LeftArm" sourcerect="34,0,17,42" origin="0.5,0.5" depth="0.13" hidelimb="true"/>
+
+      <sprite texture="engigearSurvivor.png" limb="Waist" sourcerect="81,77,30,26" origin="0.5,0.45" depth="1" hidelimb="true"/>
+      <sprite texture="engigearSurvivor.png" limb="RightThigh" sourcerect="53,77,27,49" origin="0.5,0.5" depth="0.10" hidelimb="true"/>
+      <sprite texture="crewLegs.png" limb="LeftThigh" sourcerect="56,0,26,48" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+
+      <sprite texture="engigear.png" limb="RightLeg" sourcerect="33,77,20,51" origin="0.5,0.5" depth="0.11" hidelimb="true"/>
+      <sprite texture="engigearSurvivor.png" limb="LeftLeg" sourcerect="33,77,20,51" origin="0.5,0.5" depth="0.15" hidelimb="true"/>
+	  
+	  <sprite texture="crewLegs.png" limb="RightFoot" sourcerect="35,53,16,25" origin="0.5,0.5" depth="0.10" hidelimb="true"/>
+      <sprite texture="crewLegs.png" limb="LeftFoot" sourcerect="35,53,16,25" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.16" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.6"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingdamagemultiplier="0.9"/>
+    </Wearable>
+
+    <ItemContainer capacity="5">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Survivor Doc's Coat"
+    category="Misc"
+	tags="meditem,clothing"
+	description="A worn standard issued garment given to Medical Doctors."
+    >
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="doctorgearSurvivor.png" sourcerect="75,0,53,18" depth="0.6"/>
+
+    <Body width="52" height="17" density="11.5"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="doctorgearSurvivor.png" limb="RightHand" sourcerect="93,59,15,47" origin="0.45,0.55" depth="0.005"/>
+      <sprite texture="doctorgearSurvivor.png" limb="LeftHand" sourcerect="51,0,15,47" origin="0.45,0.55" depth="0.13" hidelimb="true"/>
+
+      <sprite texture="doctorgearSurvivor.png" limb="RightArm" sourcerect="73,61,17,40" origin="0.5,0.5"/>
+      <sprite texture="doctorgearSurvivor.png" limb="LeftArm" sourcerect="33,0,17,40" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.04" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7"/>
+    </Wearable>
+
+    <ItemContainer capacity="2">
+      <Containable name="chem"/>
+	  <Containable name="medical"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Survivor Body Armor"
+    category="Misc"
+    tags="bigitem,clothing"
+	description="While the body armor won't offer adequate protection against most of the inhabitants of the subsurface ocean, it can be extremely useful if there are traitors on board."
+    >
+	
+	<Deconstruct time="15">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="securitygearSurvivor.png" sourcerect="68,0,60,31" depth="0.6"/>
+
+    <Body width="52" height="17" density="40"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="securitygearSurvivor.png" limb="Torso" sourcerect="0,0,38,58" origin="0.52,0.48"/>
+
+      <sprite texture="securitygearSurvivor.png" limb="RightArm" sourcerect="40,0,21,45" origin="0.5,0.5"/>
+	  <sprite texture="survivorgear.png" limb="RightHand" sourcerect="0,0,12,37" origin="0.56,0.6"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.15" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.9"/>
+      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.3" bleedingmultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.1" bleedingmultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Prisoner Jumpsuit"
+    category="Misc"
+    tags="meditem,clothing"
+    description="The usual garment given to detainees by the Coalition.">
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+	<Sprite texture = "prisonergearSurvivor.png" sourcerect="0,52,50,25" depth="0.6"/>
+
+    <Body width="50" height="17" density="14"/>
+
+    <Wearable slots="Any,Torso+Legs" armorvalue="1.5">
+      <sprite texture="prisonergearSurvivor.png" limb="Torso" sourcerect="0,0,32,51" origin="0.5,0.48" depth="0.01"/>
+	  
+	  <sprite texture="prisonergearSurvivor.png" limb="LeftHand" sourcerect="72,0,17,42" origin="0.45,0.6" depth="0.14"/>
+
+      <sprite texture="prisonergearSurvivor.png" limb="RightArm" sourcerect="34,0,17,42" origin="0.5,0.5" depth="0.005" hidelimb="false"/>
+	  <sprite texture="prisonergearSurvivor.png" limb="LeftArm" sourcerect="56,0,17,42" origin="0.5,0.5" depth="0.13" hidelimb="true"/>
+
+      <sprite texture="prisonergearSurvivor.png" limb="Waist" sourcerect="81,77,30,26" origin="0.5,0.45" hidelimb="true"/>
+      <sprite texture="prisonergearSurvivor.png" limb="RightThigh" sourcerect="53,77,27,49" origin="0.5,0.5" depth="0.10" hidelimb="true"/>
+      <sprite texture="prisonergearSurvivor.png" limb="LeftThigh" sourcerect="53,77,27,49" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+
+      <sprite texture="prisonergearSurvivor.png" limb="RightLeg" sourcerect="33,77,20,51" origin="0.5,0.5" depth="0.11" hidelimb="true"/>
+      <sprite texture="prisonergearSurvivor.png" limb="LeftLeg" sourcerect="33,77,20,51" origin="0.5,0.5" depth="0.15" hidelimb="true"/>
+	  
+	  <sprite texture="crewLegs.png" limb="RightFoot" sourcerect="35,53,16,25" origin="0.5,0.5" depth="0.10" hidelimb="true"/>
+      <sprite texture="crewLegs.png" limb="LeftFoot" sourcerect="35,53,16,25" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.15" disabledeltatime="true"/>
+    </Wearable>
+
+    <ItemContainer capacity="1">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Survivor Trousers"
+    category="Misc"
+	tags="meditem,clothing"
+	description="A pair of worn trousers."
+    >
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="doctorgearSurvivor.png" sourcerect="76,19,51,13" depth="0.6"/>
+
+    <Body width="51" height="13" density="12"/>
+
+    <Wearable slots="Any,Legs">
+      <sprite texture="doctorgear.png" limb="Waist" sourcerect="0,0,28,26" depth="0.01" origin="0.5,0.5" hidelimb="true"/>
+      <sprite texture="survivorgear.png" limb="RightThigh" sourcerect="80,53,24,46" origin="0.5,0.5" depth="0.10"/>
+      <sprite texture="crewLegs.png" limb="LeftThigh" sourcerect="56,0,26,48" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+
+      <sprite texture="survivorgear.png" limb="RightLeg" sourcerect="107,0,22,50" origin="0.5,0.5" depth="0.11" hidelimb="true"/>
+      <sprite texture="survivorgear.png" limb="LeftLeg" sourcerect="107,0,22,50" origin="0.5,0.5" depth="0.15" hidelimb="true"/>
+	  
+	  <sprite texture="survivorgear.png" limb="RightFoot" sourcerect="110,54,16,25" origin="0.5,0.5" depth="0.12" hidelimb="true"/>
+      <sprite texture="survivorgear.png" limb="LeftFoot" sourcerect="110,54,16,25" origin="0.5,0.5" depth="0.15" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.03" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+    </Wearable>
+
+    <ItemContainer capacity="2">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Survivor Cargo Trousers"
+    category="Misc"
+	tags="meditem,clothing"
+	description="A pair of worn cargo trousers."
+    >
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="doctorgearSurvivor.png" sourcerect="76,19,51,13" depth="0.6"/>
+
+    <Body width="51" height="13" density="12"/>
+
+    <Wearable slots="Any,Legs">
+      <sprite texture="crewLegs.png" limb="Waist" sourcerect="0,0,32,29" depth="0.01" origin="0.5,0.5" hidelimb="true"/>
+      <sprite texture="survivorgear.png" limb="RightThigh" sourcerect="80,0,24,46" origin="0.5,0.5" depth="0.10" hidelimb="true"/>
+      <sprite texture="crewLegs.png" limb="LeftThigh" sourcerect="56,0,26,48" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+
+      <sprite texture="survivorgear.png" limb="RightLeg" sourcerect="107,0,22,50" origin="0.5,0.5" depth="0.11" hidelimb="true"/>
+      <sprite texture="doctorgear.png" limb="LeftLeg" sourcerect="46,61,22,50" origin="0.5,0.5" depth="0.15" hidelimb="true"/>
+	  
+	  <sprite texture="survivorgear.png" limb="RightFoot" sourcerect="110,54,16,25" origin="0.5,0.5" depth="0.12" hidelimb="true"/>
+      <sprite texture="crewLegs.png" limb="LeftFoot" sourcerect="53,54,16,25" origin="0.5,0.5" depth="0.15" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.06" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+
+    <ItemContainer capacity="3">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Survivor Capt's Trousers"
+    category="Misc"
+    tags="meditem,clothing">
+	
+	<Deconstruct time="15">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="captainLegsSurvivor.png" sourcerect="0,71,51,12" depth="0.6"/>
+
+    <Body width="51" height="13" density="13"/>
+
+    <Wearable slots="Any,Legs">
+      <sprite texture="captainLegsSurvivor.png" limb="Waist" sourcerect="0,0,28,26" origin="0.5,0.5" hidelimb="true"/>
+      <sprite texture="captainLegsSurvivor.png" limb="RightThigh" sourcerect="52,34,28,46" origin="0.5,0.5"/>
+      <sprite texture="captainLegsSurvivor.png" limb="LeftThigh" sourcerect="52,34,28,46" origin="0.5,0.5"/>
+
+      <sprite texture="captainLegsSurvivor.png" limb="RightLeg" sourcerect="31,0,21,51" origin="0.5,0.5"/>
+      <sprite texture="captainLegsSurvivor.png" limb="LeftLeg" sourcerect="86,0,21,50" origin="0.5,0.5"/>
+	  
+	  <sprite texture="crewLegs.png" limb="RightFoot" sourcerect="53,54,16,25" origin="0.5,0.5" hidelimb="true"/>
+      <sprite texture="survivorgear.png" limb="LeftFoot" sourcerect="110,54,16,25" origin="0.5,0.5" depth="0.15" hidelimb="true"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.04" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+    </Wearable>
+	
+	<ItemContainer capacity="2">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Clown Mask"
+    category="Misc"
+    tags="smallitem,clothing"
+    description="Praise the honkmother."
+	>
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="clownmask.png" depth="0.6"/>
+
+    <Body radius="8" density="10.1"/>
+
+    <Wearable limbtype="Head" slots="Any,Face">
+      <sprite texture="clownmask.png" limb="Head" origin="0.5,0.5"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.01" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Clown Mask"
+    category="Misc"
+    tags="smallitem,clothing"
+    description="Praise the honkmother."
+	>
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="clownmaskSurvivor.png" depth="0.6"/>
+
+    <Body radius="8" density="10.1"/>
+
+    <Wearable limbtype="Head" slots="Any,Face">
+      <sprite texture="clownmaskSurvivor.png" limb="Head" origin="0.5,0.5"/>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.01" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+
+  <Item
+    name="Clown Costume"
+    category="Misc"
+    tags="meditem,clothing"
+    description="Praise the honkmother."
+	>
+	
+	<Deconstruct time="15">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="clownpants.png" sourcerect="0,62,53,18" depth="0.6"/>
+
+    <Body width="53" height="18" density="12"/>
+
+    <Wearable slots="Any,Torso+Legs">
+      <sprite texture="clownshirt.png" limb="Torso" sourcerect="0,3,30,58" origin="0.5,0.48" depth="0.02"/>
+
+      <sprite texture="clownshirt.png" limb="RightHand" sourcerect="49,0,15,49" origin="0.45,0.5"/>
+      <sprite texture="clownshirt.png" limb="LeftHand" sourcerect="49,0,15,49" origin="0.45,0.5" depth="0.14"/>
+
+      <sprite texture="clownshirt.png" limb="RightArm" sourcerect="30,0,17,42" origin="0.5,0.5" depth="0.005"/>
+      <sprite texture="clownshirt.png" limb="LeftArm" sourcerect="30,0,17,42" origin="0.5,0.5" depth="0.13"/>
+
+      <sprite texture="clownpants.png" limb="Waist" sourcerect="0,0,1,1" origin="0.5,0.5" hidelimb="true"/>
+      <sprite texture="clownpants.png" limb="RightThigh" sourcerect="0,0,38,50" origin="0.5,0.5" depth="0.01" hidelimb="true"/>
+      <sprite texture="clownpants.png" limb="LeftThigh" sourcerect="0,0,38,50" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+
+      <sprite texture="clownpants.png" limb="RightLeg" sourcerect="37,0,28,52" origin="0.55,0.5" depth="0.11" hidelimb="true"/>
+      <sprite texture="clownpants.png" limb="LeftLeg" sourcerect="37,0,28,52" origin="0.55,0.5" depth="0.15" hidelimb="true"/>
+
+      <sprite texture="clownpants.png" limb="RightFoot" sourcerect="65,41,15,39" origin="0.5,0.35" depth="0.11" hidelimb="true"/>
+      <sprite texture="clownpants.png" limb="LeftFoot" sourcerect="65,41,15,39" origin="0.5,0.35" depth="0.15" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.09" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Survivor Clown Costume"
+    category="Misc"
+    tags="meditem,clothing"
+    description="Praise the honkmother."
+	>
+	
+	<Deconstruct time="15">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="clownpantsSurvivor.png" sourcerect="0,62,53,18" depth="0.6"/>
+
+    <Body width="53" height="18" density="12"/>
+
+    <Wearable slots="Any,Torso+Legs">
+      <sprite texture="clownshirtSurvivor.png" limb="Torso" sourcerect="0,3,30,58" origin="0.5,0.48" depth="0.02"/>
+
+      <sprite texture="clownshirtSurvivor.png" limb="RightHand" sourcerect="49,0,15,49" origin="0.45,0.5"/>
+      <sprite texture="clownshirtSurvivor.png" limb="LeftHand" sourcerect="49,0,15,49" origin="0.45,0.5" depth="0.14"/>
+
+      <sprite texture="clownshirtSurvivor.png" limb="RightArm" sourcerect="30,0,17,42" origin="0.5,0.5" depth="0.005"/>
+      <sprite texture="clownshirt.png" limb="LeftArm" sourcerect="30,0,17,42" origin="0.5,0.5" depth="0.13"/>
+
+      <sprite texture="clownpantsSurvivor.png" limb="Waist" sourcerect="0,0,1,1" origin="0.5,0.5" hidelimb="true"/>
+      <sprite texture="clownpantsSurvivor.png" limb="RightThigh" sourcerect="0,0,38,50" origin="0.5,0.5" depth="0.01" hidelimb="true"/>
+      <sprite texture="clownpantsSurvivor.png" limb="LeftThigh" sourcerect="0,0,38,50" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+
+      <sprite texture="clownpantsSurvivor.png" limb="RightLeg" sourcerect="37,0,28,52" origin="0.55,0.5" depth="0.11" hidelimb="true"/>
+      <sprite texture="clownpantsSurvivor.png" limb="LeftLeg" sourcerect="37,0,28,52" origin="0.55,0.5" depth="0.15" hidelimb="true"/>
+
+      <sprite texture="clownpantsSurvivor.png" limb="RightFoot" sourcerect="65,41,15,39" origin="0.5,0.35" depth="0.11" hidelimb="true"/>
+      <sprite texture="clownpantsSurvivor.png" limb="LeftFoot" sourcerect="65,41,15,39" origin="0.5,0.35" depth="0.15" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.09" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.9"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Plastic Bag"
+    category="Misc"
+    tags="smallitem"
+	description="It's commonly found inside cargo crates. Usually used to carry small items but sometimes used in other, questionable activities."
+	price="35">
+	
+	<Deconstruct time="5">
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="PlasticBag.png" sourcerect="50,0,30,43" depth="0.5"/>
+
+    <Body width="14" height="6" radius="8" density="9.9"/>
+
+    <Wearable limbtype="Head" slots="Any,Head+Face">
+      <sprite texture="PlasticBag.png" limb="Head" sourcerect="0,0,31,35" origin="0.5,0.6" hidelimb="false"/>
+	  <StatusEffect type="OnWearing" target="Character" ObstructVision="true" setvalue="true" disabledeltatime="true"/>
+	  <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0"/>
+	  <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="250.0" Condition="-0.6" Health="-0.06">
+        <RequiredItem type="Contained" name="Liquid Oxygenite"/>
+      </StatusEffect>
+	  <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-50.0" Condition="-0.3" Health="-0.1">
+        <RequiredItem type="Contained" name="Aluminium Powder,Copper Powder,Iron Powder"/>
+      </StatusEffect>
+	  <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-75.0" Condition="-0.3" Health="-0.2">
+        <RequiredItem type="Contained" name="Flash Powder,Gun Powder"/>
+      </StatusEffect>
+	  <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-75.0" Condition="-0.3" Health="-0.4">
+        <RequiredItem type="Contained" name="Uranium Powder,Thermite Powder,Fulgurium Powder"/>
+      </StatusEffect>
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.03" disabledeltatime="true"/>
+    </Wearable>
+	
+	<ItemContainer capacity="3" hideitems="true">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+</Items>

@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Items>
+  <Item
+    name="Diving Knife"
+    category="Equipment"
+    Tags="meditem,weapon"
+	description="A Diving Knife is a general purpose tool meant for divers but is usually used by most crew members for personal protection purposes."
+    price="150">
+
+    <Deconstruct time="5">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/knieves.png" sourcerect="0,0,52,10" depth="0.55"/>
+    
+    <Body width="42" height="8" density="25"/>
+
+    <MeleeWeapon slots="RightHand,LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="0.8">
+      <Attack damage="8" bleedingdamage="2" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>   
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Tranquilizer Dart"
+    category="Equipment"
+	Tags="smallitem,weapon,chem"
+	description="A dart containing Midazolam, which can be used to put either dangerous individuals or creatures to sleep."
+    interactthroughwalls="true"
+    price="150">
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,78,25,8" depth="0.55"/>
+
+    <Body width="23" height="6" density="10.1"/>
+
+    <Projectile launchimpulse="30" doesstick="true">
+      <Attack damage="1" stun="120" damagetype="Slash"/>
+	  <StatusEffect type="OnImpact" target="This" Condition="-100" delay="5.0"/>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
+    name="Bleedout Dart"
+    category="Equipment"
+	Tags="smallitem,weapon,chem"
+	description="A dart containing Hematosine, which causes massive hemorrhage through all natural openings and wounds the victim might already have."
+    interactthroughwalls="true">
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="31,78,25,8" depth="0.55"/>
+
+    <Body width="23" height="6" density="10.1"/>
+
+    <Projectile launchimpulse="30" doesstick="true">
+      <Attack damage="1" bleedingdamage="75" stun="2" damagetype="Slash"/>
+	  <StatusEffect type="OnImpact" target="This" Condition="-100" delay="5.0"/>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
+    name="Dart Gun"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="This is an scoped pneumatic rifle that can propel darts containing different drugs."
+    price="1500">
+
+    <Deconstruct time="10">      
+      <Item name="Steel Bar"/>
+      <Item name="Aluminium Bar"/>      
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+  
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,30,98,33" depth="0.55"/>
+
+    <Body width="90" height="30" density="40"/>
+    
+    <RangedWeapon barrelpos="49,10" spread="0" unskilledspread="10">
+      <Sound file="Mods/BTE/Items/Weapons/DartGun1.ogg" type="OnUse"/>
+      <Sound file="Mods/BTE/Items/Weapons/DartGun2.ogg" type="OnUse"/>
+      <RequiredItems name="Tranquilizer Dart,Bleedout Dart" type="Contained" msg="The loaded dart is depleted"/>
+      <RequiredSkill name="Weapons" level="50"/>
+    </RangedWeapon>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Tranquilizer Dart"/>
+	  <Containable name="Bleedout Dart"/>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              holdpos="35,-10" aimpos="60,5" handle1="-15,-6" handle2="26,7"/>
+  </Item>
+  
+  <Item
+    name="Plastic Spear"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="Polycarbonate spears used mainly for Harpoon Gun or Spear Gun training."
+    interactthroughwalls="true"
+	price="35">
+
+    <Deconstruct time="6">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="speargun.png" sourcerect="0,26,65,7" depth="0.55"/>
+
+    <Body width="64" height="5" density="9.8"/>
+
+    <Projectile launchimpulse="20" doesstick="false">
+      <Attack damage="3" stun="4" targetforce="16" damagetype="Blunt"/>
+    </Projectile>
+	
+	<MeleeWeapon slots="RightHand+LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="2.6">
+      <Attack damage="2" stun="1" structuredamage="1" targetforce="16" damagetype="Blunt" sound="Content/Items/Weapons/smack.ogg"/>   
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Aluminium Spear"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A makeshift aluminium spear, which can be used as Harpoon Gun or Spear Gun ammo or as a melee weapon in a pinch."
+    interactthroughwalls="true">
+
+    <Deconstruct time="6">
+      <Item name="Aluminium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="speargun.png" sourcerect="0,34,65,7" depth="0.55"/>
+
+    <Body width="64" height="5" density="16"/>
+
+    <Projectile launchimpulse="20" doesstick="true">
+      <Attack damage="20" bleedingdamage="1" stun="1" structuredamage="10" targetforce="30" damagetype="Slash"/>
+    </Projectile>
+	
+	<MeleeWeapon slots="RightHand+LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="2.6">
+      <Attack damage="8" bleedingdamage="1" stun="0.2" targetforce="18" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>   
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Copper Spear"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A makeshift copper spear, which can be used as Harpoon Gun or Spear Gun ammo or as a melee weapon in a pinch."
+    interactthroughwalls="true">
+
+    <Deconstruct time="6">
+      <Item name="Copper Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="speargun.png" sourcerect="0,42,65,7" depth="0.55"/>
+
+    <Body width="64" height="5" density="18"/>
+
+    <Projectile launchimpulse="20" doesstick="true">
+      <Attack damage="30" bleedingdamage="2" stun="1.5" structuredamage="20" targetforce="40" damagetype="Slash"/>
+    </Projectile>
+	
+	<MeleeWeapon slots="RightHand+LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="2.6">
+      <Attack damage="10" bleedingdamage="1" stun="0.2" targetforce="20" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>   
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Steel Spear"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="Steel spears are standard issue ammunition for Harpoon Guns or Spear Guns but they can be used as melee weapons in a pinch."
+    interactthroughwalls="true"
+    price="125">
+
+    <Deconstruct time="8">
+      <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="speargun.png" sourcerect="0,50,65,7" depth="0.55"/>
+
+    <Body width="64" height="5" density="20"/>
+
+    <Projectile launchimpulse="20" doesstick="true">
+      <Attack damage="40" bleedingdamage="3" stun="3" structuredamage="30" targetforce="50" damagetype="Slash"/>
+    </Projectile>
+	
+	<MeleeWeapon slots="RightHand+LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-1,4" holdangle="-80" reload="2.6">
+      <Attack damage="20" bleedingdamage="1.5" stun="0.3" targetforce="25" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>   
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Uranium Spear"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="An uranium spear for Harpoon Guns or Spear Guns. They are heavier but still useful as ammo or melee weapon."
+    interactthroughwalls="true">
+
+    <Deconstruct time="10">
+      <Item name="Uranium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="speargun.png" sourcerect="0,66,65,7" depth="0.55"/>
+
+    <Body width="64" height="5" density="28"/>
+
+    <Projectile launchimpulse="18" doesstick="true">
+      <Attack damage="35" bleedingdamage="2.5" stun="4" structuredamage="40" targetforce="60" damagetype="Blunt"/>
+    </Projectile>
+	
+	<MeleeWeapon slots="RightHand+LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-1,4" holdangle="-80" reload="2.8">
+      <Attack damage="15" bleedingdamage="1" stun="0.4" targetforce="30" damagetype="Blunt" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>   
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Fulgurium Spear"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A makeshift fulgurium spear, which can be used as Harpoon Gun or Spear Gun ammo or as a melee weapon in a pinch."
+    interactthroughwalls="true">
+
+    <Deconstruct time="6">
+      <Item name="Fulgurium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="speargun.png" sourcerect="0,58,65,7" depth="0.55"/>
+
+    <Body width="64" height="5" density="10"/>
+
+    <Projectile launchimpulse="22" doesstick="true">
+      <Attack damage="19" bleedingdamage="0.9" stun="0.9" structuredamage="5" targetforce="30" damagetype="Slash"/>
+    </Projectile>
+	
+	<MeleeWeapon slots="RightHand+LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="2.6">
+      <Attack damage="7" bleedingdamage="0.8" stun="0.15" targetforce="20" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>   
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Hollowhead Spear"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A heavily modified plastic spear with enough room for an explosive charge. This spear is wider than normal ones so it can only be loaded in Harpoon Guns."
+    interactthroughwalls="true">
+
+    <Deconstruct time="10">
+      <Item name="Plastic Spear"/>
+	  <Item name="Copper Powder"/>
+    </Deconstruct>
+
+    <Sprite texture="speargun.png" sourcerect="0,73,65,9" depth="0.55"/>
+
+    <Body width="64" height="5" density="10.2"/>
+
+    <Projectile launchimpulse="18" doesstick="false">
+      <Attack damage="1.5" stun="2" targetforce="8" damagetype="Blunt"/>
+	  <StatusEffect type="OnImpact" target="This,Contained" Condition="-100" disabledeltatime="true"/>
+    </Projectile>
+	
+	<ItemContainer capacity="1" hideitems="true">
+      <Containable name="Explosive"/>
+    </ItemContainer>
+	
+	<MeleeWeapon slots="RightHand+LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-1,4" holdangle="-80" reload="2.6">
+      <Attack damage="1" stun="0.5" targetforce="12" damagetype="Blunt" sound="Content/Items/Weapons/smack.ogg"/>  
+	  <StatusEffect type="OnUse" target="Contained" Condition="-100"/>
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Harpoon Gun"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A pneumatic implement designed to fire a spear at underwater creatures. It's meant to be used for hunting but it's usually used for self defense."
+    price="500">
+
+    <Deconstruct time="10">      
+      <Item name="Steel Bar"/>
+	  <Item name="Aluminium Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+  
+    <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="0,25,98,25" depth="0.55"/>
+
+    <Body width="90" height="30" density="40"/>
+	
+	<ItemContainer capacity="1" itempos="27,9" iteminterval="0,-4" hideitems="false">
+      <Containable name="Plastic Spear,Aluminium Spear,Copper Spear,Steel Spear,Uranium Spear,Fulgurium Spear,Hollowhead Spear"/>
+    </ItemContainer>
+
+    <Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              holdpos="35,-10" aimpos="50,-3" handle1="-15,-6" handle2="26,7"/>
+    
+    <RangedWeapon barrelpos="49,10" spread="1" unskilledspread="8">
+      <Sound file="Content/Items/Weapons/harpoon1.ogg" type="OnUse"/>
+      <Sound file="Content/Items/Weapons/harpoon2.ogg" type="OnUse"/>
+      <RequiredItems name="Plastic Spear,Aluminium Spear,Copper Spear,Steel Spear,Uranium Spear,Fulgurium Spear,Hollowhead Spear" type="Contained" msg="The loaded spear is too damaged"/>
+      <RequiredSkill name="Weapons" level="20"/>
+	  <StatusEffect type="OnUse">
+	    <Explosion range="1" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  
+  <Item
+    name="Spear Gun"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A military pneumatic weapon used by security. It can hold up to three spears and it can be deadly in the right, or wrong hands."
+    price="1750">
+
+    <Deconstruct time="10">      
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+	  <Item name="Aluminium Bar"/>
+	  <Item name="Aluminium Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+  
+    <Sprite texture="speargun.png" sourcerect="0,0,98,25" depth="0.55"/>
+
+    <Body width="90" height="30" density="50"/>
+	
+	<ItemContainer capacity="3" itempos="27,9" iteminterval="0,-4" hideitems="false">
+      <Containable name="Plastic Spear,Aluminium Spear,Copper Spear,Steel Spear,Uranium Spear,Fulgurium Spear"/>
+    </ItemContainer>
+
+    <Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              holdpos="35,-10" aimpos="50,-3" handle1="-15,-6" handle2="26,1"/>
+    
+    <RangedWeapon barrelpos="49,10" spread="2" unskilledspread="10">
+      <Sound file="Content/Items/Weapons/harpoon1.ogg" type="OnUse"/>
+      <Sound file="Content/Items/Weapons/harpoon2.ogg" type="OnUse"/>
+      <RequiredItems name="Plastic Spear,Aluminium Spear,Copper Spear,Steel Spear,Uranium Spear,Fulgurium Spear" type="Contained" msg="The loaded spear is too damaged"/>
+      <RequiredSkill name="Weapons" level="50"/>
+	  <StatusEffect type="OnUse" target="This">
+	    <Explosion range="1" force="12" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  
+  <Item
+    name="Plastic Saw"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A makeshift polycarbonate saw."
+    interactthroughwalls="true">
+
+    <Deconstruct time="6">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="sawgun.png" sourcerect="0,44,33,34" depth="0.55"/>
+
+    <Body width="31" height="32" radius="8" density="9.7"/>
+
+    <Projectile launchimpulse="20"  doesstick="false">
+      <Attack damage="4" stun="2" damagetype="Blunt"/>
+	  <StatusEffect type="OnImpact" target="This" damage="2">
+	  <Explosion range="5" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+      </StatusEffect>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
+    name="Aluminium Saw"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A makeshift aluminium saw."
+    interactthroughwalls="true">
+
+    <Deconstruct time="6">
+      <Item name="Aluminium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="sawgun.png" sourcerect="34,44,33,34" depth="0.55"/>
+
+    <Body width="31" height="32" radius="8" density="16"/>
+
+    <Projectile launchimpulse="25" doesstick="true">
+      <Attack damage="20" bleedingdamage="2" stun="0.2" structuredamage="5" damagetype="Slash" severlimbsprobability="0.8"/>
+	  <StatusEffect type="OnImpact" target="This" damage="10">
+	    <Explosion range="5" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+      </StatusEffect>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
+    name="Copper Saw"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A makeshift copper saw."
+    interactthroughwalls="true">
+
+    <Deconstruct time="6">
+      <Item name="Copper Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="sawgun.png" sourcerect="0,78,33,34" depth="0.55"/>
+
+    <Body width="31" height="32" radius="8" density="17"/>
+
+    <Projectile launchimpulse="25" doesstick="true">
+      <Attack damage="30" bleedingdamage="3" stun="0.4" structuredamage="10" damagetype="Slash" severlimbsprobability="0.9"/>
+	  <StatusEffect type="OnImpact" target="This" damage="10">
+	    <Explosion range="5" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+      </StatusEffect>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
+    name="Steel Saw"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A standard issue Steel Saw used mostly to craft or repair Saw Cutters."
+    interactthroughwalls="true"
+    price="100">
+
+    <Deconstruct time="8">
+      <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="sawgun.png" sourcerect="34,78,33,34" depth="0.55"/>
+
+    <Body width="31" height="32" radius="8" density="18"/>
+
+    <Projectile launchimpulse="25" doesstick="true">
+      <Attack damage="40" bleedingdamage="4" stun="1" structuredamage="15" damagetype="Slash" severlimbsprobability="1"/>
+	  <StatusEffect type="OnImpact" target="This" damage="20">
+	    <Explosion range="5" force="15" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+      </StatusEffect>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
+    name="Uranium Saw"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A makeshift Uranium Saw."
+    interactthroughwalls="true">
+
+    <Deconstruct time="10">
+      <Item name="Uranium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="sawgun.png" sourcerect="34,112,33,34" depth="0.55"/>
+
+    <Body width="31" height="32" radius="8" density="20"/>
+
+    <Projectile launchimpulse="22" doesstick="true">
+      <Attack damage="35" bleedingdamage="3.5" stun="2" structuredamage="20" damagetype="Blunt" severlimbsprobability="0.9"/>
+	  <StatusEffect type="OnImpact" target="This" damage="20">
+	    <Explosion range="5" force="20" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+      </StatusEffect>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
+    name="Fulgurium Saw"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="A makeshift fulgurium saw."
+    interactthroughwalls="true">
+
+    <Deconstruct time="6">
+      <Item name="Fulgurium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="sawgun.png" sourcerect="0,112,33,34" depth="0.55"/>
+
+    <Body width="31" height="32" radius="8" density="10"/>
+
+    <Projectile launchimpulse="27" doesstick="true">
+      <Attack damage="17" bleedingdamage="1.3" stun="0.25" structuredamage="2.5" damagetype="Slash" severlimbsprobability="0.7"/>
+	  <StatusEffect type="OnImpact" target="This" damage="10">
+	    <Explosion range="5" force="8" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+      </StatusEffect>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
+    name="Saw Gun"
+    category="Equipment"
+	description="A makeshift weapon. This is a heavily modified Saw Cutter designed to throw saws instead."
+	tags="bigitem,weapon">
+
+    <Deconstruct time="10">
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+	  <Item name="Aluminium Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+  
+    <Sprite texture ="sawgun.png" sourcerect="0,0,66,41" depth="0.55"/>
+
+    <Body width="74" height="48" density="50"/>
+    
+    <RangedWeapon barrelpos="49,10" spread="3" unskilledspread="10">
+      <Sound file="Content/Items/Weapons/harpoon1.ogg" type="OnUse"/>
+      <Sound file="Content/Items/Weapons/harpoon2.ogg" type="OnUse"/>
+      <RequiredItems name="Plastic Saw,Aluminium Saw,Copper Saw,Steel Saw,Uranium Saw,Fulgurium Saw" type="Contained" msg="The loaded saw is too damaged"/>
+      <RequiredSkill name="Weapons" level="30"/>
+	  <StatusEffect type="OnUse" target="This">
+	  <Explosion range="1" force="11" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
+      </StatusEffect>
+    </RangedWeapon>
+
+    <ItemContainer capacity="1" itempos="26,5" hideitems="false">
+	  <Containable name="Plastic Saw,Aluminium Saw,Copper Saw,Steel Saw,Uranium Saw,Fulgurium Saw"/>
+    </ItemContainer>
+	
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true"
+              holdpos="35,-10" aimpos="50,0" handle1="-12,4"/>
+  </Item>
+  
+  <Item
+    name="HTM Grenade"
+    category="Equipment"
+	tags="smallitem,weapon"
+	description="HTM or Hand Thrown Munition, is an empty steel casing with a screw-off cap and a trigger mechanism that ignites the containing payload after a certain amount of time."
+    canuseonself="true"
+	impacttolerance="3"
+	price="225">
+	
+	<Deconstruct time="5">      
+      <Item name="Steel Bar"/>
+	  <Item name="Copper Powder"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="117,68,11,21" depth="0.55"/>
+
+    <Body width="11" height="24" density="20"/>
+	
+	<ItemContainer capacity="1" hideitems="true">
+	  <Containable name="explosive"/>
+    </ItemContainer>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="This">
+	    <sound file="Mods/BTE/Items/Weapons/GrenadePrimer.ogg"/>
+	  </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" Condition="-100" delay="5"/>
+    </ItemComponent>
+
+    <Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="3" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Weapons/GrenadeHit.ogg"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Hot Can"
+    category="Equipment"
+    tags="smallitem,weapon"
+	description="This Food Can has been rigged with Thermite, which will ignite the contents on impact. It's very sensitive so it can be set off by accident."
+	impacttolerance="3">
+	
+	<Deconstruct time="5">      
+      <Item name="Aluminium Powder"/>
+	  <Item name="Aluminium Powder" requirefullcondition="true"/>
+	  <Item name="Thermite Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="108,100,20,30" depth="0.55"/>
+
+    <Body width="18" height="28" density="18"/>
+	
+	<ItemContainer capacity="1" hideitems="true">
+	  <Containable name="smallitem"/>
+    </ItemContainer>
+	
+	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="100" IsOn="false">
+      <StatusEffect type="OnActive" target="This,Contained" Condition="-42.4">
+        <ParticleEmitter particle="bubbles" particlespersecond="30"/>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+      <sound file="Content/Items/Tools/flare.ogg" type="OnActive" range="800" loop="true"/>
+    </LightComponent>
+
+    <Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="3" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/FoodCan.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="This" delay="1" IsOn="true">
+	    <sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Gas Can"
+    category="Equipment"
+	description="An illegal device usually used by saboteurs. It releases a colourless gas upon impact that absorbs oxygen."
+    tags="smallitem,weapon"
+	impacttolerance="2">
+	
+	<Deconstruct time="5">
+      <Item name="Aluminium Powder"/>
+	  <Item name="Aluminium Powder" requirefullcondition="true"/>
+	  <Item name="Liquid Oxygenite" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="110,131,18,24" depth="0.55"/>
+
+    <Body width="16" height="22" density="14"/>
+	
+	<LightComponent LightColor="1.0,0.0,0.0,0.1" Flicker="0.5" range="100" IsOn="false">
+	  <StatusEffect type="OnActive" target="Hull" oxygen="-40000"/>
+      <StatusEffect type="OnActive" target="This" Condition="-2.1">
+        <ParticleEmitter particle="bubbles" particlespersecond="20"/>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+      <sound file="Content/Items/Tools/flare.ogg" type="OnActive" range="800" loop="true"/>
+    </LightComponent>
+
+    <Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="3" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/FoodCan.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="This" delay="1" IsOn="true">
+	    <sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Revolver Round"
+    category="Equipment"
+	Tags="smallitem,weapon"
+	description="Firing an old relic from earth should be punishable by death."
+    interactthroughwalls="true"
+	price="50">
+	
+	<Deconstruct time="5">      
+      <Item name="Iron Powder"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="52,99,8,3" depth="0.55"/>
+
+    <Body width="6" height="2" density="30"/>
+
+	<Pickable slots="Any"/>
+    <Projectile hitscan="true" doesstick="false" removeonhit="true">
+      <Attack damage="50" bleedingdamage="6" stun="0.5" structuredamage="50" targetforce="25" damagetype="Blunt"/>
+    </Projectile>
+  </Item>
+  
+  <Item
+    name="Revolver HL Round"
+    category="Equipment"
+	Tags="smallitem,weapon"
+	description="Custom hand-loaded Revolver ammunition. More stopping power but less damage."
+    interactthroughwalls="true">
+	
+	<Deconstruct time="5">      
+      <Item name="Copper Powder"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Phosphorus" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="100,0,8,3" depth="0.55"/>
+
+    <Body width="6" height="2" density="30"/>
+
+	<Pickable slots="Any"/>
+    <Projectile hitscan="true" doesstick="false" removeonhit="true">
+      <Attack damage="40" bleedingdamage="4" stun="3.5" structuredamage="40" targetforce="50" damagetype="Blunt"/>
+    </Projectile>
+  </Item>
+  
+  <Item
+    name="Revolver Flare Round"
+    category="Equipment"
+	Tags="smallitem,weapon"
+	description="Pyrotechnic revolver ammunition. Designed to be used for signalling or illumination."
+	spritecolor="1.0,0.0,0.0,1.0"
+    interactthroughwalls="true"
+	price="75">
+	
+	<Deconstruct time="5">      
+      <Item name="Aluminium Powder"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Potassium" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="100,0,8,3" depth="0.55"/>
+
+    <Body width="6" height="2" density="10.5"/>
+	
+	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="500" IsOn="false">
+      <StatusEffect type="OnUse" target="This" IsOn="true"/>
+	  <StatusEffect type="OnActive" target="This" Condition="-1.5">
+	    <ParticleEmitter particle="flare" particlespersecond="30"/>
+        <ParticleEmitter particle="bubbles" particlespersecond="30"/>
+		<Explosion range="40" damage="0.1" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1.0"/>
+      </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+	  <sound file="Content/Items/Tools/flare.ogg" type="OnActive" range="600" loop="true"/>
+    </LightComponent>
+
+	<Pickable slots="Any"/>
+    <Projectile launchimpulse="25" doesstick="true">
+      <Attack damage="10" bleedingdamage="1" structuredamage="1" targetforce="50" damagetype="Burn"/>
+    </Projectile>
+  </Item>
+  
+  <Item
+    name="Revolver"
+    category="Equipment"
+	tags="meditem,weapon"
+    description="It belongs in a museum! This old handgun still packs a punch, though."
+    >
+
+    <Deconstruct time="10">      
+      <Item name="Steel Bar"/>
+    </Deconstruct>
+  
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,0,40,20" depth="0.55"/>
+
+    <Body width="40" height="20" density="35"/>
+    
+    <RangedWeapon barrelpos="37,3" spread="0" unskilledspread="2" reload="0.3">
+      <Sound file="Mods/BTE/Items/Weapons/Revolver.ogg" type="OnUse"/>
+	  <StatusEffect type="InWater" target="This" Condition="-75"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="1" delay="15"/>
+	  <StatusEffect type="Always" target="This" Condition="15"/>
+      <RequiredItems name="Revolver Round,Revolver HL Round,Revolver Flare Round" type="Contained" msg="The loaded ammunition is too damaged"/>
+      <RequiredSkill name="Weapons" level="40"/>
+	  <StatusEffect type="OnUse" Condition="-5">
+	    <Explosion range="150" force="5" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
+      </StatusEffect>
+    </RangedWeapon>
+
+    <ItemContainer capacity="6" hideitems="true">
+      <Containable name="Revolver Round"/>
+	  <Containable name="Revolver HL Round"/>
+	  <Containable name="Revolver Flare Round"/>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              aimpos="75,18" handle1="-12,-3" handle2="-1,-7"/>
+  </Item>
+  
+  <Item
+    name="Diving Revolver"
+    category="Equipment"
+	tags="meditem,weapon"
+    description="A lightweight underwater handgun. Standard issue firearm for officers."
+    >
+
+    <Deconstruct time="10">      
+      <Item name="Aluminium Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+  
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="50,0,40,20" depth="0.55"/>
+
+    <Body width="40" height="20" density="25"/>
+    
+    <RangedWeapon barrelpos="37,3" spread="0" unskilledspread="2" reload="0.3">
+      <Sound file="Mods/BTE/Items/Weapons/Revolver.ogg" type="OnUse"/>
+      <RequiredItems name="Revolver Round,Revolver HL Round,Revolver Flare Round" type="Contained" msg="The loaded ammunition is too damaged"/>
+      <RequiredSkill name="Weapons" level="40"/>
+	  <StatusEffect type="OnUse">
+	    <Explosion range="150" force="5" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
+      </StatusEffect>
+    </RangedWeapon>
+
+    <ItemContainer capacity="6" hideitems="true">
+      <Containable name="Revolver Round"/>
+	  <Containable name="Revolver HL Round"/>
+	  <Containable name="Revolver Flare Round"/>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              aimpos="75,18" handle1="-12,-3" handle2="-1,-7"/>
+  </Item>
+  
+  <Item
+    name="Gauss Pistol"
+    category="Equipment"
+	tags="meditem,weapon"
+    description="Gauss weapons use magnetic force and mass drivers to generate and propel projectiles the size of a sand grain from a dense bar of metal."
+    >
+
+    <Deconstruct time="20">      
+      <Item name="Steel Bar"/>
+	  <Item name="Fulgurium Bar"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+  
+    <Sprite texture="Mods/BTE/Items/Weapons/GaussGuns.png" sourcerect="0,70,38,20" depth="0.55"/>
+
+    <Body width="36" height="18" density="25"/>
+	
+	<ItemContainer capacity="1" hideitems="true">
+      <Containable name="Polycarbonate Bar,Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar"/>
+    </ItemContainer>
+	
+	<RepairTool structurefixamount="-10" limbfixamount="-40" range="1000" barrelpos="28,3" particles="plasma">
+	  <Fixable name="structure"/>
+      <sound file="Mods/BTE/Items/Weapons/EnergySmall.ogg" type="OnUse" range="700"/>
+	  <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained" msg="The loaded bar is depleted"/>
+      <RequiredSkill name="Weapons" level="10"/>
+	  <StatusEffect type="OnUse" target="This">
+	    <Explosion range="65" force="1" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Contained" Condition="-0.2" disabledeltatime="true"/>
+	  <StatusEffect type="OnFailure" target="Contained" Condition="-0.1" disabledeltatime="true"/>
+    </RepairTool>
+	
+	<Holdable slots="RightHand,LeftHand,Any" controlpose="true"
+              aimpos="75,18" handle1="-12,-3" handle2="-11,-4">
+	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="2"/>
+	</Holdable>
+  </Item>
+  
+  <Item
+    name="Gauss Carbine"
+    category="Equipment"
+	tags="bigitem,weapon"
+    description="Gauss weapons use magnetic force and mass drivers to generate and propel projectiles the size of a sand grain from a dense bar of metal."
+    >
+
+    <Deconstruct time="20">      
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+	  <Item name="Fulgurium Bar"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+  
+    <Sprite texture="Mods/BTE/Items/Weapons/GaussGuns.png" sourcerect="0,39,99,26" depth="0.55"/>
+
+    <Body width="97" height="24" density="35"/>
+	
+	<ItemContainer capacity="1" hideitems="true">
+      <Containable name="Polycarbonate Bar,Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar"/>
+    </ItemContainer>
+	
+	<RepairTool structurefixamount="-2" limbfixamount="-5" range="1000" barrelpos="57,6" particles="plasma">
+	  <Fixable name="structure"/>
+      <sound file="Mods/BTE/Items/Weapons/EnergyLoop.ogg" type="OnUse" range="800" loop="true"/>
+	  <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained" msg="The loaded bar is depleted"/>
+      <RequiredSkill name="Weapons" level="20"/>
+	  <StatusEffect type="OnUse" target="This">
+	    <Explosion range="100" force="0.2" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Contained" Condition="-0.1" disabledeltatime="true"/>
+	  <StatusEffect type="OnFailure" target="Contained" Condition="-0.1" disabledeltatime="true"/>
+    </RepairTool>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              holdpos="35,-10" aimpos="50,-3" handle1="-15,-6" handle2="26,1">
+	  <StatusEffect type="OnUse" target="This" Condition="-300"/>
+	  <StatusEffect type="Always" target="This" Condition="10"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="4"/>
+	</Holdable>
+  </Item>
+  
+  <Item
+    name="Gauss Rifle"
+    category="Equipment"
+	tags="bigitem,weapon"
+    description="Gauss weapons use magnetic force and mass drivers to generate and propel projectiles the size of a sand grain from a dense bar of metal."
+    >
+
+    <Deconstruct time="20">      
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+	  <Item name="Fulgurium Bar"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+  
+    <Sprite texture="Mods/BTE/Items/Weapons/GaussGuns.png" sourcerect="0,0,120,35" depth="0.55"/>
+
+    <Body width="118" height="33" density="45"/>
+	
+	<ItemContainer capacity="1" hideitems="true">
+      <Containable name="Polycarbonate Bar,Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar"/>
+    </ItemContainer>
+	
+	<RepairTool structurefixamount="-20" limbfixamount="-150" range="2000" barrelpos="62,3" particles="plasma">
+	  <Fixable name="structure"/>
+      <sound file="Mods/BTE/Items/Weapons/EnergyBig.ogg" type="OnUse" range="900"/>
+	  <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained" msg="The loaded bar is depleted"/>
+      <RequiredSkill name="Weapons" level="30"/>
+	  <StatusEffect type="OnUse" target="This">
+	    <Explosion range="150" force="2" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Contained" Condition="-0.4" disabledeltatime="true"/>
+	  <StatusEffect type="OnFailure" target="Contained" Condition="-0.1" disabledeltatime="true"/>
+    </RepairTool>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              holdpos="35,-10" aimpos="60,5" handle1="-15,-6" handle2="26,7">
+	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="6"/>
+	</Holdable>
+  </Item>
+  
+  <Item
+    name="Shock Rod"
+    category="Equipment"
+    Tags="bigitem,weapon"
+    description="A makeshift melee weapon that uses battery power to deliver an electric shock to the target. The shock can stun but it might be lethal too."
+	>
+
+    <Deconstruct time="10">
+      <Item name="Plastic Spear"/>
+	  <Item name="Copper Coil"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,96,70,13" depth="0.55"/>
+    
+    <Body width="68" height="11" density="15"/>
+
+    <MeleeWeapon slots="RightHand,LeftHand,Any"
+              aimpos="50,0" handle1="-5,0" holdangle="10" reload="2.0">
+      <Attack damage="4" stun="0.2" damagetype="Blunt" sound="Content/Items/Weapons/smack.ogg"/>
+      <StatusEffect type="OnUse" target="Contained,Character" Condition="-50" damage="10" stun="20" disabledeltatime="true">
+	    <sound file="Content/Items/Weapons/stunbaton.ogg"/>
+        <RequiredItem name="Battery Cell" type="Contained" msg="Depleted battery cell"/>        
+        <Explosion range="100" force="0.6" shockwave="false" flames="false" camerashake="5.0"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained,Character" Condition="-35" damage="15" stun="40" disabledeltatime="true">
+	    <sound file="Content/Items/Weapons/stunbaton.ogg"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Depleted battery cell"/>        
+        <Explosion range="100" force="0.2" shockwave="false" flames="false" camerashake="5.0"/>
+      </StatusEffect>      
+    </MeleeWeapon>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell"/>
+      <Containable name="Fulgurium Battery Cell"/>      
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Stun Baton"
+    category="Equipment"
+    Tags="bigitem,weapon"
+	description="If verbal orders are insufficient, a high-voltage shock from a Stun Baton may be enough to beat an unruly crew member into submission."
+    price="100">
+
+    <Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Aluminium Bar"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="21,0,77,22" depth="0.55"/>
+    
+    <Body width="90" height="30" density="25"/>
+
+    <MeleeWeapon slots="RightHand,LeftHand,Any"
+              aimpos="50,0" handle1="-5,0" holdangle="10" reload="1.0">
+      <Attack damage="3" stun="0.2" damagetype="Blunt" sound="Content/Items/Weapons/smack.ogg"/>
+      <StatusEffect type="OnUse" target="Contained,Character" Condition="-20" stun="40" disabledeltatime="true">
+	    <sound file="Content/Items/Weapons/stunbaton.ogg"/>
+        <RequiredItem name="Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+        <Explosion range="100" force="0.5" shockwave="false" flames="false" smoke="false" camerashake="5.0"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained,Character" Condition="-10" stun="60" disabledeltatime="true">
+	    <sound file="Content/Items/Weapons/stunbaton.ogg"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+        <Explosion range="100" force="0.1" shockwave="false" flames="false" smoke="false" camerashake="5.0"/>
+      </StatusEffect>      
+    </MeleeWeapon>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell"/>
+      <Containable name="Fulgurium Battery Cell"/>      
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Sonar Blaster"
+    category="Equipment"
+    Tags="smallitem,weapon"
+	description="A heavily modified personal sonar device designed to produce an intensely loud sonar ping. It can stun both the user and those around him for about a second."
+    >
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+      <Item name="Aluminium Powder"/>
+	  <Item name="Copper Bar"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="42,0,22,9" depth="0.55"/>
+
+    <Body width="31" height="6" density="14"/>
+
+    <Holdable slots="RightHand,LeftHand,Any" aimpos="100,0" handle1="-5,0"/>
+
+    <RangedWeapon reload="3">
+	  <StatusEffect type="OnUse" target="Contained" Condition="-8" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Weapons/SonarGun.ogg"/>
+        <RequiredItem name="Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+        <Explosion range="200" damage="3" stun="3" force="1.6" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="5.0"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" Condition="-10" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Weapons/SonarGun.ogg"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+        <Explosion range="400" damage="3" stun="3" force="1.8" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="5.0"/>
+      </StatusEffect> 
+    </RangedWeapon>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell, Fulgurium Battery Cell"/>
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Battery Cell"
+    category="Equipment,Electrical"
+	description="Used as a power source for various handheld devices. Most submarines have several stationary backup batteries with recharge docks for battery cells."
+    tags="smallitem,loadable"
+    price="75">
+
+    <Deconstruct time="10">
+      <Item name="Aluminium Powder"/>
+      <Item name="Copper Powder"/>
+    </Deconstruct>
+    
+    <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="0,0,20,9" depth="0.8"/>
+
+    <Body width="20" height="9" density="30"/>
+
+    <Pickable slots="Any,RightHand,LeftHand"/>
+  </Item>
+  
+  <Item
+    name="Fulgurium Battery Cell"
+    category="Equipment,Electrical"
+    tags="smallitem,loadable"
+    description="A battery cell constructed of the rare and poorly understood compound Fulgurium."
+	>
+
+    <Deconstruct time="10">
+      <Item name="Aluminium Powder"/>
+      <Item name="Copper Powder"/>
+      <Item name="Fulgurium Powder"/>  
+    </Deconstruct>
+
+    <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="0,0,20,9" depth="0.8"/>
+
+    <Body width="20" height="9" density="20"/>
+
+    <Pickable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="0.06"/>
+	</Pickable>
+  </Item>
+  
+  <Item
+    name="Aluminium Bat"
+    category="Equipment"
+    Tags="bigitem,weapon"
+	description="A smooth aluminium club used in the Earth sport of baseball. It's an effective melee weapon against people too."
+    >
+
+    <Deconstruct time="10">
+      <Item name="Aluminium Bar"/>
+      <Item name="Aluminium Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,118,97,8" depth="0.55"/>
+    
+    <Body width="95" height="6" density="19"/>
+
+    <MeleeWeapon slots="RightHand+LeftHand,Any"
+              aimpos="50,0" handle1="-30,0" handle2="-20,-10" holdangle="60" reload="2.5">
+      <Attack damage="14" stun="0.8" damagetype="Blunt" targetforce="35" sound="Mods/BTE/Items/Weapons/BatHit.ogg"/> 
+    </MeleeWeapon>
+  </Item>
+</Items>

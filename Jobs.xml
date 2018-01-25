@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job name="Captain" description="The Commanding Officer with authority over the entire crew. The captain is responsible for commanding the rest of the crew and trying to keep everything running smoothly." minnumber="1" maxnumber="1">
+    <Skills>
+      <Skill name="Weapons" level="40,80"/> <!-- 50,60 -->
+      <Skill name="Electrical Engineering" level="60,70"/> <!-- 20,30 -->
+	  <Skill name="Construction" level="60,70"/> <!-- 20,30 -->
+      <Skill name="Medical" level="25,50"/> <!-- 10,30 -->
+	  <Skill name="Cooking" level="15,30"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Clipboard">
+        <Item name="Top Secret Cover"/>
+		<Item name="Coalition Captain"/>
+		<Item name="Basic Emergency Protocol"/>
+		<Item name="Outbreak Protocol"/>
+		<Item name="Document about Threshers"/>
+		<Item name="Document about Crawlers"/>
+		<Item name="Document about Mantises"/>
+		<Item name="Document about Scorpions"/>
+		<Item name="Document about Molochs"/>
+      </Item> 
+      <Item name="Captain's Cap" equip="true"/>
+      <Item name="Captain's Jacket" equip="true"/>
+      <Item name="Captain's Trousers B" equip="true"/>
+      <Item name="Headset" equip="true">
+        <Item name="Battery Cell"/>
+      </Item>
+	  <Item name="Diving Revolver" equip="false">
+        <Item name="Revolver Round"/>
+        <Item name="Revolver Round"/>
+		<Item name="Revolver Round"/>
+		<Item name="Revolver Round"/>
+		<Item name="Revolver Round"/>
+		<Item name="Revolver Round"/>
+      </Item> 
+    </Items>
+  </Job>
+  
+  <Job name="Assistant" description="The executive officer or second-in-command. The assistant's duty is to help the captain with administrative and navigation responsibilities. If the captain is absent, the assistant will temporarily assume command." maxnumber="1">
+    <Skills>
+      <Skill name="Weapons" level="25,50"/> <!-- 20,30 -->
+      <Skill name="Construction" level="10,20"/> <!-- 20,30 -->
+      <Skill name="Electrical Engineering" level="10,20"/> <!-- 20,30 -->
+      <Skill name="Medical" level="25,50"/> <!-- 10,20 -->
+	  <Skill name="Cooking" level="20,40"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Clipboard">
+        <Item name="Top Secret Cover"/>
+		<Item name="Coalition Assistant"/>
+		<Item name="Basic Emergency Protocol"/>
+		<Item name="Classified Protocol A"/>
+		<Item name="Classified Protocol B"/>
+      </Item> 
+      <Item name="Crewmember Vest" equip="true"/>
+	  <Item name="Crewmember Trousers B" equip="true"/>
+	  <Item name="Flashlight">
+	    <Item name="Battery Cell"/>
+	  </Item> 
+      <Item name="Headset" equip="true">
+        <Item name="Battery Cell"/>
+      </Item> 
+    </Items>
+  </Job>
+  
+  <Job name="Security Officer" description="Security officers are are responsible for keeping the submarine safe from potential attackers. The creatures inhabiting the ocean aren't the only threat they need to worry about, as several of the renegade groups opposing the Europa Coalition are known to have sent infiltrators on board the vessels." maxnumber="4">
+    <Skills>
+      <Skill name="Weapons" level="60,80"/> <!-- 50,60 -->
+      <Skill name="Construction" level="10,20"/> <!-- 10,20 -->
+      <Skill name="Electrical Engineering" level="10,20"/> <!-- 10,20 -->
+	  <Skill name="Medical" level="20,40"/> <!-- 30,40 -->
+	  <Skill name="Cooking" level="25,45"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Clipboard">
+        <Item name="Top Secret Cover"/>
+		<Item name="Coalition Security"/>
+		<Item name="Basic Emergency Protocol"/>
+		<Item name="Classified Protocol A"/>
+		<Item name="Classified Protocol B"/>
+      </Item> 
+      <Item name="Body Armor"/>
+      <Item name="Ballistic Helmet"/>
+	  <Item name="Crewmember Cargo Trousers A" equip="true"/>
+	  <Item name="Crewmember Beret" equip="true"/>
+	  <Item name="Handcuffs"/>
+	  <Item name="Stun Baton">
+        <Item name="Battery Cell"/>
+	  </Item> 
+      <Item name="Headset" equip="true">
+        <Item name="Battery Cell"/>
+      </Item>      
+    </Items>
+  </Job>
+
+  <Job name="Medical Doctor" description="The primary duty of the doctors is to help injured crew members, but their knowledge of chemistry and pharmaceutics can also be useful for creating various non-medicinal chemicals." maxnumber="2">
+    <Skills>
+      <Skill name="Weapons" level="15,30"/> <!-- 10,20 -->
+      <Skill name="Construction" level="10,20"/> <!-- 10,20 -->
+      <Skill name="Electrical Engineering" level="10,20"/> <!-- 10,20 -->
+      <Skill name="Medical" level="60,80"/> <!-- 60,70 -->
+	  <Skill name="Cooking" level="30,50"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Clipboard">
+        <Item name="Coalition Doctor"/>
+		<Item name="Basic Emergency Protocol"/>
+      </Item> 
+      <Item name="Doctor's Coat A" equip="true"/>
+      <Item name="Crewmember Trousers A" equip="true"/>
+      <Item name="Health Scanner HUD"/>
+      <Item name="Medical Syringe"/>
+      <Item name="Headset" equip="true">
+        <Item name="Battery Cell"/>
+      </Item>      
+    </Items>
+  </Job>
+  
+  <Job name="Engineer" description="Engineers have above-average electrician skills, but fixing complex mechanical devices is still usually out of their skill set. They are competent at fixing electrical devices however, and are the ones to turn to when the power grid starts failing." minnumber="1">
+    <Skills>
+      <Skill name="Weapons" level="30,50"/> <!-- 10,30 -->
+      <Skill name="Construction" level="70,90"/> <!-- 20,30 -->
+      <Skill name="Electrical Engineering" level="80,90"/> <!-- 50,60 -->
+      <Skill name="Medical" level="10,60"/> <!-- 10,20 -->
+	  <Skill name="Cooking" level="10,60"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Clipboard">
+        <Item name="Coalition Engineer"/>
+		<Item name="Basic Emergency Protocol"/>
+      </Item> 
+	  <Item name="Crewmember Cap A"/>
+      <Item name="Utility Vest" equip="true"/>
+	  <Item name="Crewmember Cargo Trousers A" equip="true"/>   
+      <Item name="Wire"/>
+      <Item name="Screwdriver"/>
+      <Item name="Headset" equip="true">
+        <Item name="Battery Cell"/>
+      </Item>      
+    </Items>
+  </Job>
+
+  <Job name="Mechanic" description="Mechanics have high construction and mechanic skills. They are skilled at using tools such as plasma cutters and welders, and are usually the only ones who can fix broken mechanical devices." minnumber="1">
+    <Skills>
+      <Skill name="Weapons" level="15,30"/> <!-- 10,30 -->
+      <Skill name="Construction" level="80,90"/> <!-- 50,60 -->
+      <Skill name="Electrical Engineering" level="60,80"/> <!-- 30,35 -->
+      <Skill name="Medical" level="10,20"/> <!-- 10,20 -->
+	  <Skill name="Cooking" level="10,20"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Clipboard">
+        <Item name="Coalition Mechanic"/>
+		<Item name="Basic Emergency Protocol"/>
+      </Item> 
+	  <Item name="Crewmember Beanie"/>
+	  <Item name="Utility Jumpsuit" equip="true"/>
+      <Item name="Wrench"/>
+      <Item name="Welding Tool">
+	    <Item name="Thermite Tank"/>
+	  </Item>
+      <Item name="Headset" equip="true">
+        <Item name="Battery Cell"/>
+      </Item>      
+    </Items>
+  </Job>
+  
+  <Job name="Cook" description="The primary duty of a cook, or culinary specialist, is to provide cooking services for the rest of the crew. They are also responsible for keeping the storerooms stocked and the dinning areas clean." maxnumber="2">
+    <Skills>
+      <Skill name="Weapons" level="15,30"/>
+      <Skill name="Construction" level="10,20"/>
+      <Skill name="Electrical Engineering" level="10,20"/>
+      <Skill name="Medical" level="30,50"/>
+	  <Skill name="Cooking" level="60,80"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Clipboard">
+        <Item name="Coalition Cook"/>
+		<Item name="Basic Emergency Protocol"/>
+      </Item> 
+	  <Item name="Crewmember Cap B" equip="true"/>
+	  <Item name="Crewmember Jumper B"/>
+	  <Item name="Crewmember Trousers A" equip="true"/>
+      <Item name="Headset" equip="true">
+        <Item name="Battery Cell"/>
+      </Item>      
+    </Items>
+  </Job>
+
+  <Job name="Seaman" description="Seamen don't have any specific responsibilities or areas of expertise. This job is a good choice for newcomers who want to get a hang of working on board the submarine without taking up tasks that they aren't qualified for." allowalways="true">
+    <Skills>
+      <Skill name="Weapons" level="20,40"/>
+      <Skill name="Construction" level="20,40"/>
+      <Skill name="Electrical Engineering" level="15,30"/>
+      <Skill name="Medical" level="15,30"/>
+	  <Skill name="Cooking" level="15,35"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Clipboard">
+        <Item name="Coalition Seamen"/>
+		<Item name="Basic Emergency Protocol"/>
+      </Item> 
+	  <Item name="Crewmember Beanie"/>
+	  <Item name="Crewmember Sweater B" equip="true"/>
+	  <Item name="Crewmember Cargo Trousers A" equip="true"/>
+      <Item name="Flashlight">
+	    <Item name="Battery Cell"/>
+	  </Item> 
+      <Item name="Headset" equip="true">
+        <Item name="Battery Cell"/>
+      </Item>      
+    </Items>
+  </Job>
+  
+  <Job name="Prisoner" description="Prisoners can range from petty individuals to dangerous and even reckless psychopaths. Coalition correctional facilities make no distinctive outfits or safety measures for them so seeing low-risk prisoners sharing cell blocks with maximum security ones is commonplace." allowalways="true">
+    <Skills>
+      <Skill name="Weapons" level="5,80"/>
+      <Skill name="Construction" level="5,80"/>
+      <Skill name="Electrical Engineering" level="5,80"/>
+      <Skill name="Medical" level="5,80"/>
+	  <Skill name="Cooking" level="5,80"/>
+    </Skills>
+    <Items>
+      <Item name="Prisoner Jumpsuit A" equip="true"/>
+	  <!-- <Item name="Handcuffs" equip="true"/> -->
+    </Items>
+  </Job>
+</Jobs>

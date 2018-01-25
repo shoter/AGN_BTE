@@ -1,0 +1,94 @@
+﻿<Items>
+  <Item
+    name="Health Scanner HUD"
+    category="Equipment"
+    tags="smallitem"
+	description="A heads-up headset that displays information of the vital signs and status of nearby humans."
+    >
+	
+	<Deconstruct time="15">
+      <Item name="Steel Bar"/>
+      <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture ="doctorgear.png" sourcerect="0,120,20,8" depth="0.6"/>
+
+    <Body width="18" height="6" density="11"/>
+
+    <Wearable limbtype="Head" slots="Any,Face">
+      <sprite texture ="doctorgear.png" sourcerect="0,120,20,8" limb="Head" origin="0.45,0.9" depthlimb="Head"/>
+    </Wearable>
+
+    <StatusHUD drawhudwhenequipped="true"/>
+  </Item>
+
+  <Item
+    name="Doctor's Coat A"
+    category="Equipment"
+	tags="meditem,clothing"
+	description="A standard issued garment given to Medical Doctors."
+    >
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="doctorgear.png" sourcerect="75,0,53,18" depth="0.6"/>
+
+    <Body width="52" height="17" density="11.5"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="doctorgear.png" limb="RightHand" sourcerect="51,0,15,47" origin="0.45,0.55" depth="0.005" hidelimb="true"/>
+      <sprite texture="doctorgear.png" limb="LeftHand" sourcerect="51,0,15,47" origin="0.45,0.55" depth="0.13" hidelimb="true"/>
+
+      <sprite texture="doctorgear.png" limb="RightArm" sourcerect="33,0,17,40" origin="0.5,0.5" hidelimb="true"/>
+      <sprite texture="doctorgear.png" limb="LeftArm" sourcerect="33,0,17,40" origin="0.5,0.5" depth="0.14" hidelimb="true"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.04" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7"/>
+    </Wearable>
+
+    <ItemContainer capacity="2">
+      <Containable name="chem"/>
+	  <Containable name="medical"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Doctor's Coat B"
+    category="Equipment"
+	tags="meditem,clothing"
+	description="A standard issued garment given to Medical Doctors."
+    >
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="doctorgear.png" sourcerect="75,0,53,18" depth="0.6"/>
+
+    <Body width="52" height="17" density="11.5"/>
+
+    <Wearable slots="Any,Torso">
+      <sprite texture="doctorgear.png" limb="RightHand" sourcerect="93,59,15,47" origin="0.45,0.55" depth="0.005"/>
+      <sprite texture="doctorgear.png" limb="LeftHand" sourcerect="93,59,15,47" origin="0.45,0.55" depth="0.13"/>
+
+      <sprite texture="doctorgear.png" limb="RightArm" sourcerect="73,61,17,40" origin="0.5,0.5"/>
+      <sprite texture="doctorgear.png" limb="LeftArm" sourcerect="73,61,17,40" origin="0.5,0.5" depth="0.14"/>
+	  
+	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.05" disabledeltatime="true"/>
+	  
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+    </Wearable>
+
+    <ItemContainer capacity="2">
+      <Containable name="chem"/>
+	  <Containable name="medical"/>
+    </ItemContainer>
+  </Item>
+</Items>

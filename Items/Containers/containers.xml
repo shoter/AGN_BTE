@@ -1,0 +1,252 @@
+﻿<Items>
+  <Item
+    name="Steel Cabinet"
+    linkable="true"
+    pickdistance ="150">
+    
+    <Sprite texture ="Content/Items/Containers/locker.png" depth="0.79"/>
+	
+	<Controller direction="None" canbepicked="true">
+      <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
+    </Controller>
+
+    <ItemContainer capacity="20" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,meditem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Steel Locker"
+    linkable="true"
+    pickdistance ="150">
+    
+    <Sprite texture ="Containers.png" depth="0.78" sourcerect="0,0,45,128"/>
+	
+	<Controller direction="None" canbepicked="true">
+      <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="750"/>
+    </Controller>
+	
+	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,meditem,bigitem"/>
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Medicine Cabinet"
+    linkable="true"
+    pickdistance ="150">
+
+    <Sprite texture ="Content/Items/Containers/cabinets.png" depth="0.78" sourcerect="0,0,48,64" canflipx="false"/>
+	
+	<Controller direction="None" canbepicked="true">
+      <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
+    </Controller>
+
+    <ItemContainer capacity="20" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,medical,chem"/>
+    </ItemContainer>
+  </Item>
+
+  <Item
+   name="Toxic Cabinet"
+   linkable="true"
+   pickdistance ="150">
+
+    <Sprite texture ="Content/Items/Containers/cabinets.png" depth="0.78" sourcerect="0,64,48,64" canflipx="false"/>
+	
+	<Controller direction="None" canbepicked="true">
+      <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
+    </Controller>
+
+    <ItemContainer capacity="20" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,chem,medical"/>
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Metal Crate"
+    linkable="true"
+    pickdistance ="150"
+	price="250">
+	
+	<Deconstruct time="10">
+      <Item name="Steel Bar"/>
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Mods/BTE/Items/Containers/Containers.png" depth="0.54" sourcerect="84,0,56,51"/>
+
+    <Body width="54" height="49" density="50"/>
+
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" aimpos="15,-50" handle1="-25,14" handle2="25,14"/>
+
+    <ItemContainer capacity="20" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,meditem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Metal Footlocker"
+    linkable="true"
+    pickdistance ="150"
+	price="250">
+	
+	<Deconstruct time="10">
+      <Item name="Steel Bar"/>
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Containers/crates.png" depth="0.54" sourcerect="0,0,79,35"/>
+
+    <Body width="77" height="33" density="50"/>
+
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" aimpos="15,-50" handle1="-30,14" handle2="30,14"/>
+
+    <ItemContainer capacity="10" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,meditem,bigitem"/>
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Explosive Crate"
+    linkable="true"
+    pickdistance ="150"
+	price="250">
+	
+	<Deconstruct time="10">
+      <Item name="Steel Bar"/>
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Containers/crates.png" depth="0.54" sourcerect="81,0,47,42"/>
+
+    <Body width="45" height="41" density="50"/>
+    
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" aimpos="15,-50" handle1="-20,14" handle2="20,14"/>
+
+    <ItemContainer capacity="10" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,explosive"/>
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Chemical Crate"
+    linkable="true"
+    pickdistance ="150"
+	price="250">
+	
+	<Deconstruct time="10">
+      <Item name="Steel Bar"/>
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture ="Content/Items/Containers/crates.png" depth="0.54" sourcerect="1,36,47,42"/>
+
+    <Body width="45" height="41" density="50"/>
+
+	<Holdable slots="RightHand+LeftHand" holdpos="0,-70" aimpos="15,-50" handle1="-20,14" handle2="20,14"/>
+
+    <ItemContainer capacity="10" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,chem,medical"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Fire Extinguisher Bracket"
+    linkable="true"
+    pickdistance ="150">
+    
+    <Sprite texture ="Containers.png" depth="0.78" sourcerect="46,0,25,61"/>
+
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="13,-25">
+      <Containable name="Fire Extinguisher"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Steel Table"
+	linkable="true"
+    pickdistance="150"
+    description="A sturdy steel table with a drawer. Sometimes used as a dining table."
+	impacttolerance="4"
+	price="230">
+	
+	<Deconstruct time="10">
+      <Item name="Steel Bar"/>
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Containers/ChairTable.png" depth="0.53" sourcerect="69,0,131,85"/>
+	
+	<Body width="130" height="84" density="18"/>
+	
+	<Holdable slots="RightHand+LeftHand" holdpos="0,-80" aimpos="40,-20" handle1="-40,14" handle2="40,14" aimable="false" controlpose="false">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Weapons/BatHit.ogg"/>
+        <Explosion range="75" damage="8" stun="3.8" force="12.5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+      </StatusEffect>
+	</Holdable>
+	
+	<ItemContainer capacity="4" canbeselected="true" hideitems="true">
+      <Containable name="smallitem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Steel Chair"
+	linkable="true"
+    pickdistance="150"
+    description="A sturdy but uncomfortable steel chair."
+	impacttolerance="4"
+	price="150">
+	
+	<Deconstruct time="10">
+      <Item name="Steel Bar"/>
+	  <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Containers/ChairTable.png" depth="0.54" sourcerect="0,0,53,98"/>
+	
+	<Body width="52" height="97" density="14"/>
+	
+	<Holdable slots="RightHand+LeftHand" holdpos="40,-30" aimpos="45,-20" handle1="-30,14" handle2="30,-7"/>
+	
+	<Throwable slots="RightHand+LeftHand" holdpos="40,-30" aimpos="45,-20" handle1="-30,14" handle2="30,-7" throwforce="3.0">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Weapons/BatHit.ogg"/>
+        <Explosion range="70" damage="6" stun="3.4" force="10.5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+      </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Diving Chest"
+	category="Equipment"
+    linkable="true"
+    pickdistance ="150"
+    description="A neutrally buoyant underwater chest that can be used as a toolbox for hull repairs outside a sub or in object retrieval operations."
+	price="500">
+	
+	<Deconstruct time="10">
+      <Item name="Steel Bar"/>
+	  <Item name="Aluminium Bar"/>
+	  <Item name="Polycarbonate Bar"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture ="DivingChest.png" depth="0.54" sourcerect="0,0,90,48"/>
+
+    <Body width="88" height="44" density="10.01"/>
+
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" aimpos="15,-50" handle1="-30,14" handle2="30,14"/>
+
+    <ItemContainer capacity="10" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,meditem,bigitem"/>
+    </ItemContainer>
+  </Item>
+</Items>

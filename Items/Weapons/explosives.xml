@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>    
+  <Item
+    name="Nitroglycerin"
+    category="Material"
+    description="A highly unstable liquid that may explode when subjected to heat or physical shock."
+    spritecolor="1.0,1.0,1.0,1.0"
+    Tags="smallitem,explosive,chem,medical"
+    impacttolerance="4"
+	price="300">
+
+    <Sprite texture ="Content/Items/Medical/med.png" sourcerect="24,16,8,16" depth="0.6"/>
+
+    <Body width="25" height="5" density="10"/>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.07"/>
+	  <StatusEffect type="OnFire" target="This" Condition="-50.0"/>
+      <StatusEffect type="OnImpact" target="This" Condition="-75.0" setvalue="true"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100.0">
+	    <sound file="Content/Items/Reactor/explosion.ogg"/>
+        <Explosion range="600" structuredamage="300" damage="225" stun="14" force="25" severlimbsprobability="0.3" decal="explosion" decalsize="0.6"/>
+      </StatusEffect>
+      
+      <StatusEffect type="OnUse" target="This" Condition="-100.0">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Flash Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="A non-lethal explosive designed to stun targets instead of killing them."
+    price="250">
+	
+	<Deconstruct time="5"> 
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Flash Powder" requirefullcondition="true"/>
+	  <Item name="Flash Powder" requirefullcondition="true"/>
+	  <Item name="Flash Powder" requirefullcondition="true"/>
+	  <Item name="Flash Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
+
+    <Body width="16" height="7"/>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100.0">
+	    <sound file="Content/Items/Weapons/stungrenade.ogg"/>
+        <Explosion range="450" damage="5" stun="50" force="0.1" flames="false" smoke="false"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  
+  <Item
+    name="Propellant Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="A weak explosive charge usually crafted to be used in the Deconstructor to get it back as powder units and craft ammo or other explosives."
+    >
+	
+	<Deconstruct time="5">      
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
+
+    <Body width="16" height="7"/>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100">
+	    <sound file="Content/Items/Weapons/stungrenade.ogg"/>
+        <Explosion range="500" structuredamage="25" damage="50" stun="25" force="24" flames="false" smoke="false" sparks="false"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  
+  <Item
+    name="Concussion Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="An anti-personnel explosive designed to deal damage to one or more targets with explosive power alone."
+    price="250">
+	
+	<Deconstruct time="5">      
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
+
+    <Body width="16" height="7"/>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100">
+	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
+        <Explosion range="450" structuredamage="70" damage="250" stun="8" force="14" decal="explosion" decalsize="0.5"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  
+  <Item
+    name="Blast Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="A standard explosive charge used as payload for Railgun Shells, Depth Charges and Mines."
+    price="500">
+	
+	<Deconstruct time="5">      
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
+
+    <Body width="16" height="7"/>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100">
+	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
+        <Explosion range="525" structuredamage="200" damage="200" stun="6" force="16" severlimbsprobability="0.1" decal="explosion" decalsize="0.5"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  
+  <Item
+    name="Destroyer Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="A standard high explosive charge designed as anti-submarine payload. It's impact sensitive so it's best to keep safely stored."
+	impacttolerance="7"
+    price="650">
+	
+	<Deconstruct time="5">      
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
+
+    <Body width="16" height="7"/>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnFire" target="This" Condition="-18"/>
+	  <StatusEffect type="OnImpact" target="This" Condition="-25" setvalue="true"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100">
+	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionBig.ogg"/>
+        <Explosion range="550" structuredamage="400" damage="275" stun="8" force="18" severlimbsprobability="0.6" decal="explosion" decalsize="0.5"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  
+  <Item
+    name="Demolition Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="A high explosive charge designed to cause a lot of destruction over an area. It's impact sensitive so it's best to keep safely stored."
+	impacttolerance="6"
+    price="750">
+	
+	<Deconstruct time="5">      
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
+
+    <Body width="16" height="7"/>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
+	  <StatusEffect type="OnImpact" target="This" Condition="-50" setvalue="true"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100">
+	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionBig.ogg"/>
+        <Explosion range="650" structuredamage="600" damage="250" stun="10" force="20" severlimbsprobability="0.4" decal="explosion" decalsize="0.6"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  
+  <Item
+    name="Shockwave Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="An electronic device designed to release an ultra-sonic audio wave that causes superfluous amounts of damage to living organisms."
+	price="600">
+	
+	<Deconstruct time="5">      
+      <Item name="Aluminium Powder"/>
+	  <Item name="Aluminium Powder" requirefullcondition="true"/>
+	  <Item name="Copper Powder"/>
+	  <Item name="FPGA Circuit" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png"  depth="0.8" sourcerect="109,160,19,9"/>
+
+    <Body width="16" height="7"/>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnBroken" target="This" Condition="-100">
+	    <sound file="Mods/BTE/Items/Weapons/SonicExplosion.ogg" range="3000"/>
+        <Explosion range="750" structuredamage="60" damage="500" stun="12" force="1" flames="false" smoke="false" sparks="false"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  
+  <Item
+    name="WetBomb Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="An explosive charge designed to be set off when in contact with water. It's an obvious traitor-made explosive."
+    >
+	
+	<Deconstruct time="5">      
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
+
+    <Body width="16" height="7" density="11"/>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnFire" target="This" Condition="-15.0"/>
+	  <StatusEffect type="InWater" target="This" Condition="-100.0"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100.0">
+	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
+        <Explosion range="500.0" structuredamage="180" damage="240" stun="8" force="17" severlimbsprobability="0.2" decal="explosion" decalsize="0.5"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+
+  <Item
+    name="Thermate Charge"
+    category="Equipment"
+    Tags="smallitem,explosive"
+	description="An incendiary explosive charge designed to start fires. This is an illegal explosive usually used in sabotage."
+    impacttolerance="5">
+	
+	<Deconstruct time="5">      
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+	  <Item name="Propellant Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
+
+    <Body width="16" height="7"/>
+
+    <Pickable slots="Any">
+      <StatusEffect type="OnFire" target="This" Condition="-50.0"/>
+	  <StatusEffect type="OnImpact" target="This" Condition="-40" setvalue="true"/>
+      <StatusEffect type="OnBroken" target="This" Condition="-100.0">
+	    <sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
+        <Explosion range="450" structuredamage="50" damage="50" stun="4" force="0.3" severlimbsprobability="0.1" decal="explosion" decalsize="0.5"/>
+        <Fire size="500"/>
+      </StatusEffect>
+    </Pickable>
+  </Item>
+
+  <Item
+    name="Detonator"
+    description="A device that detonates any contained explosive when receiving a signal."
+    category="Equipment"
+    Tags="smallitem">
+
+    <Sprite texture="Content/Items/Weapons/weapons.png"  depth="0.8" sourcerect="0,107,14,12"/>
+
+    <Body width="12" height="10"/>
+
+    <Holdable selectkey="Action" slots="Any,RightHand,LeftHand" msg="Detach [Wrench]" aimpos="35,-10" handle1="0,0" attachable="true" aimable="true">
+      <requireditem name="Wrench" type="Equipped"/>
+    </Holdable>
+
+    <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="true">
+      <Containable name="explosive"/>
+    </ItemContainer>
+
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
+      <requireditem name="Screwdriver,Wire" type="Equipped"/>
+      <input name="activate">
+        <StatusEffect type="OnUse" target="Contained" Condition="-100.0"/>        
+      </input>
+    </ConnectionPanel>
+  </Item>
+</Items>
