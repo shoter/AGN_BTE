@@ -110,6 +110,7 @@
 	  <Item name="Clipboard">
         <Item name="Coalition Doctor"/>
 		<Item name="Basic Emergency Protocol"/>
+		<Item name="Husk Treatment Information"/>
       </Item> 
       <Item name="Doctor's Coat A" equip="true"/>
       <Item name="Crewmember Trousers A" equip="true"/>

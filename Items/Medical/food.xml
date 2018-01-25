@@ -25,7 +25,7 @@
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" Stun="0.3" delay="10" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="Character" Stun="2" delay="40" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-25"/>
     </ItemComponent>
 
     <Throwable slots="RightHand,LeftHand,Any" throwforce="3" aimpos="35,-10">
@@ -62,7 +62,7 @@
 	  <StatusEffect type="OnUse" target="Character" Stun="0.4" delay="10" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="Character" Stun="4" delay="40" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="Character" Stun="2" delay="60" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-20"/>
     </ItemComponent>
 
     <Throwable slots="RightHand,LeftHand,Any" throwforce="3" aimpos="35,-10">
@@ -103,7 +103,7 @@
 	  <StatusEffect type="OnUse" target="Character" Stun="6" delay="60" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="Character" Stun="0.6" delay="76" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="Character" Stun="8" delay="88" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-15"/>
     </ItemComponent>
 
     <Throwable slots="RightHand,LeftHand,Any" throwforce="3" aimpos="35,-10">

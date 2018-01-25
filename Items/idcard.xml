@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<Item
+<Items>
+  <Item
 	name="ID Card"
-  category="Equipment"
+    category="Equipment"
 	Tags="smallitem,docs"
 	>
 	
@@ -15,7 +16,22 @@
 	<Body width="16" height="16" density="10.1"/>
 
 	<Pickable/>
-</Item>
+  </Item>
+
+  <Item
+	name="Master ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,admin,com,cap,ast,sec,med,eng,mec,cul,nov,P1,P2,P3,P4,ID Card"
+	>
 	
+	<Deconstruct time="10">
+      <Item name="Master ID Card"/>
+    </Deconstruct>
 
+	<Sprite texture ="Content/Items/idcard.png" depth="0.82"/>
 
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+</Items>

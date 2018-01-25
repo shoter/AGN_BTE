@@ -837,7 +837,7 @@
 	  <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained" msg="The loaded bar is depleted"/>
       <RequiredSkill name="Weapons" level="10"/>
 	  <StatusEffect type="OnUse" target="This">
-	    <Explosion range="65" force="1" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
+	    <Explosion range="65" force="0.9" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Contained" Condition="-0.2" disabledeltatime="true"/>
 	  <StatusEffect type="OnFailure" target="Contained" Condition="-0.1" disabledeltatime="true"/>
@@ -845,8 +845,12 @@
 	
 	<Holdable slots="RightHand,LeftHand,Any" controlpose="true"
               aimpos="75,18" handle1="-12,-3" handle2="-11,-4">
-	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
-	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="2"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true">
+	    <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="2">
+	    <sound file="Mods/BTE/Items/Weapons/EnergyOn.ogg"/>
+	  </StatusEffect>
 	</Holdable>
   </Item>
   
@@ -878,7 +882,7 @@
 	  <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained" msg="The loaded bar is depleted"/>
       <RequiredSkill name="Weapons" level="20"/>
 	  <StatusEffect type="OnUse" target="This">
-	    <Explosion range="100" force="0.2" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
+	    <Explosion range="100" force="0.18" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Contained" Condition="-0.1" disabledeltatime="true"/>
 	  <StatusEffect type="OnFailure" target="Contained" Condition="-0.1" disabledeltatime="true"/>
@@ -886,9 +890,13 @@
 	
 	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
               holdpos="35,-10" aimpos="50,-3" handle1="-15,-6" handle2="26,1">
-	  <StatusEffect type="OnUse" target="This" Condition="-300"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-300">
+	    <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained"/>
+	  </StatusEffect>
 	  <StatusEffect type="Always" target="This" Condition="10"/>
-	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="4"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="4">
+	    <sound file="Mods/BTE/Items/Weapons/EnergyOn.ogg"/>
+	  </StatusEffect>
 	</Holdable>
   </Item>
   
@@ -921,16 +929,20 @@
 	  <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained" msg="The loaded bar is depleted"/>
       <RequiredSkill name="Weapons" level="30"/>
 	  <StatusEffect type="OnUse" target="This">
-	    <Explosion range="150" force="2" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
+	    <Explosion range="150" force="1.5" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
       </StatusEffect>
-	  <StatusEffect type="OnUse" target="Contained" Condition="-0.4" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Contained" Condition="-0.4" disabledeltatime="true">
+	    <RequiredItems name="Aluminium Bar,Copper Bar,Steel Bar,Uranium Bar,Fulgurium Bar" type="Contained"/>
+	  </StatusEffect>
 	  <StatusEffect type="OnFailure" target="Contained" Condition="-0.1" disabledeltatime="true"/>
     </RepairTool>
 	
 	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
               holdpos="35,-10" aimpos="60,5" handle1="-15,-6" handle2="26,7">
 	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
-	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="6"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="6">
+	    <sound file="Mods/BTE/Items/Weapons/EnergyOn.ogg"/>
+	  </StatusEffect>
 	</Holdable>
   </Item>
   

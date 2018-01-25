@@ -477,12 +477,12 @@
     <Items >
       <Item name="Metal Footlocker">
 	    <Item name="Plastic Bag" amount="2"/>
-        <Item name="Prisoner Jumpsuit" amount="4"/>
+        <Item name="Prisoner Jumpsuit A" amount="4"/>
 		<Item name="Handcuffs" amount="4"/> 
       </Item>
 	  <Item name="Metal Footlocker">
 	    <Item name="Plastic Bag" amount="2"/>
-        <Item name="Prisoner Jumpsuit" amount="4"/>
+        <Item name="Prisoner Jumpsuit B" amount="4"/>
 		<Item name="Stun Baton" amount="4"/>
       </Item>
     </Items>

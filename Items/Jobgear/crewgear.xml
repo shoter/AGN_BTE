@@ -25,7 +25,7 @@
       </ItemContainer>
     
     <Wearable limbtype="Head" slots="Any,Face">
-      <StatusEffect type="OnWearing" target="Contained" Condition="-0.01"/>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.1"/>
       <sprite texture="headset.png" limb="Head" origin="0.5,0.5" depthlimb="Head"/>
     </Wearable>
   </Item>
