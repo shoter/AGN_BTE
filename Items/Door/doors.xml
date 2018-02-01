@@ -1,8 +1,7 @@
 ﻿<Items>
   <Item
     name="Door"
-    linkable="true"
-    >
+    linkable="true">
 
     <Sprite texture ="Content/Items/Door/door.png" sourcerect="1,0,48,208" depth="0.01" origin="0.5,0.5"/>
 
@@ -34,8 +33,7 @@
 
   <Item
     name="Windowed Door"
-    linkable="true"
-    >
+    linkable="true">
 
     <Sprite texture ="Content/Items/Door/door.png" sourcerect="1,0,48,208" depth="0.01" origin="0.5,0.5"/>
 
@@ -64,11 +62,42 @@
       <output name="state_out"/>
     </ConnectionPanel>
   </Item>
+  
+  <Item
+    name="Glass Door"
+    linkable="true">
+
+    <Sprite texture ="Mods/BTE/Items/Door/Door.png" sourcerect="1,0,48,208" depth="0.01" origin="0.5,0.5"/>
+
+    <Door window="0,-32,10,160" canbeselected="true">
+      <Sprite texture ="Mods/BTE/Items/Door/Door.png" sourcerect="56,0,19,208" depth="0.05" origin="0.5,0.0"/>
+      <WeldedSprite texture ="Content/Items/Door/door.png" sourcerect="9,0,32,188" depth="0.0" origin="0.5,0.5"/>
+      <BrokenSprite texture="Mods/BTE/Items/Door/Door.png" sourcerect="192,0,40,208" depth="0.051" origin="0.5,0.0" scale="true"/>
+      <sound file="Mods/BTE/Items/Door/GlassDoor.ogg" type="OnUse" range="500"/>
+	  <StatusEffect type="OnBroken" target="This">
+	    <sound file="Mods/BTE/Items/Door/GlassDoorBreak.ogg" type="OnBroken" range="3000"/>
+	    <Explosion range ="200" stun="0.2" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+      </StatusEffect>
+    </Door>
+
+    <AiTarget sightrange="500.0"/>
+
+    <fixrequirement name="Mechanical repairs">
+      <skill name="Construction" level="20"/>
+      <item name="Welding Tool"/>
+    </fixrequirement>
+
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
+      <requireditem name="Screwdriver" type="Equipped"/>
+      <input name="toggle"/>
+      <input name="set_state"/>
+      <output name="state_out"/>
+    </ConnectionPanel>
+  </Item>
 
   <Item
     name="Hatch"
-    linkable="true"
-    >
+    linkable="true">
 
     <Sprite texture ="Content/Items/Door/hatch.png" sourcerect="0,0,128,46" depth="0.01" origin="0.5,0.5"/>
 
@@ -97,11 +126,42 @@
       <output name="state_out"/>
     </ConnectionPanel>
   </Item>
+  
+  <!-- <Item
+    name="Glass Hatch"
+    linkable="true">
+
+    <Sprite texture ="Mods/BTE/Items/Door/Hatch.png" sourcerect="0,0,128,46" depth="0.01" origin="0.5,0.5"/>
+
+    <Door window="-50,-10,50,-10" canbeselected="true" horizontal="true">
+      <Sprite texture="Mods/BTE/Items/Door/Hatch.png" sourcerect="128,0,128,19" depth="0.05" origin="0.0,0.5"/>
+      <WeldedSprite texture="Content/Items/Door/hatch.png" sourcerect="0,56,108,33" depth="0.0" origin="0.5,0.5"/>
+      <BrokenSprite texture="Mods/BTE/Items/Door/Hatch.png" sourcerect="128,21,128,58" depth="0.051" origin="0.0,0.5" scale="true"/>
+      <sound file="Mods/BTE/Items/Door/GlassDoor.ogg" type="OnUse" range="500"/>
+	  <StatusEffect type="OnBroken" target="This">
+	    <sound file="Mods/BTE/Items/Door/GlassDoorBreak.ogg" range="3000"/>
+	    <Explosion range ="200" stun="0.2" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+      </StatusEffect>
+    </Door>
+
+    <AiTarget sightrange="500.0"/>
+
+    <fixrequirement name="Mechanical repairs">
+      <skill name="Construction" level="20"/>
+      <item name="Welding Tool"/>
+    </fixrequirement>
+
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
+      <requireditem name="Screwdriver" type="Equipped"/>
+      <input name="toggle"/>
+      <input name="set_state"/>
+      <output name="state_out"/>
+    </ConnectionPanel>
+  </Item>  -->
 
   <Item
     name="Docking Port"
-    linkable="true"
-    >
+    linkable="true">
 
     <Sprite texture ="Content/Items/Door/dockingport.png" sourcerect="0,0,112,208" depth="0.94" origin="0.5,0.5"/>
 
@@ -131,8 +191,7 @@
 
   <Item
    name="Docking Hatch"
-   linkable="true"
-   >
+   linkable="true">
 
     <Sprite texture ="Content/Items/Door/dockingport2.png" sourcerect="0,0,128,112" depth="0.94" origin="0.5,0.5"/>
 
@@ -168,15 +227,14 @@
   
   <Item
     name="Duct Block"
-    linkable="true"
-    >
+    linkable="true">
 
-    <Sprite texture ="door.png" sourcerect="0,0,33,33" depth="0.01" origin="0.5,0.5"/>
+    <Sprite texture ="Duct.png" sourcerect="0,0,33,33" depth="0.01" origin="0.5,0.5"/>
 
     <Door canbeselected="true" horizontal="true">
-      <Sprite texture ="door.png" sourcerect="68,0,19,19" depth="0.05" origin="-0.4,0.5"/>
-      <WeldedSprite texture ="door.png" sourcerect="34,0,33,33" depth="0.0" origin="0.5,0.5"/>
-      <BrokenSprite texture="door.png" sourcerect="0,34,52,53" depth="0.051" origin="0.2,0.5" scale="true"/>
+      <Sprite texture ="Duct.png" sourcerect="68,0,19,19" depth="0.05" origin="-0.4,0.5"/>
+      <WeldedSprite texture ="Duct.png" sourcerect="34,0,33,33" depth="0.0" origin="0.5,0.5"/>
+      <BrokenSprite texture="Duct.png" sourcerect="0,34,52,53" depth="0.051" origin="0.2,0.5" scale="true"/>
       <sound file="Content/Items/Door/door.ogg" type="OnUse" range="300"/>
 	  <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Door/DuctBreak.ogg" range="2000"/>

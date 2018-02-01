@@ -617,6 +617,40 @@
   </Item>
   
   <Item
+    name="Buzzer Component"
+    linkable="true"
+	category="Electrical"
+    Tags="smallitem">
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture="signalcomp.png" sourcerect="32,0,16,16" depth="0.8"/>
+
+    <Door canbeselected="true">
+      <Sprite texture ="signalcomp.png" sourcerect="0,0,0.1,0.1" depth="0.05" origin="0.5,0.0"/>
+      <WeldedSprite texture ="signalcomp.png" sourcerect="0,0,1,1" depth="0.0" origin="0.5,0.5"/>
+      <BrokenSprite texture ="signalcomp.png" sourcerect="0,0,1,1" depth="0.051" origin="0.5,0.0"/>
+      <sound file="Buzzer.ogg" type="OnUse" range="500"/>
+    </Door>
+
+    <fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="20"/>
+	  <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+  
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
+      <requireditem name="Screwdriver" type="Equipped"/>
+      <input name="toggle"/>
+      <input name="set_state"/>
+      <output name="state_out"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
     name="Alarm Buzzer"
     category="Electrical"
     Tags="smallitem"
@@ -709,108 +743,6 @@
 
     <ItemComponent>
       <sound file="Mods/BTE/Items/Electricity/VideoBeep.ogg" type="OnActive" range="1000.0" loop="true"/>
-    </ItemComponent>
-
-    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
-      <requireditem name="Screwdriver,Wire" type="Equipped"/>
-      <input name="toggle"/>
-      <input name="set_state"/>
-    </ConnectionPanel>
-  </Item>
-  
-  <Item
-    name="SPACE magic fly"
-    category="Electrical"
-    Tags="smallitem"
-
-    linkable="true"
-    price="180">
-
-    <Deconstruct time="10">
-      <Item name="Steel Bar"/>
-	  <Item name="Copper Powder"/>
-      <Item name="FPGA Circuit"/>
-    </Deconstruct>
-
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="64,32,23,16"/>
-
-    <Body width="20" height="16" density="25"/>
-
-    <Holdable selectkey="Action" slots="Any,RightHand,LeftHand" msg="Detach [Wrench]" PickingTime="5.0"
-              aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
-      <requireditem name="Wrench" type="Equipped"/>
-    </Holdable>
-
-    <ItemComponent>
-      <sound file="Mods/BTE/Items/Electricity/SPACEmagicfly.ogg" type="OnActive" range="1000.0" loop="true"/>
-    </ItemComponent>
-
-    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
-      <requireditem name="Screwdriver,Wire" type="Equipped"/>
-      <input name="toggle"/>
-      <input name="set_state"/>
-    </ConnectionPanel>
-  </Item>
-  
-  <Item
-    name="CHARLIE spacer woman"
-    category="Electrical"
-    Tags="smallitem"
-
-    linkable="true"
-    price="180">
-
-    <Deconstruct time="10">
-      <Item name="Steel Bar"/>
-	  <Item name="Copper Powder"/>
-      <Item name="FPGA Circuit"/>
-    </Deconstruct>
-
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="64,32,23,16"/>
-
-    <Body width="20" height="16" density="25"/>
-
-    <Holdable selectkey="Action" slots="Any,RightHand,LeftHand" msg="Detach [Wrench]" PickingTime="5.0"
-              aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
-      <requireditem name="Wrench" type="Equipped"/>
-    </Holdable>
-
-    <ItemComponent>
-      <sound file="Mods/BTE/Items/Electricity/CHARLIEspacerwoman.ogg" type="OnActive" range="1000.0" loop="true"/>
-    </ItemComponent>
-
-    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
-      <requireditem name="Screwdriver,Wire" type="Equipped"/>
-      <input name="toggle"/>
-      <input name="set_state"/>
-    </ConnectionPanel>
-  </Item>
-  
-  <Item
-    name="LASER laser"
-    category="Electrical"
-    Tags="smallitem"
-
-    linkable="true"
-    price="180">
-
-    <Deconstruct time="10">
-      <Item name="Steel Bar"/>
-	  <Item name="Copper Powder"/>
-      <Item name="FPGA Circuit"/>
-    </Deconstruct>
-
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="64,32,23,16"/>
-
-    <Body width="20" height="16" density="25"/>
-
-    <Holdable selectkey="Action" slots="Any,RightHand,LeftHand" msg="Detach [Wrench]" PickingTime="5.0"
-              aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
-      <requireditem name="Wrench" type="Equipped"/>
-    </Holdable>
-
-    <ItemComponent>
-      <sound file="Mods/BTE/Items/Electricity/LASERlaser.ogg" type="OnActive" range="1000.0" loop="true"/>
     </ItemComponent>
 
     <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">

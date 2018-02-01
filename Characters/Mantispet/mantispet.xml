@@ -66,11 +66,11 @@
     <!-- "claw" -->
     <limb id = "6" width="15" height="63" mass = "2" flip="true" pullpos="0.0,30.0" refjoint="0">
       <sprite texture="Mods/BTE/Characters/Mantispet/mantispet.png" sourcerect="228,1,28,76" depth="0.01" origin="0.5,0.5"/>
-      <attack range="150" damagerange="75" duration="0.25" damage="35" stun="5" bleedingdamage="0.5" structuredamage="25" damagetype="blunt" targetforce="100" severlimbsprobability="0.1"
+      <attack range="150" damagerange="75" duration="0.25" damage="35" stun="4" bleedingdamage="0.5" structuredamage="25" damagetype="blunt" targetforce="100" severlimbsprobability="0.1"
               torque="-20" force="10" applyforceonlimbs="0,1,6">
 	    <StatusEffect type="OnUse" target="This">
 		  <StatusEffect type="OnUse" target="This" Health="15" disabledeltatime="true"/>
-		  <Explosion range="150" structuredamage="5" force="12" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
+		  <Explosion range="150" structuredamage="5" stun="1" force="12" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
 		</StatusEffect>
       </attack>
       <sound file ="Content/Sounds/stepMetal.ogg"/>

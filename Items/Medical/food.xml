@@ -19,11 +19,12 @@
     <Body width="8" height="32" radius="8" density="12"/>
 	
 	<ItemComponent>
-      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.08" disabledeltatime="true" duration="50"/>
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.04" oxygen="-0.005" disabledeltatime="true" duration="50"/>
 	  <StatusEffect type="OnUse" target="Character" Health="0.02" duration="50">
 	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.3" delay="10" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.3" delay="20" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="1" delay="30" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="Character" Stun="2" delay="40" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="This" Condition="-25"/>
     </ItemComponent>
@@ -55,13 +56,14 @@
     <Body width="8" height="38" radius="8" density="13"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.16" disabledeltatime="true" duration="75"/>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.08" oxygen="-0.01" disabledeltatime="true" duration="75"/>
 	  <StatusEffect type="OnUse" target="Character" Health="0.02" duration="75">
 	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.4" delay="10" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="Character" Stun="4" delay="40" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="Character" Stun="2" delay="60" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.4" delay="20" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="1" delay="32" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="4" delay="44" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="2" delay="65" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="This" Condition="-20"/>
     </ItemComponent>
 
@@ -93,16 +95,17 @@
     <Body width="8" height="38" radius="8" density="11"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.18" disabledeltatime="true" duration="100"/>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.1" oxygen="-0.02" disabledeltatime="true" duration="100"/>
 	  <StatusEffect type="OnUse" target="Character" Health="0.01" duration="100">
 	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.4" delay="10" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="Character" Stun="4" delay="22" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.6" delay="34" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="Character" Stun="6" delay="60" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.6" delay="76" disabledeltatime="true"/>
-	  <StatusEffect type="OnUse" target="Character" Stun="8" delay="88" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.4" delay="20" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="4" delay="30" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.6" delay="40" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="1" delay="50" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="6" delay="65" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.6" delay="80" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="8" delay="90" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="This" Condition="-15"/>
     </ItemComponent>
 

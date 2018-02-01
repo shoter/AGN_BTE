@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Jobs>
-
+  
   <Job name="agnMechanic" description="Trousers, Flashlight, Screwdriver, Wrench" allowalways="true">
     <Skills>
       <Skill name="Weapons" level="40,80"/> <!-- 50,60 -->
@@ -19,12 +19,12 @@
 	  </Item> 
     </Items>
   </Job>
-
+  
   <Job name="Captain" description="The Commanding Officer with authority over the entire crew. The captain is responsible for commanding the rest of the crew and trying to keep everything running smoothly." minnumber="1" maxnumber="1">
     <Skills>
-      <Skill name="Weapons" level="40,80"/> <!-- 50,60 -->
-      <Skill name="Electrical Engineering" level="60,70"/> <!-- 20,30 -->
-	  <Skill name="Construction" level="60,70"/> <!-- 20,30 -->
+      <Skill name="Weapons" level="40,60"/> <!-- 50,60 -->
+      <Skill name="Construction" level="15,30"/> <!-- 20,30 -->
+      <Skill name="Electrical Engineering" level="10,20"/> <!-- 20,30 -->
       <Skill name="Medical" level="25,50"/> <!-- 10,30 -->
 	  <Skill name="Cooking" level="15,30"/>
     </Skills>
@@ -144,17 +144,18 @@
   
   <Job name="Engineer" description="Engineers have above-average electrician skills, but fixing complex mechanical devices is still usually out of their skill set. They are competent at fixing electrical devices however, and are the ones to turn to when the power grid starts failing." minnumber="1">
     <Skills>
-      <Skill name="Weapons" level="30,50"/> <!-- 10,30 -->
-      <Skill name="Construction" level="70,90"/> <!-- 20,30 -->
-      <Skill name="Electrical Engineering" level="80,90"/> <!-- 50,60 -->
-      <Skill name="Medical" level="10,60"/> <!-- 10,20 -->
-	  <Skill name="Cooking" level="10,60"/>
+      <Skill name="Weapons" level="10,20"/> <!-- 10,30 -->
+      <Skill name="Construction" level="20,40"/> <!-- 20,30 -->
+      <Skill name="Electrical Engineering" level="60,80"/> <!-- 50,60 -->
+      <Skill name="Medical" level="10,20"/> <!-- 10,20 -->
+	  <Skill name="Cooking" level="10,20"/>
     </Skills>
     <Items>
       <Item name="ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Coalition Engineer"/>
 		<Item name="Basic Emergency Protocol"/>
+		<Item name="Document about Nuclear Reactors"/>
       </Item> 
 	  <Item name="Crewmember Cap A"/>
       <Item name="Utility Vest" equip="true"/>
@@ -170,8 +171,8 @@
   <Job name="Mechanic" description="Mechanics have high construction and mechanic skills. They are skilled at using tools such as plasma cutters and welders, and are usually the only ones who can fix broken mechanical devices." minnumber="1">
     <Skills>
       <Skill name="Weapons" level="15,30"/> <!-- 10,30 -->
-      <Skill name="Construction" level="80,90"/> <!-- 50,60 -->
-      <Skill name="Electrical Engineering" level="60,80"/> <!-- 30,35 -->
+      <Skill name="Construction" level="60,80"/> <!-- 50,60 -->
+      <Skill name="Electrical Engineering" level="15,30"/> <!-- 30,35 -->
       <Skill name="Medical" level="10,20"/> <!-- 10,20 -->
 	  <Skill name="Cooking" level="10,20"/>
     </Skills>

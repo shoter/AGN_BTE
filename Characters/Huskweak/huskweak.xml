@@ -8,7 +8,7 @@
   <ai 
     combatstrength="100"
     attackpriorityhumans="500"
-    attackpriorityrooms="5.0"
+	attackpriorityrooms="0.0"
     attackpriorityweaker="50"
     attackprioritystronger="0"
     sight="0.5"

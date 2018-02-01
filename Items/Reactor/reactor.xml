@@ -55,6 +55,7 @@
       </Containable>
 	  <Containable name="Fulgurium Fuel Rod">
         <StatusEffect type="OnContaining" target="This" AvailableFuel="20" disabledeltatime="true"/>
+		<StatusEffect type="OnContaining" target="This" Temperature="10"/>
       </Containable>
       <Containable name="Oxygenite Coolant Rod">
 	    <StatusEffect type="OnContaining" target="This" Temperature="-90"/>

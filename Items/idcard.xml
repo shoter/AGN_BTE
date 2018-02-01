@@ -21,7 +21,7 @@
   <Item
 	name="Master ID Card"
     category="Equipment"
-	Tags="smallitem,docs,admin,com,cap,ast,sec,med,eng,mec,cul,nov,P1,P2,P3,P4,ID Card"
+	Tags="smallitem,docs,admin,com,cap,ast,sec,med,eng,mec,cul,nov,stg,P1,P2,P3,P4,ID Card"
 	>
 	
 	<Deconstruct time="10">

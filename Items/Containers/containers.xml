@@ -156,6 +156,20 @@
   </Item>
   
   <Item
+    name="Cargo Container"
+    linkable="true"
+    pickdistance ="50">
+    
+    <Sprite texture ="CargoContainer.png" depth="0.79"/>
+	
+	<Controller direction="None" canbepicked="true">
+      <sound file="Mods/BTE/Items/Containers/CargoContainer.ogg" type="OnUse" range="1250"/>
+    </Controller>
+
+    <ItemContainer capacity="60" canbeselected="true" hideitems="true"/>
+  </Item>
+  
+  <Item
     name="Fire Extinguisher Bracket"
     linkable="true"
     pickdistance ="150">
