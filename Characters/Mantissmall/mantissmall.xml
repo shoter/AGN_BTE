@@ -70,10 +70,10 @@
     <!-- "claw" -->
     <limb id = "6" width="15" height="63" mass = "2" flip="true" pullpos="0.0,30.0" refjoint="0">
       <sprite texture="Content/Characters/Mantis/mantis.png" sourcerect="228,1,28,76" depth="0.01" origin="0.5,0.5"/>
-      <attack range="150" damagerange="75" duration="0.25" damage="20" stun="0.1" bleedingdamage="1.5" structuredamage="6" damagetype="slash" targetforce="-100" severlimbsprobability="0.4"
+      <attack range="150" damagerange="75" duration="0.25" damage="20" stun="0.1" bleedingdamage="1.5" structuredamage="10" damagetype="slash" targetforce="-100" severlimbsprobability="0.4"
               torque="-20" force="10" applyforceonlimbs="0,1,6">
 	    <StatusEffect type="OnUse" target="This">
-		  <Explosion range="150" structuredamage="10" force="5" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
+		  <Explosion range="225" structuredamage="15" force="5" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
 		</StatusEffect>
       </attack>
       <sound file ="Content/Sounds/stepMetal.ogg"/>

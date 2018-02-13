@@ -71,7 +71,7 @@
       <attack range="200" damagerange="100" duration="0.25" damage="50" stun="0.1" bleedingdamage="3" structuredamage="20" damagetype="slash" targetforce="-100" severlimbsprobability="0.8"
               torque="-20" force="10" applyforceonlimbs="0,1,6">
 	    <StatusEffect type="OnUse" target="This">
-		  <Explosion range="200" structuredamage="20" force="5" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
+		  <Explosion range="200" structuredamage="30" force="5" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
 		</StatusEffect>
       </attack>
       <sound file ="Content/Sounds/stepMetal.ogg"/>

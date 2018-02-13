@@ -4,7 +4,6 @@
     characterfile="Mods/BTE/Characters/Crawler/crawler.xml" 
     mineventcount="1" maxeventcount="3"
     minamount="2" maxamount="3"
-    repeat="true"
     spawntype="mainpath"
     musictype="monster">
 	<OverrideEventCount leveltype="Ridge" min="3" max="5"/>
@@ -56,7 +55,6 @@
     characterfile="Mods/BTE/Characters/Mantissmall/mantissmall.xml"
     mineventcount="0" maxeventcount="1"
 	minamount="2" maxamount="4"
-    repeat="true"
     spawntype="mainpath,cave"
     musictype="monster">
     <OverrideEventCount leveltype="Ridge" min="3" max="5"/>
@@ -67,7 +65,6 @@
     characterfile="Mods/BTE/Characters/Mantis/mantis.xml"
     mineventcount="0" maxeventcount="2"
 	minamount="1" maxamount="2"
-    repeat="true"
     spawntype="mainpath,cave"
     musictype="monster">
     <OverrideEventCount leveltype="Ridge" min="4" max="5"/>

@@ -42,6 +42,7 @@
     <Turret barrelsprite="railgunbarrel.png" canbeselected="true" linkable="true" origin="0.5, 0.85" barrelpos="64,64" 
             rotationlimits="180,360"
             powerconsumption="10000.0"
+			reload="2.5"
 			showchargeindicator="true"
             showprojectileindicator="true"
             hudtint="0.4,0.6,0.7,0.05">
@@ -65,6 +66,7 @@
     name="Railgun Controller"
     category="Machine"
     type="Controller"
+	disableitemusagewhenselected="true"
     linkable="true">
 
     <Sprite texture ="Content/Items/Weapons/railgunetc.png" depth="0.8" sourcerect="182,0,61,97"/>
@@ -89,7 +91,7 @@
     category="Machine"
     linkable="true">
 
-    <Sprite texture ="Content/Items/Weapons/railgunetc.png" depth="0.8" sourcerect="0,0,177,128"/>
+    <Sprite texture ="Content/Items/Weapons/railgunetc.png" depth="0.85" sourcerect="0,0,177,128"/>
 
     <ItemContainer hideitems="false" drawinventory="true" capacity="6" slotsperrow="6" itempos="24,-75" iteminterval="26,0" itemrotation="90" canbeselected = "true">
       <Containable name="Railgun Plastic Spear"/>
@@ -108,7 +110,7 @@
     category="Machine"
     linkable="true">
 
-    <Sprite texture ="railgunetc.png" depth="0.8" sourcerect="0,0,177,128"/>
+    <Sprite texture ="railgunetc.png" depth="0.85" sourcerect="0,0,177,128"/>
 
     <ItemContainer hideitems="false" drawinventory="true" capacity="9" slotsperrow="9" itempos="20,-75" iteminterval="17,0" itemrotation="90" canbeselected = "true">
       <Containable name="Plastic Spear"/>

@@ -31,7 +31,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -58,7 +58,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -85,7 +85,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -112,7 +112,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -139,7 +139,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -166,7 +166,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -193,7 +193,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -220,7 +220,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -247,7 +247,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -274,7 +274,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -382,7 +382,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -409,7 +409,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Document about Threshers"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -436,7 +436,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Document about Crawlers"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -463,7 +463,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Document about Mantises"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -490,7 +490,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Document about Scorpions"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -517,7 +517,7 @@
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Document about Molochs"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
@@ -582,6 +582,33 @@
 	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
       <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
       <ScreenOverlay texture="Mods/BTE/Items/Tools/docHuskhuman2.png" origin="0.6,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Incident Report 37"
+    category="Misc"
+    tags="smallitem,docs"
+    description="This is a page of an incident report."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Incident Report 37"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="31,0,25,40" depth="0.81"/>
+
+    <Body width="24" height="36" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/docTeleG1.png" origin="0.6,0.5"/>
 	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
     </Radar>
 
@@ -663,6 +690,33 @@
 	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
       <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
       <ScreenOverlay texture="Mods/BTE/Items/Tools/drawMoloch.png" origin="0.65,0.45"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="A drawing of a Husk"
+    category="Misc"
+    tags="smallitem,docs"
+    description="A piece of paper from a notebook containing a drawing of a Husk in a diving suit."
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Paper Boat"/>
+    </Deconstruct>
+
+    <Sprite texture="documents.png" sourcerect="58,0,24,40" depth="0.81"/>
+
+    <Body width="23" height="33" density="10.02"/>
+	
+	<Radar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+	  <GuiFrame rect="0,0,0.5,0.7" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BTE/Items/Tools/drawHuskBoi.png" origin="0.65,0.45"/>
 	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
     </Radar>
 
@@ -769,7 +823,7 @@
     description="HONK">
 	
 	<Deconstruct time="10">
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="Aluminium Powder"/>
     </Deconstruct>
 
@@ -791,7 +845,7 @@
     description="We all float down here...">
 	
 	<Deconstruct time="10">
-      <Item name="Paper Boat"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture="tools.png" sourcerect="102,149,30,11" depth="0.55"/>

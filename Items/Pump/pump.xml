@@ -1,0 +1,47 @@
+﻿<Items>
+  <Item
+  name="Large Pump"
+  linkable="true"
+  category="Machine"
+  >
+
+    <Sprite texture ="pump.png" depth="0.8"/>
+
+    <Pump canbeselected = "true" maxflow="1000" PowerConsumption="600" MinVoltage="0.3">
+      <GuiFrame rect="0,0,330,145" alignment="Center" style="ItemUI"/>
+      <sound file="pump.ogg" type="OnActive" range="1000" volume="CurrFlow" volumemultiplier="0.01" loop="true"/>
+    </Pump>
+
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
+      <requireditem name="Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <input name="toggle"/>
+      <input name="set_active"/>
+      <input name="set_speed"/>
+      <input name="set_targetlevel"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
+  name="Force Field Panel"
+  linkable="true"
+  category="Machine"
+  >
+
+    <Sprite texture ="ForceField.png" depth="0.8"/>
+
+    <Pump canbeselected="true" maxflow="90000" FlowPercentage="-100" IsActive="true" PowerConsumption="900" MinVoltage="0.3"> <!-- IsActive not working -->
+      <GuiFrame rect="0,0,330,145" alignment="Center" style="ItemUI"/>
+      <sound file="ForceField.ogg" type="OnActive" range="1000" volume="CurrFlow" volumemultiplier="0.01" loop="true"/>
+    </Pump>
+
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
+      <requireditem name="Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <input name="toggle"/>
+      <input name="set_active"/>
+      <input name="set_speed"/>
+      <input name="set_targetlevel"/>
+    </ConnectionPanel>
+  </Item>
+</Items>

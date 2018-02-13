@@ -94,6 +94,47 @@
       <output name="velocity_y_out"/>
     </ConnectionPanel>
   </Item>
+  
+  <Item
+    name="Command Terminal"
+    linkable="true"
+    category="Machine">
+
+    <Sprite texture="Mods/BTE/Items/machines.png" depth="0.8" sourcerect="0,0,130,206"/>
+	
+	<fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="60"/>
+      <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+	
+	<Steering minvoltage="0.5" canbeselected="true" powerconsumption="10">
+      <StatusEffect type="InWater" target="This" condition="-1.0"/>
+      <GuiFrame rect="-30,20,0.45,0.5" alignment="CenterRight" style="ItemUI"/>
+    </Steering>
+
+    <Radar canbeselected = "true" powerconsumption="100" displaybordersize="0.2">
+      <sound file="Content/Items/Engine/radarPing.ogg" type="OnUse" range="4000"/>
+      <GuiFrame rect="-30,20,0.45,0.5" alignment="CenterRight" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Content/Items/Engine/radarOverlay.png" origin="0.5,0.5"/>
+      <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+	
+	<MiniMap MinVoltage="0.5" PowerConsumption="100" canbeselected = "true">
+    <GuiFrame rect="155,20,0.4,0.5" alignment="CenterLeft" style="ItemUI"/>
+  </MiniMap>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <input name="water_data_in"/>
+      <input name="oxygen_data_in"/>
+	  <input name="velocity_in"/>
+      <output name="velocity_x_out"/>
+      <output name="velocity_y_out"/>
+    </ConnectionPanel>
+  </Item>
 
   <Item
     name="Sonar Monitor"

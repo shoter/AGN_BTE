@@ -8,7 +8,8 @@
     price="85">
 	
 	<Deconstruct time="5">
-	  <Item name="Steel Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
     </Deconstruct>
        
     <Sprite texture ="Content/Items/Tools/tools.png" sourcerect="0,58,31,6" depth="0.55"/>
@@ -102,13 +103,13 @@
 
     <Body width="47" height="17" density="40"/>
 
-    <RepairTool structurefixamount="0.5" limbfixamount="-0.5" range="100" barrelpos="19,6" particles="weld">
+    <RepairTool structurefixamount="5.0" limbfixamount="-0.5" range="100" barrelpos="19,6" particles="weld">
       <RequiredItems name="Thermite Tank,Sulphurite Tank,Oxygen Tank,Oxygenite Tank" type="Contained" msg="Welding fuel depleted"/>
       <sound file="Content/Items/Tools/weldingTool.ogg" type="OnUse" range="500.0" loop="true"/>
-      <StatusEffect type="OnUse" target="Contained" targetnames="Oxygen Tank" Condition="-5"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Oxygenite Tank" Condition="-3"/>
-	  <StatusEffect type="OnUse" target="Contained,Hull" targetnames="Sulphurite Tank" Condition="-2" oxygen="-2500"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Thermite Tank" Condition="-1"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Oxygen Tank" Condition="-4"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Oxygenite Tank" Condition="-2"/>
+	  <StatusEffect type="OnUse" target="Contained,Hull" targetnames="Sulphurite Tank" Condition="-1" oxygen="-2500"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Thermite Tank" Condition="-0.5"/>
       <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Windowed Door" Stuck="20.0" Condition="3.0"/>
       <Fixable name="structure"/>
       <RequiredSkill name="Construction" level="20"/>
@@ -148,16 +149,16 @@
 
     <Body width="76" height="48" density="40"/>
 
-    <RepairTool structurefixamount="-0.2" limbfixamount="-6.4" range="50" barrelpos="20,10" particles="bubbles">
+    <RepairTool structurefixamount="-1.0" limbfixamount="-5.4" range="50" barrelpos="20,10" particles="bubbles">
       <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
-	  <StatusEffect type="OnUse" target="This" Condition="-1.0"/>
-      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-3"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-2"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-0.8"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-2"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-1"/>
       <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Windowed Door" Stuck="-20.0" Condition="-1.5"/>
       <sound file="SawLoop.ogg" type="OnUse" range="500.0" loop="true"/>
       <Fixable name="structure"/>
       <RequiredSkill name="Construction" level="30"/>
-      <StatusEffect type="OnFailure" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-4.0"/>
+      <StatusEffect type="OnFailure" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-2.0"/>
       <LightComponent LightColor="0.8,0.7,1.0,0.3" Flicker="0.5">
         <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5"/>
       </LightComponent>
@@ -188,12 +189,12 @@
 
     <Body width="41" height="16" density="40"/>
 
-    <RepairTool structurefixamount="-0.4" limbfixamount="-1.2" range="100" barrelpos="28,8" particles="plasma">
+    <RepairTool structurefixamount="-2.5" limbfixamount="-1.2" range="100" barrelpos="28,8" particles="plasma">
       <RequiredItems name="Oxygen Tank,Oxygenite Tank,Sulphurite Tank,Thermite Tank" type="Contained" msg="Gas tank depleted"/>
-      <StatusEffect type="OnUse" target="Contained" targetnames="Oxygen Tank" Condition="-2"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Oxygenite Tank" Condition="-1"/>
-	  <StatusEffect type="OnUse" target="Contained,Hull" targetnames="Sulphurite Tank" Condition="-3" oxygen="-2750"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Thermite Tank" Condition="-5"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Oxygen Tank" Condition="-1"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Oxygenite Tank" Condition="-0.5"/>
+	  <StatusEffect type="OnUse" target="Contained,Hull" targetnames="Sulphurite Tank" Condition="-2" oxygen="-2750"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Thermite Tank" Condition="-4"/>
       <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Windowed Door" Stuck="-20.0" Condition="-3.0"/>
       <sound file="Content/Items/Tools/plasmaCutter.ogg" type="OnUse" range="500.0" loop="true"/>
       <Fixable name="structure"/>
@@ -233,7 +234,7 @@
     <Body radius="10" height="45" density="7"/>
 
     <RepairTool extinquishamount="30.0" range="300" barrelpos="21,25" particles="extinguisher" particlespeed="650.0">
-      <StatusEffect type="OnUse" target="This" Condition="-2.0"/>
+      <StatusEffect type="OnUse" target="This" Condition="-1.5"/>
       <sound file="Content/Items/Tools/extinguisher.ogg" type="OnUse" range="500.0" loop="true"/>
     </RepairTool>
 
@@ -309,7 +310,7 @@
     </ItemContainer>
 	
 	<Holdable slots="RightHand,LeftHand,Any" aimpos="100,0" handle1="0,0">
-      <StatusEffect type="OnActive" target="Contained" Condition="-0.15"/>
+      <StatusEffect type="OnActive" target="Contained" Condition="-0.1"/>
     </Holdable>
   </Item>
 
@@ -323,8 +324,8 @@
     price="50">
 
     <Deconstruct time="10">
-      <Item name="Polycarbonate Bar"/>
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
+      <Item name="Aluminium Powder" requirefullcondition="true"/>
 	  <Item name="Potassium" requirefullcondition="true"/>
     </Deconstruct>
 

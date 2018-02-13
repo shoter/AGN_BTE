@@ -9,7 +9,8 @@
     price="50">
 	
 	<Deconstruct time="5">
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Aluminium Powder"/>
     </Deconstruct>
 
     <Sprite texture ="Content/Items/Medical/med.png" sourcerect="0,0,25,5" depth="0.6"/>
@@ -35,12 +36,12 @@
     name="Bandage"
     category="Equipment"
     Tags="smallitem,medical"
-	description="Treated with a hemostatic agent that quickly seals most minor wounds."
+	description="Treated piece of fabric used to dress wounds and reduce or stop a bleeding."
     canuseonself="true"
     price="20">
 	
 	<Deconstruct time="5">
-      <Item name="Bandage" requirefullcondition="true"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="Content/Items/Medical/med.png" sourcerect="0,16,11,16" depth="0.6"/>
@@ -287,6 +288,7 @@
     category="Material"
     spritecolor="1.0,1.0,1.0,0.6"
     Tags="smallitem,chem,medical"
+	description="A noxious gas used mostly as chemical reagent."
     price="20">
 	
 	<Deconstruct time="5">
@@ -351,6 +353,10 @@
 	  <StatusEffect type="OnUse" target="Character" Stun="1" delay="22" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="Character" Stun="0.4" delay="34" disabledeltatime="true"/>
 	  <StatusEffect type="OnUse" target="Character" Stun="2" delay="45" disabledeltatime="true"/>
+	  <StatusEffect type="OnFire" target="this" condition="-100">
+		<sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
+	    <Fire size="25"/>
+	  </StatusEffect>
     </Holdable>
   </Item>
 
@@ -371,7 +377,7 @@
     
     <Holdable slots="Any">
 	  <StatusEffect type="InWater" target="This" Condition="-100"/>
-	  <StatusEffect type="OnBroken" target="This" Condition="-100.0">
+	  <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/ChemExplosion.ogg"/>
 	    <Explosion range="150" damage="8" stun="2" shockwave="false" flames="false" sparks="false" force="0.3"/>
 	  </StatusEffect>
@@ -428,6 +434,7 @@
     category="Material"
     spritecolor="1.0,1.0,1.0,0.8"
     Tags="smallitem,chem,medical"
+	description="A chemical reagent with sedative properties. Might be lethal in high doses."
     price="20">
 	
 	<Deconstruct time="5">
@@ -439,7 +446,10 @@
     <Body width="8" height="17" density="10.1"/>
 
     <Holdable slots="Any">
-      <StatusEffect type="OnUse" target="Character" Health="-5.0" Stun="10" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="Character" oxygen="-0.08" SpeedMultiplier="-0.1" disabledeltatime="true" delay="3" duration="14">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Stun="10" delay="5">
         <RequiredItem name="Medical Syringe" type="Container"/>
       </StatusEffect>
     </Holdable>
@@ -483,7 +493,7 @@
     <Body width="8" height="17" density="11"/>
 
     <Holdable slots="Any">
-      <StatusEffect type="OnUse" target="Character" Health="-2.0" duration="90">
+      <StatusEffect type="OnUse" target="Character" Health="-2" duration="90">
         <RequiredItem name="Medical Syringe" type="Container"/>
       </StatusEffect>
     </Holdable>
@@ -652,9 +662,9 @@
     <Holdable slots="Any"> 
       <StatusEffect type="OnFire" target="this" condition="-100">
 	    <sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
-	    <Fire size="150.0"/>
+	    <Fire size="35"/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Health="-2.5" duration="90.0">
+	  <StatusEffect type="OnUse" target="Character" Health="-2.5" duration="90">
         <RequiredItem name="Medical Syringe" type="Container"/>
       </StatusEffect>
     </Holdable>

@@ -4,12 +4,13 @@
     name="Polycarbonate Bar"
     category="Material"
     Tags="smallitem"
-    description="Polycarbonate is a thermoplastic polymer, which can be molded into hard, soft and optically transparent materials."
+    description="Polycarbonate is a thermoplastic polymer, which can be molded into hard, soft or optically transparent materials."
     canbepicked="true"
     price="30">
    
     <Deconstruct time="5">
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="materials.png" sourcerect="0,13,24,12" depth="0.55"/>
@@ -117,6 +118,25 @@
     <Sprite texture ="materials.png" sourcerect="0,0,24,12" depth="0.55"/>
 
     <Body width="24" height="12" density="10"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+  
+  <Item
+    name="Polycarbonate Sliver"
+    category="Material"
+    Tags="smallitem"
+    description="A soft piece of thermoplastic polymer fabric."
+    canbepicked="true"
+    price="15">
+   
+    <Deconstruct time="5">
+      <Item name="Polycarbonate Sliver"/>
+    </Deconstruct>
+
+    <Sprite texture ="materials.png" sourcerect="0,26,20,10" depth="0.55"/>
+
+    <Body width="24" height="12" density="9.9"/>
 
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
   </Item>

@@ -7,7 +7,7 @@
     description="A token of the Captain's unquestionable authority.">
 	
 	<Deconstruct time="10">
-	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="captainhat.png" depth="0.6"/>
@@ -15,11 +15,11 @@
     <Body width="25" height="15" density="10.3"/>
 
     <Wearable limbtype="Head" slots="Any,Head">
-      <sprite texture="captainhat.png" limb="Head" origin="0.5,0.9" depth="0.039"/>
+      <sprite texture="captainhat.png" limb="Head" origin="0.5,0.9" depth="0.035"/>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.08" disabledeltatime="true"/>
 	  
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8" deflectprojectiles="false"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8" deflectprojectiles="false"/>
     </Wearable>
   </Item>
 
@@ -30,8 +30,9 @@
     tags="meditem,clothing">
 	
 	<Deconstruct time="15">
-	  <Item name="Polycarbonate Bar"/>
-      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="captainLegs.png" sourcerect="0,52,52,17" depth="0.6"/>
@@ -49,8 +50,8 @@
 	  
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.07" disabledeltatime="true"/>
 	  
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.7"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.7"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.7" deflectprojectiles="false"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.7" deflectprojectiles="false"/>
     </Wearable>
 	
 	<ItemContainer capacity="1">
@@ -64,8 +65,9 @@
     tags="meditem,clothing">
 	
 	<Deconstruct time="15">
-	  <Item name="Polycarbonate Bar"/>
-      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="captainLegs.png" sourcerect="0,71,51,12" depth="0.6"/>
@@ -84,8 +86,8 @@
       <sprite texture="crewLegs.png" limb="LeftFoot" sourcerect="53,54,16,25" origin="0.5,0.5" hidelimb="true"/>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.04" disabledeltatime="true"/>
 	  
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8" deflectprojectiles="false"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8" deflectprojectiles="false"/>
     </Wearable>
 	
 	<ItemContainer capacity="2">
@@ -99,8 +101,9 @@
     tags="meditem,clothing">
 	
 	<Deconstruct time="15">
-	  <Item name="Polycarbonate Bar"/>
-      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="captainLegs.png" sourcerect="0,71,51,12" depth="0.6"/>
@@ -119,8 +122,8 @@
       <sprite texture="crewLegs.png" limb="LeftFoot" sourcerect="53,54,16,25" origin="0.5,0.5" hidelimb="true"/>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.04" disabledeltatime="true"/>
 	  
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8" deflectprojectiles="false"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.8" deflectprojectiles="false"/>
     </Wearable>
 	
 	<ItemContainer capacity="2">

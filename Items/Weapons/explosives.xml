@@ -19,7 +19,7 @@
       <StatusEffect type="OnImpact" target="This" Condition="-75.0" setvalue="true"/>
       <StatusEffect type="OnBroken" target="This" Condition="-100.0">
 	    <sound file="Content/Items/Reactor/explosion.ogg"/>
-        <Explosion range="600" structuredamage="300" damage="225" stun="14" force="25" severlimbsprobability="0.3" decal="explosion" decalsize="0.6"/>
+        <Explosion range="600" structuredamage="300" damage="225" stun="14" force="25" severlimbsprobability="0.3" camerashake="6.5" decal="explosion" decalsize="0.6"/>
       </StatusEffect>
       
       <StatusEffect type="OnUse" target="This" Condition="-100.0">
@@ -36,7 +36,7 @@
     price="250">
 	
 	<Deconstruct time="5"> 
-	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
       <Item name="Flash Powder" requirefullcondition="true"/>
 	  <Item name="Flash Powder" requirefullcondition="true"/>
 	  <Item name="Flash Powder" requirefullcondition="true"/>
@@ -51,7 +51,7 @@
 	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
       <StatusEffect type="OnBroken" target="This" Condition="-100.0">
 	    <sound file="Content/Items/Weapons/stungrenade.ogg"/>
-        <Explosion range="450" damage="5" stun="50" force="0.1" flames="false" smoke="false"/>
+        <Explosion range="450" damage="5" stun="50" force="0.1" flames="false" smoke="false" camerashake="2.5"/>
       </StatusEffect>
     </Pickable>
   </Item>
@@ -64,7 +64,7 @@
     >
 	
 	<Deconstruct time="5">      
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
@@ -79,7 +79,7 @@
 	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
       <StatusEffect type="OnBroken" target="This" Condition="-100">
 	    <sound file="Content/Items/Weapons/stungrenade.ogg"/>
-        <Explosion range="500" structuredamage="25" damage="50" stun="25" force="24" flames="false" smoke="false" sparks="false"/>
+        <Explosion range="500" structuredamage="25" damage="50" stun="25" force="24" flames="false" smoke="false" sparks="false" camerashake="3.0"/>
       </StatusEffect>
     </Pickable>
   </Item>
@@ -92,7 +92,7 @@
     price="250">
 	
 	<Deconstruct time="5">      
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
@@ -106,7 +106,7 @@
 	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
       <StatusEffect type="OnBroken" target="This" Condition="-100">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
-        <Explosion range="450" structuredamage="70" damage="250" stun="8" force="14" decal="explosion" decalsize="0.5"/>
+        <Explosion range="450" structuredamage="70" damage="250" stun="8" force="14" camerashake="4.0" decal="explosion" decalsize="0.5"/>
       </StatusEffect>
     </Pickable>
   </Item>
@@ -119,7 +119,7 @@
     price="500">
 	
 	<Deconstruct time="5">      
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
@@ -134,7 +134,7 @@
 	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
       <StatusEffect type="OnBroken" target="This" Condition="-100">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
-        <Explosion range="525" structuredamage="200" damage="200" stun="6" force="16" severlimbsprobability="0.1" decal="explosion" decalsize="0.5"/>
+        <Explosion range="525" structuredamage="200" damage="200" stun="6" force="16" severlimbsprobability="0.1" camerashake="5.0" decal="explosion" decalsize="0.5"/>
       </StatusEffect>
     </Pickable>
   </Item>
@@ -148,7 +148,7 @@
     price="650">
 	
 	<Deconstruct time="5">      
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
@@ -164,7 +164,7 @@
 	  <StatusEffect type="OnImpact" target="This" Condition="-25" setvalue="true"/>
       <StatusEffect type="OnBroken" target="This" Condition="-100">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionBig.ogg"/>
-        <Explosion range="550" structuredamage="400" damage="275" stun="8" force="18" severlimbsprobability="0.6" decal="explosion" decalsize="0.5"/>
+        <Explosion range="550" structuredamage="400" damage="275" stun="8" force="18" severlimbsprobability="0.6" camerashake="6.0" decal="explosion" decalsize="0.5"/>
       </StatusEffect>
     </Pickable>
   </Item>
@@ -178,7 +178,7 @@
     price="750">
 	
 	<Deconstruct time="5">      
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
@@ -194,7 +194,7 @@
 	  <StatusEffect type="OnImpact" target="This" Condition="-50" setvalue="true"/>
       <StatusEffect type="OnBroken" target="This" Condition="-100">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionBig.ogg"/>
-        <Explosion range="650" structuredamage="600" damage="250" stun="10" force="20" severlimbsprobability="0.4" decal="explosion" decalsize="0.6"/>
+        <Explosion range="650" structuredamage="600" damage="250" stun="10" force="20" severlimbsprobability="0.4" camerashake="7.0" decal="explosion" decalsize="0.6"/>
       </StatusEffect>
     </Pickable>
   </Item>
@@ -220,7 +220,7 @@
     <Pickable slots="Any">
 	  <StatusEffect type="OnBroken" target="This" Condition="-100">
 	    <sound file="Mods/BTE/Items/Weapons/SonicExplosion.ogg" range="3000"/>
-        <Explosion range="750" structuredamage="60" damage="500" stun="12" force="1" flames="false" smoke="false" sparks="false"/>
+        <Explosion range="750" structuredamage="60" damage="500" stun="12" force="1" flames="false" smoke="false" sparks="false" camerashake="8.0"/>
       </StatusEffect>
     </Pickable>
   </Item>
@@ -233,7 +233,7 @@
     >
 	
 	<Deconstruct time="5">      
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
@@ -248,7 +248,7 @@
 	  <StatusEffect type="InWater" target="This" Condition="-100.0"/>
       <StatusEffect type="OnBroken" target="This" Condition="-100.0">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
-        <Explosion range="500.0" structuredamage="180" damage="240" stun="8" force="17" severlimbsprobability="0.2" decal="explosion" decalsize="0.5"/>
+        <Explosion range="500.0" structuredamage="180" damage="240" stun="8" force="17" severlimbsprobability="0.2" camerashake="5.0" decal="explosion" decalsize="0.5"/>
       </StatusEffect>
     </Pickable>
   </Item>
@@ -261,7 +261,7 @@
     impacttolerance="5">
 	
 	<Deconstruct time="5">      
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
 	  <Item name="Propellant Powder" requirefullcondition="true"/>
@@ -287,6 +287,11 @@
     description="A device that detonates any contained explosive when receiving a signal."
     category="Equipment"
     Tags="smallitem">
+	
+	<Deconstruct time="5">      
+      <Item name="Aluminium Bar"/>
+	  <Item name="Copper Powder"/>
+    </Deconstruct>
 
     <Sprite texture="Content/Items/Weapons/weapons.png"  depth="0.8" sourcerect="0,107,14,12"/>
 

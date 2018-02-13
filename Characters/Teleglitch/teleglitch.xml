@@ -43,8 +43,8 @@
     <!-- body -->
     <limb id = "1" radius="14" height="21" mass="1" type="Torso" ignorecollisions="true">
       <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchTorso.png" sourcerect="0,0,29,58" depth="0.045" origin="0.5,0.6"/>
-	  <lightsource range="50.0" color="0.8,0.8,1.0,0.9">
-        <lighttexture texture="Content/Characters/Watcher/watcher.png" sourcerect="391,282,121,230" depth="0.025" origin="0.5,0.5"/>
+	  <lightsource range="100" color="0.8,0.8,1.0,0.9">
+        <lighttexture texture="Mods/BTE/Characters/Teleglitch/lightsprite.png" depth="0.025" origin="0.5,0.5"/>
       </lightsource>
 	  <attack range="100" damagerange="100" duration="1" damage="0.1" structuredamage="0.1"
 			  targetforce="1" force="10" damagetype="burn" applyforceonlimbs="0,2,3,4,5" torque="-20">
@@ -66,6 +66,9 @@
     </limb>
     <limb id = "3" radius="6" height="26" mass="1" type="LeftHand" ignorecollisions="true" pullpos="0.0,-18.0">
       <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchTorso.png" sourcerect="49,2,13,47" depth="0.16" origin="0.5,0.5"/>
+	  <lightsource range="25" color="0.8,0.8,1.0,0.9">
+        <lighttexture texture="Mods/BTE/Characters/Teleglitch/lightsprite.png" depth="0.025" origin="0.5,0.5"/>
+      </lightsource>
     </limb>
 
     <!-- right arm -->
@@ -96,6 +99,9 @@
     </limb>
     <limb id = "11" radius="5" height="13" mass="1" type="RightFoot" flip="true" ignorecollisions="true" pullpos="-5.0,0.0">
       <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchLegs.png" sourcerect="35,53,16,25" depth="0.13" origin="0.5,0.5"/>
+	  <lightsource range="50" color="0.8,0.8,1.0,0.9">
+        <lighttexture texture="Mods/BTE/Characters/Teleglitch/lightsprite.png" depth="0.025" origin="0.5,0.5"/>
+      </lightsource>
     </limb> 
 
     <!-- head to body -->

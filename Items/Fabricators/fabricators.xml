@@ -29,7 +29,7 @@
         <RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Diving Knife" requireditems="Polycarbonate Bar, Steel Bar" requiredtime="15"/>
+	  <fabricableitem name="Diving Knife" requireditems="Polycarbonate Sliver, Steel Bar" requiredtime="15"/>
 
       <fabricableitem name="Harpoon Gun" requireditems="Steel Bar, Aluminium Bar, Polycarbonate Bar" requiredtime="20">
         <RequiredSkill name="Construction" level="20"/>
@@ -44,7 +44,7 @@
         <RequiredSkill name="Construction" level="40"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Screwdriver" requireditems="Steel Bar" requiredtime="5"/>
+	  <fabricableitem name="Screwdriver" requireditems="Polycarbonate Sliver, Iron Powder" requiredtime="5"/>
 	  <fabricableitem name="Wrench" requireditems="Steel Bar, Steel Bar" requiredtime="10"/>
 	  
 	  <fabricableitem name="Welding Tool" requireditems="Aluminium Bar, Polycarbonate Bar" requiredtime="20">
@@ -75,63 +75,67 @@
       </fabricableitem>
 
       <fabricableitem name="Copper Coil" requireditems="Copper Powder" requiredtime="5"/>
-	  <fabricableitem name="Wire" requireditems="Copper Coil, Polycarbonate Bar" requiredtime="10"/>
-	  <fabricableitem name="FPGA Circuit" requireditems="Polycarbonate Bar, Copper Bar" requiredtime="15">
+	  <fabricableitem name="Wire" requireditems="Copper Coil, Polycarbonate Sliver" requiredtime="10"/>
+	  <fabricableitem name="FPGA Circuit" requireditems="Polycarbonate Sliver, Copper Powder" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="30"/>
       </fabricableitem>
-      
-      <fabricableitem name="Basic Switch" requireditems="Polycarbonate Bar, Copper Powder" requiredtime="10">
+	  
+	  <fabricableitem name="Headset" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="10">
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
       </fabricableitem>
-	  <fabricableitem name="Button" requireditems="Polycarbonate Bar, Copper Powder, FPGA Circuit" requiredtime="20">
+      
+      <fabricableitem name="Basic Switch" requireditems="Polycarbonate Sliver, Aluminium Powder" requiredtime="10">
+	    <RequiredSkill name="Electrical Engineering" level="20"/>
+      </fabricableitem>
+	  <fabricableitem name="Button" requireditems="Polycarbonate Bar, Aluminium Powder, FPGA Circuit" requiredtime="20">
 	    <RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
 	  
-      <fabricableitem name="And Component" requireditems="Aluminium Powder, FPGA Circuit" requiredtime="15">
+      <fabricableitem name="And Component" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
-      <fabricableitem name="Or Component" requireditems="Aluminium Powder, FPGA Circuit" requiredtime="15">
+      <fabricableitem name="Or Component" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
-      <fabricableitem name="Not Component" requireditems="Aluminium Powder, FPGA Circuit" requiredtime="15">
+      <fabricableitem name="Not Component" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
-      <fabricableitem name="Signal Check Component" requireditems="Aluminium Powder, FPGA Circuit" requiredtime="15">
+      <fabricableitem name="Signal Check Component" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
-      <fabricableitem name="RegEx Find Component" requireditems="Aluminium Powder, FPGA Circuit" requiredtime="15">
+      <fabricableitem name="RegEx Find Component" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
-      <fabricableitem name="Wifi Component" requireditems="Aluminium Powder, FPGA Circuit" requiredtime="15">
+      <fabricableitem name="Wifi Component" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
-	  <fabricableitem name="Oscillator" requireditems="Aluminium Powder, FPGA Circuit" requiredtime="15">
+	  <fabricableitem name="Oscillator Component" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
-	  <fabricableitem name="Light Component" requireditems="Polycarbonate Bar, Copper Powder, FPGA Circuit" requiredtime="10">
+	  <fabricableitem name="Light Component" requireditems="Polycarbonate Sliver, FPGA Circuit" requiredtime="10">
 	    <RequiredSkill name="Electrical Engineering" level="25"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Oxygen Detector" requireditems="Polycarbonate Bar, Aluminium Powder, Copper Powder, FPGA Circuit" requiredtime="25">
+	  <fabricableitem name="Oxygen Detector" requireditems="Polycarbonate Bar, Aluminium Powder, Copper Coil, FPGA Circuit" requiredtime="25">
 	    <RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
-      <fabricableitem name="Water Detector" requireditems="Polycarbonate Bar, Aluminium Powder, Copper Powder, FPGA Circuit" requiredtime="25">
+      <fabricableitem name="Water Detector" requireditems="Polycarbonate Bar, Aluminium Powder, Copper Coil, FPGA Circuit" requiredtime="25">
 	    <RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
-	  <fabricableitem name="Motion Detector" requireditems="Polycarbonate Bar, Aluminium Powder, Copper Powder, FPGA Circuit" requiredtime="25">
+	  <fabricableitem name="Motion Detector" requireditems="Polycarbonate Bar, Aluminium Powder, Copper Coil, FPGA Circuit" requiredtime="25">
 	    <RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
 
-      <fabricableitem name="Emergency Siren" requireditems="Polycarbonate Bar, Copper Powder, FPGA Circuit" requiredtime="15">
+      <fabricableitem name="Emergency Siren" requireditems="Polycarbonate Bar, Copper Coil, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="35"/>
       </fabricableitem>
-	  <fabricableitem name="Alarm Buzzer" requireditems="Steel Bar, Copper Powder, FPGA Circuit" requiredtime="15">
+	  <fabricableitem name="Alarm Buzzer" requireditems="Steel Bar, Copper Coil, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="35"/>
       </fabricableitem>
-	  <fabricableitem name="Alarm Buzzer B" requireditems="Steel Bar, Copper Powder, FPGA Circuit" requiredtime="15">
+	  <fabricableitem name="Alarm Buzzer B" requireditems="Steel Bar, Copper Coil, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="35"/>
       </fabricableitem>
-	  <fabricableitem name="Alarm Buzzer C" requireditems="Steel Bar, Copper Powder, FPGA Circuit" requiredtime="15">
+	  <fabricableitem name="Alarm Buzzer C" requireditems="Steel Bar, Copper Coil, FPGA Circuit" requiredtime="15">
 	    <RequiredSkill name="Electrical Engineering" level="35"/>
       </fabricableitem>
 	  
@@ -162,7 +166,7 @@
 	    <RequiredSkill name="Electrical Engineering" level="45"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Shockwave Charge" requireditems="Polycarbonate Bar, Aluminium Powder, Copper Coil, FPGA Circuit" requiredtime="30">
+	  <fabricableitem name="Shockwave Charge" requireditems="Aluminium Bar, Copper Coil, FPGA Circuit" requiredtime="30">
 	    <RequiredSkill name="Electrical Engineering" level="55"/>
       </fabricableitem>
 	  
@@ -170,11 +174,11 @@
 		<RequiredSkill name="Construction" level="50"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Flare" requireditems="Polycarbonate Bar, Aluminium Powder, Potassium" requiredtime="10">
+	  <fabricableitem name="Flare" requireditems="Polycarbonate Sliver, Aluminium Powder, Potassium" requiredtime="10">
         <RequiredSkill name="Construction" level="20"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Diesel Can" requireditems="Polycarbonate Bar, Polycarbonate Bar, Biomass, Liquid Oxygenite, Sulphuric Acid" requiredtime="20">
+	  <fabricableitem name="Diesel Can" requireditems="Polycarbonate Bar, Biomass, Liquid Oxygenite, Sulphuric Acid" requiredtime="20">
         <RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
 
@@ -196,6 +200,9 @@
 	  
 	  <fabricableitem name="Food Can" requireditems="Aluminium Bar" requiredtime="5"/>
 	  
+	  <fabricableitem name="Polycarbonate Bar" requireditems="Biomass, Biomass, Sulphuric Acid" requiredtime="20"/>
+	  
+	  <fabricableitem name="Polycarbonate Bar" requireditems="Polycarbonate Sliver, Polycarbonate Sliver" requiredtime="10"/>
 	  <fabricableitem name="Aluminium Bar" requireditems="Aluminium Powder, Aluminium Powder" requiredtime="10"/>
 	  <fabricableitem name="Copper Bar" requireditems="Copper Powder, Copper Powder" requiredtime="10"/>
 	  <fabricableitem name="Steel Bar" requireditems="Iron Powder, Iron Powder" requiredtime="10"/>
@@ -300,7 +307,7 @@
         <RequiredSkill name="Medical" level="20"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Diving Revolver" requireditems="Revolver, Aluminium Bar, Polycarbonate Bar" requiredtime="40">
+	  <fabricableitem name="Diving Revolver" requireditems="Revolver, Aluminium Bar, Polycarbonate Sliver" requiredtime="40">
         <RequiredSkill name="Weapons" level="50"/>
       </fabricableitem>
 	  <fabricableitem name="Revolver Round" requireditems="Iron Powder, Propellant Powder" requiredtime="20">
@@ -325,10 +332,23 @@
         <RequiredSkill name="Construction" level="20"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Hot Can" requireditems="Food Can, Copper Coil, Thermite Powder" requiredtime="15">
+	  <fabricableitem name="Polycarbonate Sliver" requireditems="Bandage" requiredtime="5"/>
+	  
+	  <fabricableitem name="Bandage" requireditems="Polycarbonate Sliver, Vodka" requiredtime="20">
+        <RequiredSkill name="Medical" level="30"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Bandage" requireditems="Polycarbonate Sliver, Ethanol" requiredtime="20">
+        <RequiredSkill name="Medical" level="40"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Molotov Cocktail" requireditems="Vodka, Polycarbonate Sliver, Thermite Powder" requiredtime="10">
         <RequiredSkill name="Weapons" level="30"/>
       </fabricableitem>
 	  
+	  <fabricableitem name="Hot Can" requireditems="Food Can, Copper Coil, Thermite Powder" requiredtime="15">
+        <RequiredSkill name="Weapons" level="30"/>
+      </fabricableitem>
 	  <fabricableitem name ="Gas Can" requireditems="Food Can, Sulphuric Acid, Chlorine" requiredtime="20">
         <RequiredSkill name="Weapons" level="35"/>
       </fabricableitem>
@@ -337,11 +357,11 @@
         <RequiredSkill name="Weapons" level="40"/>
       </fabricableitem>
 	  
-	  <fabricableitem name ="Flash Charge" requireditems="Polycarbonate Bar, Flash Powder, Flash Powder, Flash Powder, Flash Powder" requiredtime="25">
+	  <fabricableitem name ="Flash Charge" requireditems="Polycarbonate Sliver, Flash Powder, Flash Powder, Flash Powder, Flash Powder" requiredtime="25">
         <RequiredSkill name="Weapons" level="20"/>
       </fabricableitem>
 	  
-	  <fabricableitem name ="Propellant Charge" requireditems="Polycarbonate Bar, Propellant Powder, Propellant Powder, Propellant Powder, Propellant Powder" requiredtime="25">
+	  <fabricableitem name ="Propellant Charge" requireditems="Polycarbonate Sliver, Propellant Powder, Propellant Powder, Propellant Powder, Propellant Powder" requiredtime="25">
         <RequiredSkill name="Weapons" level="25"/>
       </fabricableitem>
 	  
@@ -377,7 +397,7 @@
 	  <fabricableitem name="Fulgurium Battery Cell" requireditems="Fulgurium Battery Cell, Sulphuric Acid" requiredtime="20"/>
 	  <fabricableitem name="Fulgurium Fuel Rod" requireditems="Fulgurium Fuel Rod, Sulphuric Acid, Sulphuric Acid" requiredtime="20"/>
 	  
-	  <fabricableitem name="Wire" requireditems="Copper Coil, Polycarbonate Bar" requiredtime="15"/>
+	  <fabricableitem name="Wire" requireditems="Copper Coil, Polycarbonate Sliver" requiredtime="15"/>
 	  <fabricableitem name="Copper Coil" requireditems="Wire" requiredtime="10"/>
 	  <fabricableitem name="Copper Coil" requireditems="Red Wire" requiredtime="10"/>
 	  <fabricableitem name="Copper Coil" requireditems="Blue Wire" requiredtime="10"/>
@@ -507,7 +527,7 @@
 
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
 
-      <fabricableitem name="Medical Syringe" requireditems="Polycarbonate Bar" requiredtime="15">
+      <fabricableitem name="Medical Syringe" requireditems="Polycarbonate Sliver, Aluminium Powder" requiredtime="15">
         <RequiredSkill name="Medical" level="25"/>
       </fabricableitem>
 	  
@@ -517,6 +537,10 @@
 	  
 	  <fabricableitem name="Bleedout Dart" requireditems="Medical Syringe, Sulphuric Acid, Hematosine" requiredtime="20">
         <RequiredSkill name="Medical" level="40"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Bandage" requireditems="Polycarbonate Sliver, Ethanol" requiredtime="15">
+        <RequiredSkill name="Medical" level="20"/>
       </fabricableitem>
 	  
 	  <fabricableitem name="Ethanol" requireditems="Biomass, Biomass" requiredtime="15">
@@ -555,17 +579,17 @@
         <RequiredSkill name="Medical" level="50"/>
       </fabricableitem>
 
-      <fabricableitem name="Calyxanide" requireditems="Velonaceps Calyx Eggs, Sulphuric Acid, Corrigodone" requiredtime="30">
+      <fabricableitem name="Calyxanide" requireditems="Velonaceps Calyx Eggs, Sulphuric Acid, Chlorine" requiredtime="30">
         <RequiredSkill name="Medical" level="60"/>
       </fabricableitem>
 	
-	  <fabricableitem name ="Flash Charge" requireditems="Polycarbonate Bar, Aluminium Powder, Potassium, Chloral Hydrate" requiredtime="20">
+	  <fabricableitem name ="Flash Charge" requireditems="Polycarbonate Sliver, Aluminium Powder, Potassium, Chloral Hydrate" requiredtime="20">
         <RequiredSkill name="Weapons" level="25"/>
       </fabricableitem>
-	  <fabricableitem name ="Propellant Charge" requireditems="Polycarbonate Bar, Aluminium Powder, Sulphuric Acid, Nitroglycerin" requiredtime="20">
+	  <fabricableitem name ="Propellant Charge" requireditems="Polycarbonate Sliver, Aluminium Powder, Sulphuric Acid, Nitroglycerin" requiredtime="20">
         <RequiredSkill name="Weapons" level="30"/>
       </fabricableitem>
-	  <fabricableitem name ="Concussion Charge" requireditems="Polycarbonate Bar, Propellant Powder, Propellant Powder, Phosphorus" requiredtime="20">
+	  <fabricableitem name ="Concussion Charge" requireditems="Polycarbonate Sliver, Propellant Powder, Propellant Powder, Phosphorus" requiredtime="20">
         <RequiredSkill name="Weapons" level="35"/>
       </fabricableitem>
 	  <fabricableitem name ="Blast Charge" requireditems="Concussion Charge, Propellant Powder, Chlorine" requiredtime="20">
@@ -577,7 +601,7 @@
 	  <fabricableitem name ="Demolition Charge" requireditems="Destroyer Charge, Nitroglycerin" requiredtime="20">
         <RequiredSkill name="Weapons" level="50"/>
       </fabricableitem>
-	  <fabricableitem name ="Thermate Charge" requireditems="Polycarbonate Bar, Propellant Powder, Thermite Powder, Thermite Powder, Phosphorus" requiredtime="20">
+	  <fabricableitem name ="Thermate Charge" requireditems="Polycarbonate Sliver, Propellant Powder, Thermite Powder, Thermite Powder, Phosphorus" requiredtime="20">
         <RequiredSkill name="Weapons" level="55"/>
       </fabricableitem>
 	  <fabricableitem name ="Wetbomb Charge" requireditems="Blast Charge, Potassium" requiredtime="20">

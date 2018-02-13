@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Jobs>
-  
-  <Job name="agnMechanic" description="Trousers, Flashlight, Screwdriver, Wrench" allowalways="true">
-    <Skills>
-      <Skill name="Weapons" level="40,80"/> <!-- 50,60 -->
-      <Skill name="Electrical Engineering" level="60,70"/> <!-- 20,30 -->
-	  <Skill name="Construction" level="60,70"/> <!-- 20,30 -->
-      <Skill name="Medical" level="25,50"/> <!-- 10,30 -->
-	  <Skill name="Cooking" level="15,30"/>
-    </Skills>
-    <Items>
-      <Item name="ID Card"/>
-	  <Item name="Crewmember Cargo Trousers A" equip="true"/>
-	  <Item name="Screwdriver"/>
-	  <Item name="Wrench"/>
-      <Item name="Flashlight">
-	    <Item name="Battery Cell"/>
-	  </Item> 
-    </Items>
-  </Job>
-  
   <Job name="Captain" description="The Commanding Officer with authority over the entire crew. The captain is responsible for commanding the rest of the crew and trying to keep everything running smoothly." minnumber="1" maxnumber="1">
     <Skills>
       <Skill name="Weapons" level="40,60"/> <!-- 50,60 -->
@@ -29,7 +9,7 @@
 	  <Skill name="Cooking" level="15,30"/>
     </Skills>
     <Items>
-      <Item name="ID Card"/>
+      <Item name="Captain ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Top Secret Cover"/>
 		<Item name="Coalition Captain"/>
@@ -67,7 +47,7 @@
 	  <Skill name="Cooking" level="20,40"/>
     </Skills>
     <Items>
-      <Item name="ID Card"/>
+      <Item name="Assistant ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Top Secret Cover"/>
 		<Item name="Coalition Assistant"/>
@@ -95,7 +75,7 @@
 	  <Skill name="Cooking" level="25,45"/>
     </Skills>
     <Items>
-      <Item name="ID Card"/>
+      <Item name="Security ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Top Secret Cover"/>
 		<Item name="Coalition Security"/>
@@ -126,7 +106,7 @@
 	  <Skill name="Cooking" level="30,50"/>
     </Skills>
     <Items>
-      <Item name="ID Card"/>
+      <Item name="Doctor ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Coalition Doctor"/>
 		<Item name="Basic Emergency Protocol"/>
@@ -151,7 +131,7 @@
 	  <Skill name="Cooking" level="10,20"/>
     </Skills>
     <Items>
-      <Item name="ID Card"/>
+      <Item name="Engineer ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Coalition Engineer"/>
 		<Item name="Basic Emergency Protocol"/>
@@ -177,7 +157,7 @@
 	  <Skill name="Cooking" level="10,20"/>
     </Skills>
     <Items>
-      <Item name="ID Card"/>
+      <Item name="Mechanic ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Coalition Mechanic"/>
 		<Item name="Basic Emergency Protocol"/>
@@ -203,7 +183,7 @@
 	  <Skill name="Cooking" level="60,80"/>
     </Skills>
     <Items>
-      <Item name="ID Card"/>
+      <Item name="Cook ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Coalition Cook"/>
 		<Item name="Basic Emergency Protocol"/>
@@ -226,7 +206,7 @@
 	  <Skill name="Cooking" level="15,35"/>
     </Skills>
     <Items>
-      <Item name="ID Card"/>
+      <Item name="Seaman ID Card"/>
 	  <Item name="Clipboard">
         <Item name="Coalition Seamen"/>
 		<Item name="Basic Emergency Protocol"/>
@@ -252,7 +232,8 @@
 	  <Skill name="Cooking" level="5,80"/>
     </Skills>
     <Items>
-      <Item name="Prisoner Jumpsuit A" equip="true"/>
+      <Item name="Prisoner ID Card"/>
+	  <Item name="Prisoner Jumpsuit A" equip="true"/>
 	  <!-- <Item name="Handcuffs" equip="true"/> -->
     </Items>
   </Job>

@@ -38,6 +38,7 @@
     itemname="Thermal Artifact">
     <message header="Artifact collected" text="The artifact is now on board. Navigate the submarine out of the cavern to claim the reward."/>
   </SalvageMission>
+  
   <SalvageMission
     name="Salvaging an artifact"
     description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact."
@@ -63,6 +64,7 @@
     itemname="Nasonov Artifact">
     <message header="Artifact collected" text="The artifact is now on board. Navigate the submarine out of the cavern to claim the reward."/>
   </SalvageMission>
+  
   <MonsterMission
     name="Killing a Moloch"
     description="A particularly aggressive Moloch has been terrorizing vessels traveling between [location1] and [location2]. A reward of 2,500 credits has been promised to those who kill the creature."
@@ -98,10 +100,22 @@
     monsterfile="Mods/BTE/Characters/Mantisboss/mantisboss.xml">
     <message header="Target terminated" text="The Mantis is dead. Navigate the submarine out of the cavern to claim the reward."/>
   </MonsterMission>
+  
+  <MonsterMission
+    name="Rogue Test Subject"
+    description="Researchers in [location2] are offering a reward of 3000 credits to hunt down a rogue Mantis between [location1] and [location2]. They will handle the retrieval once the creature is dead. A non-disclosure agreement is required for this mission."
+    commonness="4"
+    reward="3000"
+    radarlabel="Target"
+	failuremessage="Failed to kill the Mantis."
+    successmessage="As soon as you got to [location2], a team of coalition personnel boarded your vessel and retrieved every piece of data regarding this mission and the creature. The person in charge then handled the payment soon after they were done."
+    monsterfile="Mods/BTE/Characters/Mantisthresher/mantisthresher.xml">
+    <message header="Target terminated" text="The creature is dead. This was not a Mantis, at least not completely. You should report to the researchers and claim the reward."/>
+  </MonsterMission>
 
   <MonsterMission
     name="Beast from the Abyss"
-    description="Seismic readings are indicating that something colossal has emerged from the depths of Europa into the passageway between [location1] and [location2]. All transports through the passageway have been canceled for now and a reward of 15,000 has been promised to those who get rid of whatever is causing the seismic activity."
+    description="Seismic readings are indicating that something colossal has emerged from the depths of Europa into the passageway between [location1] and [location2]. All transports through the passageway have been cancelled for now and a reward of 15,000 has been promised to those who get rid of whatever is causing the seismic activity."
     commonness="2"
     reward="15000"
     radarlabel="Target"
@@ -147,6 +161,18 @@
     spawntype="ruin"
 	monsterfile="Mods/BTE/Characters/Teleglitchboss/teleglitchboss.xml">
 	<message header="Target terminated" text="The signal was being emitted by some kind of sentient humanoid anomaly. You should report the incident to [location2]."/>
+  </MonsterMission>
+  
+  <MonsterMission
+    name="Salvaging an artifact" 
+    description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact."
+    commonness="1"
+    reward="4000"
+    radarlabel="Infrasonic Signal"
+	failuremessage="Retrieving the artifact failed."
+    successmessage="Upon receiving the news, the researchers of [location1] have agreed to pay you the reward in exchange for the coordinates. You were also &quot;required&quot; to sign a non-disclosure agreement."
+    monsterfile="Mods/BTE/Characters/Mantisthresher/mantisthresher.xml">
+	<message header="Target terminated" text="It turns out the signal was emitted by an unknown creature. You should report the incident to [location2]."/>
   </MonsterMission>
 
   <MonsterMission

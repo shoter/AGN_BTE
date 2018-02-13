@@ -11,7 +11,7 @@
 
   <Deconstruct time="10">
     <Item name="Polycarbonate Bar"/>
-	<Item name="Copper Powder"/>
+	<Item name="Aluminium Powder"/>
     <Item name="FPGA Circuit"/>
   </Deconstruct>
 
@@ -44,8 +44,8 @@
   <Sprite texture ="SwitchBasic.png" depth="0.79"/>
 
   <Deconstruct time="5">
-    <Item name="Polycarbonate Bar"/>
-	<Item name="Copper Powder"/>
+    <Item name="Polycarbonate Sliver"/>
+	<Item name="Aluminium Powder"/>
   </Deconstruct>
 
   <Body width="16" height="16" density="20"/>

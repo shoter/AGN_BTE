@@ -54,7 +54,7 @@
               damagetype="slash" targetforce="-30" severlimbsprobability="0.5"
               force="5" applyforceonlimbs="0" torque="-20">
 	    <StatusEffect type="OnUse" target="This">
-		  <Explosion range="180" structuredamage="30" force="5" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
+		  <Explosion range="275" structuredamage="30" force="5" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
 		</StatusEffect>
       </attack>
     </limb>

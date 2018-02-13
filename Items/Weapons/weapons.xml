@@ -6,20 +6,31 @@
     category="Equipment"
     Tags="meditem,weapon"
 	description="A Diving Knife is a general purpose tool meant for divers but is usually used by most crew members for personal protection purposes."
-    price="150">
+    canuseonself="true"
+	price="150">
 
     <Deconstruct time="5">
-	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
       <Item name="Steel Bar"/>
     </Deconstruct>
 
     <Sprite texture="Mods/BTE/Items/Weapons/knieves.png" sourcerect="0,0,52,10" depth="0.55"/>
     
     <Body width="42" height="8" density="25"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" Health="-4.2">
+	    <sound file="Content/Items/Medical/syringe.ogg"/>
+		<Use/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" bleeding="1.2" duration="5">
+		<Use/>
+	  </StatusEffect>
+    </ItemComponent>
 
     <MeleeWeapon slots="RightHand,LeftHand,Any"
           aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="0.8">
-      <Attack damage="8" bleedingdamage="2" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>   
+      <Attack damage="8" bleedingdamage="2" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
     </MeleeWeapon>
   </Item>
   
@@ -32,7 +43,8 @@
     price="150">
 	
 	<Deconstruct time="5">
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Aluminium Powder"/>
     </Deconstruct>
 
     <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,78,25,8" depth="0.55"/>
@@ -55,7 +67,8 @@
     interactthroughwalls="true">
 	
 	<Deconstruct time="5">
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Aluminium Powder"/>
     </Deconstruct>
 
     <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="31,78,25,8" depth="0.55"/>
@@ -263,7 +276,7 @@
     interactthroughwalls="true">
 
     <Deconstruct time="10">
-      <Item name="Plastic Spear"/>
+      <Item name="Polycarbonate Bar"/>
 	  <Item name="Copper Powder"/>
     </Deconstruct>
 
@@ -582,6 +595,39 @@
   </Item>
   
   <Item
+    name="Molotov Cocktail"
+    category="Equipment"
+    tags="smallitem,weapon"
+	description="This crude incendiary bomb uses thermite for an easy ignition method, making it really unstable."
+	impacttolerance="4">
+	
+	<Deconstruct time="5">      
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Ethanol" requirefullcondition="true"/>
+	  <Item name="Ethanol" requirefullcondition="true"/>
+	  <Item name="Ethanol" requirefullcondition="true"/>
+	  <Item name="Thermite Powder" requirefullcondition="true"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,139,10,45" depth="0.55"/>
+
+    <Body width="18" height="28" density="18"/>
+
+    <Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="3" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This" Condition="-100">
+	    <sound file="Mods/BTE/Items/Tools/GlassBreak.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+	    <sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
+        <Fire size="75"/>
+      </StatusEffect>
+	  <StatusEffect type="OnFire" target="this" condition="-100">
+	    <sound file="Mods/BTE/Items/Tools/GlassBreak.ogg"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
     name="Hot Can"
     category="Equipment"
     tags="smallitem,weapon"
@@ -784,7 +830,7 @@
 
     <Deconstruct time="10">      
       <Item name="Aluminium Bar"/>
-	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
   
     <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="50,0,40,20" depth="0.55"/>
@@ -954,8 +1000,8 @@
 	>
 
     <Deconstruct time="10">
-      <Item name="Plastic Spear"/>
-	  <Item name="Copper Coil"/>
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Copper Powder"/>
 	  <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -1113,13 +1159,36 @@
       <Item name="Aluminium Bar"/>
     </Deconstruct>
 
-    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,118,97,8" depth="0.55"/>
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,118,90,8" depth="0.55"/>
     
-    <Body width="95" height="6" density="19"/>
+    <Body width="95" height="6" density="16"/>
 
     <MeleeWeapon slots="RightHand+LeftHand,Any"
-              aimpos="50,0" handle1="-30,0" handle2="-20,-10" holdangle="60" reload="2.5">
+              aimpos="50,0" handle1="-30,0" handle2="-20,-10" holdangle="60" reload="2.4">
       <Attack damage="14" stun="0.8" damagetype="Blunt" targetforce="35" sound="Mods/BTE/Items/Weapons/BatHit.ogg"/> 
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Fire Axe"
+    category="Equipment"
+    Tags="bigitem,weapon"
+	description="What is this doing in Europa?"
+    >
+
+    <Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Steel Bar"/>
+      <Item name="Steel Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/FireAxe.png" depth="0.55"/>
+    
+    <Body width="95" height="6" density="20"/>
+
+    <MeleeWeapon slots="RightHand+LeftHand,Any"
+              aimpos="50,0" handle1="-30,0" handle2="-20,-10" holdangle="60" reload="2.6">
+      <Attack damage="24" bleedingdamage="4" stun="0.6" damagetype="Slash" severlimbsprobability="0.7" targetforce="35" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/> 
     </MeleeWeapon>
   </Item>
 </Items>

@@ -107,13 +107,14 @@
     <Body width="9" height="32" density="10.1"/>
 	
 	<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,-5" throwforce="3" aimpos="35,-10">
-      <StatusEffect type="Always" target="Hull" oxygen="5000.0"/>
-	  <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
-	    <sound file="Mods/BTE/Items/Tools/GlassBreak.ogg"/>
+      <StatusEffect type="Always" target="Hull" oxygen="2500"/>
+	  <StatusEffect type="OnImpact" target="This" Condition="-53">
+	    <sound file="Mods/BTE/Items/Tools/GlassHit.ogg"/>
 	  </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" Condition="-100.0">
-	    <sound file="Mods/BTE/Items/Weapons/ChemExplosion.ogg"/>
-        <Explosion range="590.0" structuredamage="390" damage="290" stun="5" force="20.0"/>
+      <StatusEffect type="OnBroken" target="This,Hull" oxygen="90000">
+	    <sound file="Mods/BTE/Items/Tools/GlassBreak.ogg"/>
+		<sound file="Mods/BTE/Items/Weapons/ChemExplosion.ogg"/>
+        <Explosion range="590" damage="30" stun="8" force="20" camerashake="4.5"/>
       </StatusEffect>
     </Throwable>
   </Item>
@@ -139,7 +140,7 @@
 	  <StatusEffect type="OnImpact" target="This" Condition="-28.3">
 	    <sound file="Mods/BTE/Items/Tools/GlassHit.ogg"/>
 	  </StatusEffect>
-      <StatusEffect type="OnBroken" target="This,Hull" Condition="-100.0" oxygen="-90000">
+      <StatusEffect type="OnBroken" target="This,Hull" oxygen="-90000">
 	    <sound file="Mods/BTE/Items/Tools/GlassBreak.ogg"/>
 	  </StatusEffect>
     </Throwable>
@@ -168,7 +169,7 @@
 	  <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
 	    <sound file="Mods/BTE/Items/Tools/GlassBreak.ogg"/>
 	  </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" Condition="-100.0">
+      <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
         <Fire size="300.0"/>
       </StatusEffect>
@@ -212,7 +213,7 @@
       <Attack damage="1000" bleedingdamage="10" structuredamage="500" damagetype="Blunt"/>
       <StatusEffect type="OnUse" Condition="-100.0" stun="10.0" disabledeltatime="true">
 	    <sound file="Content/Items/Artifacts/alienweapon.ogg"/>
-        <Explosion range="1000.0" structuredamage="5000" damage="1000" stun="10" force="50.0"/>
+        <Explosion range="1000" structuredamage="5000" damage="1000" stun="10" force="50" camerashake="5.0"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
         <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" velocitymax="50" scalemin="2" scalemax="5"/>
@@ -239,7 +240,7 @@
       <sound file="Content/Items/Artifacts/aliendoor.ogg" type="OnUse" range="1000.0"/>
 	  <StatusEffect type="OnBroken" target="This">
 	    <sound file="Content/Items/Artifacts/aliendoor.ogg"/>
-	    <Explosion range ="200" stun="0.1" force="5" shockwave="false" flames="false" smoke="false" sparks="false"/>
+	    <Explosion range ="200" stun="0.1" force="5" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
       </StatusEffect>
     </Door>
 
@@ -264,7 +265,7 @@
       <sound file="Content/Items/Artifacts/aliendoor.ogg" type="OnUse" range="3000"/>
 	  <StatusEffect type="OnBroken" target="This">
 	    <sound file="Content/Items/Artifacts/aliendoor.ogg" range="3000"/>
-	    <Explosion range ="200" stun="0.1" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+	    <Explosion range ="200" stun="0.1" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
       </StatusEffect>
     </Door>
 

@@ -12,7 +12,7 @@
       <sound file="Content/Items/Door/door.ogg" type="OnUse" range="500"/>
 	  <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000"/>
-	    <Explosion range ="200" stun="0.1" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+	    <Explosion range ="200" stun="0.1" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
       </StatusEffect>
     </Door>
 
@@ -44,7 +44,7 @@
       <sound file="Content/Items/Door/door.ogg" type="OnUse" range="500"/>
 	  <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Door/DoorBreak1.ogg" type="OnBroken" range="3000"/>
-	    <Explosion range ="200" stun="0.1" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+	    <Explosion range ="200" stun="0.1" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
       </StatusEffect>
     </Door>
 
@@ -76,7 +76,7 @@
       <sound file="Mods/BTE/Items/Door/GlassDoor.ogg" type="OnUse" range="500"/>
 	  <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Door/GlassDoorBreak.ogg" type="OnBroken" range="3000"/>
-	    <Explosion range ="200" stun="0.2" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+	    <Explosion range ="200" stun="0.2" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
       </StatusEffect>
     </Door>
 
@@ -108,7 +108,7 @@
       <sound file="Content/Items/Door/door.ogg" type="OnUse" range="500"/>
 	  <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Door/DoorBreak1.ogg" range="3000"/>
-	    <Explosion range ="200" stun="0.1" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+	    <Explosion range ="200" stun="0.1" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5.0"/>
       </StatusEffect>
     </Door>
 

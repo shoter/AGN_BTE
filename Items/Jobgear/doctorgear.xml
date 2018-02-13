@@ -7,7 +7,7 @@
     >
 	
 	<Deconstruct time="15">
-      <Item name="Steel Bar"/>
+      <Item name="Aluminium Powder"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -30,8 +30,8 @@
     >
 	
 	<Deconstruct time="10">
-	  <Item name="Polycarbonate Bar"/>
-      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="doctorgear.png" sourcerect="75,0,53,18" depth="0.6"/>
@@ -47,8 +47,8 @@
 	  
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.04" disabledeltatime="true"/>
 	  
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7" deflectprojectiles="false"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7" deflectprojectiles="false"/>
     </Wearable>
 
     <ItemContainer capacity="2">
@@ -65,8 +65,8 @@
     >
 	
 	<Deconstruct time="10">
-	  <Item name="Polycarbonate Bar"/>
-      <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
+      <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="doctorgear.png" sourcerect="75,0,53,18" depth="0.6"/>
@@ -82,8 +82,8 @@
 	  
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.05" disabledeltatime="true"/>
 	  
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.8"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7" deflectprojectiles="false"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.7" deflectprojectiles="false"/>
     </Wearable>
 
     <ItemContainer capacity="2">

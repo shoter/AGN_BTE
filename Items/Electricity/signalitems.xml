@@ -12,7 +12,7 @@
 
     <Deconstruct time="5">
       <Item name="Copper Powder"/>
-	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="83,105,44,22"/>
@@ -36,7 +36,7 @@
 
     <Deconstruct time="5">
       <Item name="Copper Powder"/>
-	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="83,105,44,22"/>
@@ -60,7 +60,7 @@
 
     <Deconstruct time="5">
       <Item name="Copper Powder"/>
-	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="83,105,44,22"/>
@@ -84,7 +84,7 @@
 
     <Deconstruct time="5">
       <Item name="Copper Powder"/>
-	  <Item name="Polycarbonate Bar"/>
+	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
     <Sprite texture ="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="83,105,44,22"/>
@@ -128,8 +128,8 @@
     price="100">
 	
 	<Deconstruct time="5">
-      <Item name="Polycarbonate Bar"/>
-	  <Item name="Copper Bar"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Copper Powder"/>
     </Deconstruct>
 
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="32,16,16,16"/>
@@ -149,7 +149,7 @@
     description="Sends a signal when both inputs receive a signal within a set period of each other.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/> 
     </Deconstruct>
 
@@ -183,7 +183,7 @@
     description="Sends a signal if either of the inputs receive a signal.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -217,7 +217,7 @@
     description="Sends a signal when the input is NOT receiving a signal.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -249,7 +249,7 @@
     description="When switched on, forwards all received signals from the input connections to the outputs.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -296,7 +296,7 @@
     description="Delays all received signals for a specific amount of time.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -328,7 +328,7 @@
     description="Sends a signal when a signal matching a specific value is received.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -362,7 +362,7 @@
     description="Sends a signal if the received signal matches a specific regular expression pattern.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -388,13 +388,12 @@
     name="Wifi Component"
     category="Electrical"
     Tags="smallitem"
-
     linkable="true"
     price="125"
     description="Allows remote communication between other Wifi Components that are using the same channel.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -417,7 +416,7 @@
   </Item>
   
   <Item
-    name="Oscillator"
+    name="Oscillator Component"
     category="Electrical"
     Tags="smallitem"
     
@@ -426,7 +425,7 @@
     description="Sends out a periodic, oscillating signal.">
 
     <Deconstruct time="10">
-      <Item name="Aluminium Powder"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -450,6 +449,40 @@
   </Item>
   
   <Item
+    name="Buzzer Component"
+    linkable="true"
+	category="Electrical"
+    Tags="smallitem">
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Sliver"/>
+      <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture="signalcomp.png" sourcerect="32,0,16,16" depth="0.8"/>
+
+    <Door canbeselected="true">
+      <Sprite texture ="signalcomp.png" sourcerect="0,0,0.1,0.1" depth="0.05" origin="0.5,0.0"/>
+      <WeldedSprite texture ="signalcomp.png" sourcerect="0,0,1,1" depth="0.0" origin="0.5,0.5"/>
+      <BrokenSprite texture ="signalcomp.png" sourcerect="0,0,1,1" depth="0.051" origin="0.5,0.0"/>
+      <sound file="Buzzer.ogg" type="OnUse" range="500"/>
+    </Door>
+
+    <fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="20"/>
+	  <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+  
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
+      <requireditem name="Screwdriver" type="Equipped"/>
+      <input name="toggle"/>
+      <input name="set_state"/>
+      <output name="state_out"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
     name="Light Component"
     category="Electrical"
     Tags="smallitem"
@@ -458,7 +491,7 @@
     price="130">
 
     <Deconstruct time="10">
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
@@ -617,40 +650,6 @@
   </Item>
   
   <Item
-    name="Buzzer Component"
-    linkable="true"
-	category="Electrical"
-    Tags="smallitem">
-	
-	<Deconstruct time="10">
-	  <Item name="Polycarbonate Bar"/>
-      <Item name="FPGA Circuit"/>
-    </Deconstruct>
-
-    <Sprite texture="signalcomp.png" sourcerect="32,0,16,16" depth="0.8"/>
-
-    <Door canbeselected="true">
-      <Sprite texture ="signalcomp.png" sourcerect="0,0,0.1,0.1" depth="0.05" origin="0.5,0.0"/>
-      <WeldedSprite texture ="signalcomp.png" sourcerect="0,0,1,1" depth="0.0" origin="0.5,0.5"/>
-      <BrokenSprite texture ="signalcomp.png" sourcerect="0,0,1,1" depth="0.051" origin="0.5,0.0"/>
-      <sound file="Buzzer.ogg" type="OnUse" range="500"/>
-    </Door>
-
-    <fixrequirement name="Electrical repairs">
-      <skill name="Electrical Engineering" level="20"/>
-	  <item name="Wire"/>
-      <item name="Screwdriver"/>
-    </fixrequirement>
-  
-    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="Rewire [Screwdriver]">
-      <requireditem name="Screwdriver" type="Equipped"/>
-      <input name="toggle"/>
-      <input name="set_state"/>
-      <output name="state_out"/>
-    </ConnectionPanel>
-  </Item>
-  
-  <Item
     name="Alarm Buzzer"
     category="Electrical"
     Tags="smallitem"
@@ -765,7 +764,7 @@
 
     <Deconstruct time="10">
 	  <Item name="Polycarbonate Bar"/>
-      <Item name="Aluminium Bar"/>
+      <Item name="Aluminium Powder"/>
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 

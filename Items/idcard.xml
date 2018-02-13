@@ -2,16 +2,17 @@
 
 <Items>
   <Item
-	name="ID Card"
+	name="Access Card"
     category="Equipment"
-	Tags="smallitem,docs"
+	Tags="smallitem,docs,ID Card"
 	>
 	
 	<Deconstruct time="10">
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
     </Deconstruct>
 
-	<Sprite texture ="Content/Items/idcard.png" depth="0.82"/>
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="64,14,16,16" depth="0.82"/>
 
 	<Body width="16" height="16" density="10.1"/>
 
@@ -19,16 +20,176 @@
   </Item>
 
   <Item
-	name="Master ID Card"
+	name="Captain ID Card"
     category="Equipment"
-	Tags="smallitem,docs,admin,com,cap,ast,sec,med,eng,mec,cul,nov,stg,P1,P2,P3,P4,ID Card"
+	Tags="smallitem,docs,cap,com,ID Card"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Captain ID Card"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="0,0,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+  
+  <Item
+	name="Assistant ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,ast,com,ID Card"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Assistant ID Card"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="16,0,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+  
+  <Item
+	name="Security ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,sec,ID Card"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="32,0,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+  
+  <Item
+	name="Doctor ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,med,ID Card"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="48,0,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+  
+  <Item
+	name="Engineer ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,eng,ID Card"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="64,0,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+  
+  <Item
+	name="Mechanic ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,mec,ID Card"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="0,14,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+  
+  <Item
+	name="Cook ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,cul,ID Card"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="16,14,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+  
+  <Item
+	name="Seaman ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,nov,ID Card"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="32,14,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+  
+  <Item
+	name="Prisoner ID Card"
+    category="Equipment"
+	Tags="smallitem,docs,pri"
+	>
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Iron Powder"/>
+    </Deconstruct>
+
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="48,14,16,16" depth="0.82"/>
+
+	<Body width="16" height="16" density="10.1"/>
+
+	<Pickable/>
+  </Item>
+
+  <Item
+	name="Master Key Card"
+    category="Equipment"
+	Tags="smallitem,docs,admin,com,cap,ast,sec,med,eng,mec,cul,nov,pri,stg,P1,P2,P3,P4,ID Card"
 	>
 	
 	<Deconstruct time="10">
       <Item name="Master ID Card"/>
     </Deconstruct>
 
-	<Sprite texture ="Content/Items/idcard.png" depth="0.82"/>
+	<Sprite texture ="Mods/BTE/Items/idcard.png" sourcerect="64,14,16,16" depth="0.82"/>
 
 	<Body width="16" height="16" density="10.1"/>
 

@@ -170,6 +170,26 @@
   </Item>
   
   <Item
+    name="Wall Rack"
+    linkable="true"
+    pickdistance ="150">
+    
+    <Sprite texture ="WallRack.png" depth="0.78"/>
+
+    <ItemContainer capacity="3" canbeselected="true" hideitems="false" itempos="52,-16" iteminterval="0,-31">
+      
+	  <Containable name="Gauss Pistol"/>
+	  <Containable name="Gauss Carbine"/>
+	  <Containable name="Gauss Rifle"/>
+	  <Containable name="Revolver"/>
+	  <Containable name="Diving Revolver"/>
+	  <Containable name="Harpoon Gun"/>
+	  <Containable name="Spear Gun"/>
+	  <Containable name="Dart Gun"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
     name="Fire Extinguisher Bracket"
     linkable="true"
     pickdistance ="150">
