@@ -44,10 +44,10 @@
     <limb id = "11" width="16" height="71" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="193,176,21,80" depth="0.025" origin="0.5,0.5"/>
       <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
-      <attack range="200" damagerange="100" duration="0.5" damage="100" bleedingdamage="4" structuredamage="75" damagetype="slash"
+      <attack range="200" damagerange="100" duration="0.5" damage="100" bleedingdamage="4" structuredamage="8" damagetype="slash"
 	  force="20" applyforceonlimbs="0" torque="80" targetforce="-50" severlimbsprobability="0.8">
 	    <StatusEffect type="OnUse" target="This">
-		  <Explosion range="250" structuredamage="100" force="5" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
+		  <Explosion range="250" structuredamage="10" force="5" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
 		</StatusEffect>
       </attack>     
     </limb>

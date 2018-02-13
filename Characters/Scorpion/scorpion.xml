@@ -50,7 +50,7 @@
 		  <Sound file="Content/Items/Electricity/zap2.ogg" type="OnUse"/>
 		  <Sound file="Content/Items/Electricity/zap3.ogg" type="OnUse"/>
 		  <Sound file="Content/Items/Electricity/zap4.ogg" type="OnUse"/>
-		  <Explosion range="160" structuredamage="22" force="5" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
+		  <Explosion range="160" structuredamage="3" force="5" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
 		</StatusEffect>
       </attack>
     </limb>
