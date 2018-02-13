@@ -65,7 +65,7 @@
     <Wearable limbtype="Head" slots="Any,Face">
       <sprite texture="DivingMask.png" limb="Head" origin="0.1,0.5" depthlimb="Head"/>
       <StatusEffect type="OnWearing" target="Character" ObstructVision="true" SpeedMultiplier="-0.03" disabledeltatime="true"/>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500" Condition="-0.5" HuskInfectionState="-0.002">
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="15000" Condition="-0.05" HuskInfectionState="-0.002">
 	  <RequiredItem type="Contained" name="Oxygen Tank"/>
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-200" Oxygen="-80.0" Health="-0.2" Condition="-0.25" HuskInfectionState="-0.008">
@@ -74,7 +74,7 @@
       <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100" Oxygen="-20.0" Health="-0.3" Condition="-0.5" HuskInfectionState="-0.006">
         <RequiredItem type="Contained" name="Thermite Tank"/>
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000" Condition="-0.1" PressureProtection="1" HuskInfectionState="-0.001">
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="10000" Condition="-0.01" PressureProtection="1" HuskInfectionState="-0.001">
         <RequiredItem type="Contained" name="Oxygenite Tank"/>
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" disabledeltatime="true">
@@ -134,7 +134,7 @@
       <sprite texture="DivingSuit.png" limb="LeftFoot" sourcerect="30,100,20,25" origin="0.5,0.5" depth="0.13" inheritlimbdepth="false" hidelimb="true"/>
       
       <StatusEffect type="OnWearing" target="Character" ObstructVision="true" PressureProtection="100" SpeedMultiplier="-0.4" LowPassMultiplier="0.2" disabledeltatime="true"/>
-      <StatusEffect type="OnWearing" target="Contained,Character"  OxygenAvailable="1500" Condition="-0.5" HuskInfectionState="-0.002">
+      <StatusEffect type="OnWearing" target="Contained,Character"  OxygenAvailable="15000" Condition="-0.05" HuskInfectionState="-0.002">
         <RequiredItem type="Contained" name="Oxygen Tank"/>
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-200" Oxygen="-40.0" Condition="-0.25" HuskInfectionState="-0.008">
@@ -143,7 +143,7 @@
       <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100" Oxygen="-20.0" Health="-0.1" Condition="-0.5" HuskInfectionState="-0.006">
         <RequiredItem type="Contained" name="Thermite Tank"/>
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000" Condition="-0.1" HuskInfectionState="-0.001">
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="10000" Condition="-0.01" HuskInfectionState="-0.001">
         <RequiredItem type="Contained" name="Oxygenite Tank"/>
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" disabledeltatime="true">

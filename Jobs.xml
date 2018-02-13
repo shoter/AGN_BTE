@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Jobs>
+
+ <Job name="agnSeaman" description="Trousers, Flashlight, Screwdriver, all-around skills" allowalways="true">
+    <Skills>
+      <Skill name="Weapons" level="40,80"/> <!-- 50,60 -->
+      <Skill name="Electrical Engineering" level="60,70"/> <!-- 20,30 -->
+	  <Skill name="Construction" level="60,70"/> <!-- 20,30 -->
+      <Skill name="Medical" level="40,70"/> <!-- 10,30 -->
+	  <Skill name="Cooking" level="40,70"/>
+    </Skills>
+    <Items>
+      <Item name="ID Card"/>
+	  <Item name="Crewmember Cargo Trousers A" equip="true"/>
+	  <Item name="Screwdriver"/>
+	  <Item name="Flashlight">
+	    <Item name="Battery Cell"/>
+	  </Item> 
+    </Items>
+  </Job>
+  
   <Job name="Captain" description="The Commanding Officer with authority over the entire crew. The captain is responsible for commanding the rest of the crew and trying to keep everything running smoothly." minnumber="1" maxnumber="1">
     <Skills>
       <Skill name="Weapons" level="40,60"/> <!-- 50,60 -->
@@ -125,7 +144,7 @@
   <Job name="Engineer" description="Engineers have above-average electrician skills, but fixing complex mechanical devices is still usually out of their skill set. They are competent at fixing electrical devices however, and are the ones to turn to when the power grid starts failing." minnumber="1">
     <Skills>
       <Skill name="Weapons" level="10,20"/> <!-- 10,30 -->
-      <Skill name="Construction" level="20,40"/> <!-- 20,30 -->
+      <Skill name="Construction" level="60,80"/> <!-- 20,30 -->
       <Skill name="Electrical Engineering" level="60,80"/> <!-- 50,60 -->
       <Skill name="Medical" level="10,20"/> <!-- 10,20 -->
 	  <Skill name="Cooking" level="10,20"/>
@@ -152,7 +171,7 @@
     <Skills>
       <Skill name="Weapons" level="15,30"/> <!-- 10,30 -->
       <Skill name="Construction" level="60,80"/> <!-- 50,60 -->
-      <Skill name="Electrical Engineering" level="15,30"/> <!-- 30,35 -->
+      <Skill name="Electrical Engineering" level="60,80"/> <!-- 30,35 -->
       <Skill name="Medical" level="10,20"/> <!-- 10,20 -->
 	  <Skill name="Cooking" level="10,20"/>
     </Skills>
